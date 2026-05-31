@@ -119,6 +119,65 @@
         color: var(--bg);
       }
 
+      .landing-panels {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 40px 0 18px;
+      }
+
+      .landing-panel {
+        background: var(--soft);
+        border: 1px solid var(--line);
+        padding: 24px 24px 26px;
+      }
+
+      .landing-panel p,
+      .landing-panel ul {
+        max-width: none;
+      }
+
+      .offer-list,
+      .proof-list {
+        margin: 18px 0 0;
+        padding-left: 20px;
+      }
+
+      .offer-list li,
+      .proof-list li {
+        margin-top: 10px;
+      }
+
+      .service-grid {
+        display: grid;
+        gap: 14px;
+        margin-top: 22px;
+      }
+
+      .service-card {
+        background: var(--bg);
+        border: 1px solid var(--line);
+        padding: 16px 18px;
+      }
+
+      .service-card h3,
+      .proof-card h3 {
+        margin-top: 0;
+      }
+
+      .proof-card {
+        border-top: 1px solid var(--line);
+        margin-top: 22px;
+        padding-top: 22px;
+      }
+
+      .micro-cta {
+        color: var(--muted);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
       nav {
         border-bottom: 1px solid var(--line);
         padding: 36px 0;
@@ -234,6 +293,10 @@
         .toc {
           columns: 1;
         }
+
+        .landing-panels {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </head>
@@ -255,8 +318,79 @@
           <a class="book-link" href="https://books.apple.com/us/book/intelligence-amplification/id6760374447" target="_blank" rel="noreferrer">
             Read the living book on Apple Books
           </a>
+          <a class="book-link" href="#work-with-desmond">Work with Desmond</a>
+          <a class="book-link" href="#speaking-advisory">Speaking and advisory</a>
         </div>
       </header>
+
+      <section class="landing-panels" aria-label="Speaking and advisory overview">
+        <article class="landing-panel" id="work-with-desmond">
+          <span class="section-label">Work with Desmond</span>
+          <h2>Human judgment, not generic AI output.</h2>
+          <p>
+            Desmond Wood helps people and institutions think clearly about AI, agency,
+            governance, and responsible adoption. The value is not commodity text generation.
+            It is disciplined synthesis, moral framing, live interpretation, and practical
+            guidance anchored in a human being who is accountable for the judgment.
+          </p>
+          <div class="service-grid">
+            <article class="service-card">
+              <h3>Talks and keynote sessions</h3>
+              <p>
+                Public talks and guest lectures on intelligence amplification, human agency,
+                ethical technology, and the future of work.
+              </p>
+            </article>
+            <article class="service-card">
+              <h3>Workshops for teams and communities</h3>
+              <p>
+                Interactive sessions that help groups use AI to increase clarity and capability
+                without surrendering discernment or responsibility.
+              </p>
+            </article>
+            <article class="service-card">
+              <h3>Advisory briefings and thought partnership</h3>
+              <p>
+                Focused briefings for leaders, educators, founders, and mission-driven groups
+                who need a human-centered interpretation of AI strategy, risk, and institutional choice.
+              </p>
+            </article>
+          </div>
+          <p class="micro-cta">
+            This site leads with the living booklet. These services extend the same ideas into
+            live rooms, strategic conversations, and applied guidance.
+          </p>
+          <p class="micro-cta">
+            For talks, workshops, or advisory inquiries:
+            <a href="mailto:desmondwood@me.com">desmondwood@me.com</a>
+          </p>
+        </article>
+
+        <article class="landing-panel" id="speaking-advisory">
+          <span class="section-label">Recent keynote</span>
+          <h2>A speaking and advisory proof point already exists.</h2>
+          <p>
+            The recent CAISCEN keynote, <em>The Intelligence Explosion: Designing the Future
+            Without Losing Ourselves</em>, is the clearest bridge between the public writing
+            and paid speaking or advisory work. It shows voice, presence, framing, and the
+            ability to bring AI back to questions of judgment, character, and human agency.
+          </p>
+          <ul class="proof-list">
+            <li><a href="https://drive.google.com/file/d/1hxRToWg4u6YJix_eUPgQWFI6_FKJx7mC/view?usp=sharing" target="_blank" rel="noreferrer">View the presentation deck</a></li>
+            <li><a href="https://youtu.be/TNfECISmKJQ" target="_blank" rel="noreferrer">Watch the full keynote recording</a></li>
+            <li><a href="https://docs.google.com/document/d/1BhxPZacVNFe-zECSLr0Y7vsoMzNIF0_8cJvVJClNmmg/edit?usp=sharing" target="_blank" rel="noreferrer">Read the meeting notes summary</a></li>
+            <li><a href="https://youtu.be/oXnfF5EYB6s" target="_blank" rel="noreferrer">Listen to the notebook-style audio summary</a></li>
+          </ul>
+          <article class="proof-card">
+            <h3>What this can become</h3>
+            <ul class="offer-list">
+              <li>A 20-45 minute talk for schools, nonprofits, civic groups, and ethical-tech communities.</li>
+              <li>A workshop on human agency, responsible AI adoption, and intelligence amplification in practice.</li>
+              <li>An advisory briefing for leaders who need thoughtful guidance beyond hype, panic, or automation theater.</li>
+            </ul>
+          </article>
+        </article>
+      </section>
 
       <nav aria-label="Table of contents">
         <h2>Contents</h2>
