@@ -181,24 +181,22 @@
       }
 
       .overview-bio {
-        align-items: start;
-        display: grid;
-        gap: 26px;
-        grid-template-columns: 180px minmax(0, 1fr);
+        display: block;
       }
 
       .portrait-card {
-        margin: 0;
+        float: right;
+        margin: 6px 0 18px 28px;
+        width: 176px;
       }
 
       .portrait-card img {
-        aspect-ratio: 4 / 5;
+        aspect-ratio: 1 / 1;
         border: 1px solid var(--line);
         display: block;
-        filter: grayscale(100%);
         height: auto;
         object-fit: cover;
-        object-position: center top;
+        object-position: center center;
         width: 100%;
       }
 
@@ -458,7 +456,9 @@
         }
 
         .portrait-card {
+          float: none;
           max-width: 230px;
+          width: 100%;
         }
 
         .section-title-row {
