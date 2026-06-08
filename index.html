@@ -180,40 +180,6 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
-      .overview-bio {
-        display: block;
-      }
-
-      .portrait-card {
-        float: right;
-        margin: 6px 0 18px 28px;
-        width: 176px;
-      }
-
-      .portrait-card img {
-        aspect-ratio: 1 / 1;
-        border: 1px solid var(--line);
-        display: block;
-        height: auto;
-        object-fit: cover;
-        object-position: center center;
-        width: 100%;
-      }
-
-      .portrait-card figcaption {
-        color: var(--faint);
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
-        line-height: 1.45;
-        margin-top: 10px;
-      }
-
-      .portrait-card strong {
-        color: var(--ink);
-        display: block;
-        font-size: 13px;
-      }
-
       .section-intro {
         max-width: 780px;
       }
@@ -449,16 +415,9 @@
         }
 
         .overview-grid,
-        .overview-bio,
         .service-grid,
         .proof-layout {
           grid-template-columns: 1fr;
-        }
-
-        .portrait-card {
-          float: none;
-          max-width: 230px;
-          width: 100%;
         }
 
         .section-title-row {
@@ -507,18 +466,7 @@
             <span class="section-label">Advisory Practice</span>
             <h2>Strategic Discernment for AI-Native Institutions</h2>
           </div>
-          <div class="overview-bio">
-            <figure class="portrait-card">
-              <img
-                alt="Portrait of Desmond Wood"
-                src="assets/desmond-wood-portrait.jpg"
-              />
-              <figcaption>
-                <strong>Desmond Wood</strong>
-                Author, speaker, and advisor on Intelligence Amplification
-              </figcaption>
-            </figure>
-            <div>
+          <div>
             <p class="panel-lead">
               Desmond Wood helps leaders, educators, and mission-driven organizations cultivate
               wiser discernment around AI adoption, human agency, and institutional responsibility.
@@ -528,7 +476,6 @@
               The aim is not more automated noise. It is better discernment: clearer thinking, stronger
               responsibility, and more human use of powerful tools.
             </p>
-            </div>
           </div>
         </div>
       </section>
