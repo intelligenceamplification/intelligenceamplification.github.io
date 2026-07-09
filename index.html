@@ -10,13 +10,15 @@
     />
     <style>
       :root {
-        --bg: #f7f7f5;
+        --bg: #f6f6f3;
         --paper: #ffffff;
         --ink: #080808;
         --muted: #3d3d3a;
         --faint: #6b6b66;
         --line: #deded8;
         --soft: #efefec;
+        --glass: rgba(255, 255, 255, 0.72);
+        --shadow: 0 22px 70px rgba(0, 0, 0, 0.08);
       }
 
       * {
@@ -29,7 +31,9 @@
 
       body {
         margin: 0;
-        background: var(--bg);
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.86) 0%, rgba(246, 246, 243, 0) 34rem),
+          var(--bg);
         color: var(--ink);
         font-family: Georgia, "Times New Roman", serif;
         font-size: 18px;
@@ -45,47 +49,86 @@
       .page {
         width: min(1120px, calc(100% - 32px));
         margin: 0 auto;
-        padding: 34px 0 80px;
+        padding: 18px 0 80px;
       }
 
       header {
         border-bottom: 1px solid var(--line);
-        padding-bottom: 68px;
+        min-height: min(760px, calc(100vh - 36px));
+        padding-bottom: 70px;
       }
 
       .site-nav {
         align-items: center;
+        backdrop-filter: blur(22px);
+        background: var(--glass);
+        border: 1px solid rgba(222, 222, 216, 0.72);
+        border-radius: 999px;
+        box-shadow: 0 10px 34px rgba(0, 0, 0, 0.04);
         display: flex;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 13px;
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+        font-size: 12px;
         justify-content: space-between;
-        padding-bottom: 76px;
+        margin: 0 auto;
+        padding: 7px 7px 7px 18px;
+        position: sticky;
+        top: 14px;
+        z-index: 10;
       }
 
       .site-mark {
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
+        color: var(--ink);
+        font-weight: 600;
+        letter-spacing: 0;
       }
 
-      .site-nav a {
+      .nav-links {
+        align-items: center;
+        display: flex;
+        gap: 3px;
+      }
+
+      .site-nav a,
+      .nav-links a {
         color: var(--muted);
-        margin-left: 18px;
         text-decoration: none;
       }
 
-      .site-nav a:hover,
-      .site-nav a:focus {
+      .nav-links a {
+        border-radius: 999px;
+        padding: 7px 12px;
+      }
+
+      .nav-links a:hover,
+      .nav-links a:focus {
+        background: rgba(8, 8, 8, 0.06);
         color: var(--ink);
-        text-decoration: underline;
+      }
+
+      .nav-links a:last-child {
+        background: var(--ink);
+        color: var(--paper);
+      }
+
+      .hero {
+        align-items: start;
+        display: grid;
+        gap: 48px;
+        grid-template-columns: minmax(0, 1fr) minmax(300px, 0.38fr);
+        padding-top: clamp(86px, 13vw, 148px);
+      }
+
+      .hero-copy {
+        max-width: 760px;
+        min-width: 0;
       }
 
       .kicker {
         color: var(--muted);
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 17px;
-        font-weight: 700;
-        letter-spacing: 0.02em;
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0;
       }
 
       h1,
@@ -97,39 +140,46 @@
       }
 
       h1 {
-        font-size: 82px;
-        letter-spacing: 0;
-        line-height: 0.94;
-        margin-top: 26px;
-        max-width: 980px;
+        font-size: clamp(54px, 6.2vw, 84px);
+        letter-spacing: -0.02em;
+        line-height: 0.9;
+        margin-top: 24px;
+        max-width: 760px;
         text-transform: uppercase;
       }
 
       .subtitle {
         color: var(--ink);
-        font-size: 33px;
-        line-height: 1.24;
-        margin: 34px 0 0;
-        max-width: 830px;
+        font-size: clamp(29px, 3.1vw, 46px);
+        line-height: 1.08;
+        margin: 32px 0 0;
+        max-width: 880px;
       }
 
       .mission-line {
-        color: var(--muted);
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 18px;
-        line-height: 1.55;
-        margin-top: 20px;
-        max-width: 680px;
+        color: var(--faint);
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+        font-size: 20px;
+        line-height: 1.45;
+        margin-top: 22px;
+        max-width: 690px;
       }
 
       .meta {
         color: var(--faint);
         display: flex;
         flex-wrap: wrap;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 13px;
-        gap: 10px 18px;
-        margin-top: 34px;
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+        font-size: 12px;
+        gap: 8px;
+        margin-top: 28px;
+      }
+
+      .meta span {
+        background: rgba(255, 255, 255, 0.62);
+        border: 1px solid rgba(222, 222, 216, 0.72);
+        border-radius: 999px;
+        padding: 5px 10px;
       }
 
       .hero-actions,
@@ -137,36 +187,107 @@
       .contact-actions {
         display: flex;
         flex-wrap: wrap;
-        gap: 12px;
+        gap: 10px;
         margin-top: 34px;
       }
 
       .button-link {
-        border: 1px solid var(--ink);
+        border: 1px solid rgba(8, 8, 8, 0.16);
+        border-radius: 999px;
         display: inline-flex;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 13px;
-        font-weight: 700;
-        letter-spacing: 0.04em;
-        padding: 10px 14px;
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0;
+        padding: 11px 18px;
         text-decoration: none;
+        transition: background 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
       }
 
       .button-link.primary {
         background: var(--ink);
-        color: var(--bg);
+        border-color: var(--ink);
+        color: var(--paper);
       }
 
       .button-link:hover,
       .button-link:focus {
-        background: var(--ink);
-        color: var(--bg);
+        background: rgba(8, 8, 8, 0.06);
+        border-color: rgba(8, 8, 8, 0.26);
+        color: var(--ink);
+        transform: translateY(-1px);
       }
 
       .button-link.primary:hover,
       .button-link.primary:focus {
-        background: transparent;
-        color: var(--ink);
+        background: #252525;
+        color: var(--paper);
+      }
+
+      .signal-panel {
+        align-self: stretch;
+        background:
+          linear-gradient(150deg, rgba(255, 255, 255, 0.86), rgba(239, 239, 236, 0.66)),
+          var(--paper);
+        border: 1px solid rgba(222, 222, 216, 0.82);
+        border-radius: 8px;
+        box-shadow: var(--shadow);
+        display: grid;
+        min-height: 360px;
+        overflow: hidden;
+        padding: 26px;
+        position: relative;
+      }
+
+      .signal-panel::before {
+        background: linear-gradient(180deg, rgba(8, 8, 8, 0.11), rgba(8, 8, 8, 0));
+        content: "";
+        height: 1px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .signal-panel::after {
+        background:
+          linear-gradient(90deg, rgba(8, 8, 8, 0.12) 1px, transparent 1px),
+          linear-gradient(180deg, rgba(8, 8, 8, 0.12) 1px, transparent 1px);
+        background-size: 42px 42px;
+        content: "";
+        inset: 0;
+        mask-image: linear-gradient(145deg, transparent 0%, black 48%, transparent 86%);
+        opacity: 0.18;
+        position: absolute;
+      }
+
+      .signal-content {
+        align-content: space-between;
+        display: grid;
+        position: relative;
+        z-index: 1;
+      }
+
+      .signal-eyebrow,
+      .signal-note {
+        color: var(--faint);
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      .signal-mark {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+        font-size: clamp(88px, 12vw, 142px);
+        font-weight: 600;
+        letter-spacing: -0.07em;
+        line-height: 0.82;
+        margin: 44px 0;
+      }
+
+      .signal-note {
+        line-height: 1.45;
+        max-width: 250px;
       }
 
       .overview {
@@ -374,27 +495,24 @@
         }
 
         .page {
-          padding-top: 34px;
+          padding-top: 12px;
         }
 
         .site-nav {
-          align-items: flex-start;
-          flex-direction: column;
-          gap: 18px;
-          padding-bottom: 54px;
+          padding-left: 14px;
         }
 
-        .site-nav div:last-child {
-          display: grid;
-          gap: 8px;
+        .nav-links a {
+          padding-inline: 10px;
         }
 
-        .site-nav a {
-          margin-left: 0;
+        .hero {
+          display: block;
+          padding-top: 72px;
         }
 
         h1 {
-          font-size: 43px;
+          font-size: 46px;
         }
 
         h2 {
@@ -407,7 +525,16 @@
         }
 
         .subtitle {
-          font-size: 25px;
+          font-size: 29px;
+        }
+
+        .mission-line {
+          font-size: 18px;
+        }
+
+        .signal-panel {
+          margin-top: 48px;
+          min-height: 250px;
         }
 
         .toc {
@@ -432,31 +559,38 @@
       <header id="top">
         <div class="site-nav" aria-label="Primary navigation">
           <a class="site-mark" href="#top">Intelligence Amplification</a>
-          <div>
-            <a href="#services">Services</a>
-            <a href="#speaking-proof">Speaking</a>
-            <a href="#living-book">Living Book</a>
+          <div class="nav-links">
+            <a href="#services">Work</a>
+            <a href="#living-book">Book</a>
             <a href="#contact">Contact</a>
           </div>
         </div>
-        <div class="kicker">A Living Book and Advisory Practice</div>
-        <h1>INTELLIGENCE AMPLIFICATION</h1>
-        <p class="subtitle">
-          Designing Institutions for Augmented Intelligence
-        </p>
-        <p class="mission-line">
-          Wise ethics and systems thinking for leaders designing AI-native institutions.
-        </p>
-        <div class="meta" aria-label="Book details">
-          <span>Static web edition</span>
-          <span>Text-only public edition</span>
-          <span>Anchored single-page version</span>
-        </div>
-        <div class="hero-actions">
-          <a class="button-link primary" href="mailto:desmondwood@me.com?subject=Request%20a%20keynote">Request a Keynote</a>
-          <a class="button-link" href="mailto:desmondwood@me.com?subject=Request%20a%20workshop">Request a Workshop</a>
-          <a class="button-link" href="mailto:desmondwood@me.com?subject=Request%20an%20advisory%20conversation">Request an Advisory Conversation</a>
-          <a class="button-link" href="#living-book">Read the Living Book</a>
+        <div class="hero">
+          <div class="hero-copy">
+            <div class="kicker">The Living Book, extended into advisory practice</div>
+            <h1>INTELLIGENCE AMPLIFICATION</h1>
+            <p class="subtitle">
+              Designing institutions for augmented intelligence.
+            </p>
+            <p class="mission-line">
+              Wise ethics and systems thinking for leaders designing AI-native institutions.
+            </p>
+            <div class="meta" aria-label="Book details">
+              <span>Living book</span>
+              <span>Advisory practice</span>
+            </div>
+            <div class="hero-actions">
+              <a class="button-link primary" href="mailto:desmondwood@me.com?subject=Request%20an%20advisory%20conversation">Begin a Conversation</a>
+              <a class="button-link" href="#living-book">Read the Book</a>
+            </div>
+          </div>
+          <aside class="signal-panel" aria-label="Intelligence amplification signal">
+            <div class="signal-content">
+              <div class="signal-eyebrow">Human agency x machine capability</div>
+              <div class="signal-mark">IA</div>
+              <div class="signal-note">A quieter operating system for institutions learning to think with AI.</div>
+            </div>
+          </aside>
         </div>
       </header>
 
