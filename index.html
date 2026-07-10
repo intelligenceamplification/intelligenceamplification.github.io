@@ -8,6 +8,12 @@
       name="description"
       content="Intelligence Amplification is a living book and advisory practice about extending human intelligence through wiser systems, tools, and institutions."
     />
+    <meta property="og:title" content="Intelligence Amplification" />
+    <meta property="og:description" content="A living book and advisory practice about extending human intelligence through wiser systems, tools, and institutions." />
+    <meta property="og:image" content="https://intelligenceamplification.github.io/assets/og.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://intelligenceamplification.github.io/" />
+    <meta name="twitter:card" content="summary_large_image" />
     <style>
       :root {
         --bg: #f6f6f3;
@@ -225,6 +231,10 @@
       }
 
       .signal-panel {
+        --tilt-x: 0deg;
+        --tilt-y: 0deg;
+        --glow-x: 50%;
+        --glow-y: 50%;
         align-self: stretch;
         background:
           linear-gradient(150deg, rgba(255, 255, 255, 0.86), rgba(239, 239, 236, 0.66)),
@@ -237,6 +247,13 @@
         overflow: hidden;
         padding: 26px;
         position: relative;
+        transform: perspective(1000px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
+        transform-style: preserve-3d;
+        transition: box-shadow 300ms ease, transform 180ms ease;
+      }
+
+      .signal-panel:hover {
+        box-shadow: 0 28px 84px rgba(0, 0, 0, 0.12);
       }
 
       .signal-panel::before {
@@ -265,7 +282,17 @@
         align-content: space-between;
         display: grid;
         position: relative;
+        transform: translateZ(18px);
         z-index: 1;
+      }
+
+      .signal-content::after {
+        background: radial-gradient(circle at var(--glow-x) var(--glow-y), rgba(255, 255, 255, 0.76), transparent 34%);
+        content: "";
+        inset: -26px;
+        pointer-events: none;
+        position: absolute;
+        z-index: -1;
       }
 
       .signal-eyebrow,
@@ -489,6 +516,215 @@
         padding-top: 28px;
       }
 
+      .reading-progress {
+        height: 2px;
+        inset: 0 0 auto;
+        pointer-events: none;
+        position: fixed;
+        z-index: 40;
+      }
+
+      .reading-progress span {
+        background: var(--ink);
+        display: block;
+        height: 100%;
+        transform: scaleX(0);
+        transform-origin: left center;
+        transition: transform 80ms linear;
+        width: 100%;
+      }
+
+      .reader-trigger {
+        align-items: center;
+        backdrop-filter: blur(18px);
+        background: rgba(255, 255, 255, 0.84);
+        border: 1px solid rgba(222, 222, 216, 0.86);
+        border-radius: 999px;
+        bottom: 22px;
+        box-shadow: 0 12px 34px rgba(0, 0, 0, 0.08);
+        color: var(--ink);
+        cursor: pointer;
+        display: flex;
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+        font-size: 12px;
+        gap: 14px;
+        left: 50%;
+        max-width: min(460px, calc(100% - 32px));
+        opacity: 0;
+        padding: 6px 7px 6px 15px;
+        pointer-events: none;
+        position: fixed;
+        transform: translate(-50%, 16px);
+        transition: opacity 220ms ease, transform 220ms ease;
+        z-index: 31;
+      }
+
+      .reader-trigger.is-useful {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translate(-50%, 0);
+      }
+
+      .reader-trigger-label {
+        max-width: 270px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .reader-trigger-action {
+        background: var(--ink);
+        border-radius: 999px;
+        color: var(--paper);
+        font-weight: 600;
+        padding: 7px 11px;
+      }
+
+      .reader-scrim {
+        background: rgba(8, 8, 8, 0.14);
+        border: 0;
+        inset: 0;
+        opacity: 0;
+        pointer-events: none;
+        position: fixed;
+        transition: opacity 240ms ease;
+        z-index: 32;
+      }
+
+      .reader-scrim.is-open {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .reader-panel {
+        backdrop-filter: blur(24px);
+        background: rgba(250, 250, 247, 0.96);
+        border-left: 1px solid var(--line);
+        bottom: 0;
+        box-shadow: -28px 0 80px rgba(0, 0, 0, 0.1);
+        max-width: 420px;
+        overflow-y: auto;
+        padding: 24px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        transform: translateX(102%);
+        transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
+        width: calc(100% - 32px);
+        z-index: 33;
+      }
+
+      .reader-panel.is-open {
+        transform: translateX(0);
+      }
+
+      .reader-panel-head {
+        align-items: center;
+        border-bottom: 1px solid var(--line);
+        display: flex;
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        justify-content: space-between;
+        padding-bottom: 16px;
+      }
+
+      .reader-panel-head button {
+        background: transparent;
+        border: 0;
+        color: var(--faint);
+        cursor: pointer;
+        font: inherit;
+        padding: 6px 0 6px 12px;
+      }
+
+      .reader-panel-head button:focus-visible {
+        border-radius: 2px;
+        outline: 1px solid var(--ink);
+        outline-offset: 3px;
+      }
+
+      .reader-panel ol {
+        list-style: none;
+        margin: 22px 0 0;
+        padding: 0;
+      }
+
+      .reader-panel li a {
+        align-items: baseline;
+        border-bottom: 1px solid rgba(222, 222, 216, 0.76);
+        display: grid;
+        font-size: 19px;
+        gap: 14px;
+        grid-template-columns: 24px 1fr;
+        line-height: 1.25;
+        padding: 13px 0;
+        text-decoration: none;
+        transition: color 160ms ease, padding 160ms ease;
+      }
+
+      .reader-panel li a span {
+        color: var(--faint);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+      }
+
+      .reader-panel li.is-active a {
+        color: var(--ink);
+        font-weight: 700;
+        padding-left: 5px;
+      }
+
+      .reader-panel li:not(.is-active) a {
+        color: var(--muted);
+      }
+
+      .reader-panel li a:hover,
+      .reader-panel li a:focus {
+        color: var(--ink);
+        padding-left: 5px;
+      }
+
+      .reader-top-link {
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        margin-top: 24px;
+      }
+
+      .experience-ready .overview,
+      .experience-ready .services,
+      .experience-ready .speaking,
+      .experience-ready .living-book,
+      .experience-ready main > section,
+      .experience-ready .contact-section {
+        opacity: 0.28;
+        transform: translateY(24px);
+        transition: opacity 620ms ease, transform 620ms cubic-bezier(0.22, 1, 0.36, 1);
+      }
+
+      .experience-ready .overview.is-visible,
+      .experience-ready .services.is-visible,
+      .experience-ready .speaking.is-visible,
+      .experience-ready .living-book.is-visible,
+      .experience-ready main > section.is-visible,
+      .experience-ready .contact-section.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .service-card,
+      .proof-card {
+        transition: border-color 200ms ease, box-shadow 200ms ease, transform 200ms ease;
+      }
+
+      .service-card:hover,
+      .proof-card:hover {
+        border-color: rgba(8, 8, 8, 0.24);
+        box-shadow: 0 14px 38px rgba(0, 0, 0, 0.055);
+        transform: translateY(-2px);
+      }
+
       @media (max-width: 720px) {
         body {
           font-size: 17px;
@@ -512,7 +748,7 @@
         }
 
         h1 {
-          font-size: 46px;
+          font-size: clamp(36px, 10.25vw, 40px);
         }
 
         h2 {
@@ -551,10 +787,72 @@
           align-items: start;
           display: block;
         }
+
+        .reader-trigger-label {
+          max-width: 190px;
+        }
+
+        .reader-panel {
+          padding: 20px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
+
+        .signal-panel,
+        .signal-content {
+          transform: none;
+        }
+
+        .experience-ready .overview,
+        .experience-ready .services,
+        .experience-ready .speaking,
+        .experience-ready .living-book,
+        .experience-ready main > section,
+        .experience-ready .contact-section {
+          opacity: 1;
+          transform: none;
+        }
       }
     </style>
   </head>
   <body>
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
+    <button class="reader-trigger" type="button" aria-expanded="false" aria-controls="reader-panel">
+      <span class="reader-trigger-label">Living Book</span>
+      <span class="reader-trigger-action">Contents</span>
+    </button>
+    <button class="reader-scrim" type="button" aria-label="Close contents" tabindex="-1"></button>
+    <aside class="reader-panel" id="reader-panel" aria-label="Living Book contents" aria-hidden="true" inert>
+      <div class="reader-panel-head">
+        <span>Living Book</span>
+        <button type="button" aria-label="Close contents">Close</button>
+      </div>
+      <ol>
+        <li data-chapter="what-is-intelligence"><a href="#what-is-intelligence"><span>01</span>What is Intelligence?</a></li>
+        <li data-chapter="what-is-amplification"><a href="#what-is-amplification"><span>02</span>What is Amplification?</a></li>
+        <li data-chapter="amplification-in-practice"><a href="#amplification-in-practice"><span>03</span>Amplification in Practice</a></li>
+        <li data-chapter="humans-machines-dialectic"><a href="#humans-machines-dialectic"><span>04</span>Humans, Machines, and The Dialectic of Intelligence</a></li>
+        <li data-chapter="policy-and-playbooks"><a href="#policy-and-playbooks"><span>05</span>Policy and Playbooks</a></li>
+        <li data-chapter="actionable-insights"><a href="#actionable-insights"><span>06</span>Afterthoughts, Actionable Insights and Tips</a></li>
+        <li data-chapter="reflections"><a href="#reflections"><span>07</span>Reflections</a></li>
+        <li data-chapter="civilizational-possibilities"><a href="#civilizational-possibilities"><span>08</span>At The Threshold: Civilizational Possibilities</a></li>
+        <li data-chapter="authors-note"><a href="#authors-note"><span>09</span>Author's Note</a></li>
+      </ol>
+      <a class="reader-top-link" href="#top">Return to top</a>
+    </aside>
     <div class="page">
       <header id="top">
         <div class="site-nav" aria-label="Primary navigation">
@@ -921,5 +1219,103 @@
         </p>
       </footer>
     </div>
+    <script>
+      (() => {
+        const chapterIds = [
+          "what-is-intelligence",
+          "what-is-amplification",
+          "amplification-in-practice",
+          "humans-machines-dialectic",
+          "policy-and-playbooks",
+          "actionable-insights",
+          "reflections",
+          "civilizational-possibilities",
+          "authors-note",
+        ];
+        const titles = new Map(chapterIds.map((id) => [id, document.getElementById(id)?.querySelector("h2")?.textContent || "Living Book"]));
+        const progressBar = document.querySelector(".reading-progress span");
+        const trigger = document.querySelector(".reader-trigger");
+        const triggerLabel = document.querySelector(".reader-trigger-label");
+        const scrim = document.querySelector(".reader-scrim");
+        const panel = document.querySelector(".reader-panel");
+        const panelClose = document.querySelector(".reader-panel-head button");
+        const signal = document.querySelector(".signal-panel");
+        let frame = 0;
+
+        const setPanelOpen = (open) => {
+          trigger.classList.toggle("is-useful", open || window.scrollY > Math.min(window.innerHeight * 0.72, 620));
+          trigger.setAttribute("aria-expanded", String(open));
+          scrim.classList.toggle("is-open", open);
+          scrim.tabIndex = open ? 0 : -1;
+          panel.classList.toggle("is-open", open);
+          panel.setAttribute("aria-hidden", String(!open));
+          panel.inert = !open;
+          if (open) panelClose.focus();
+          else trigger.focus();
+        };
+
+        const updateProgress = () => {
+          if (frame) return;
+          frame = requestAnimationFrame(() => {
+            const available = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = available > 0 ? Math.min(1, window.scrollY / available) : 0;
+            progressBar.style.transform = `scaleX(${progress})`;
+            if (trigger.getAttribute("aria-expanded") !== "true") {
+              trigger.classList.toggle("is-useful", window.scrollY > Math.min(window.innerHeight * 0.72, 620));
+            }
+            frame = 0;
+          });
+        };
+
+        const revealObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add("is-visible");
+          });
+        }, { rootMargin: "0px 0px -10%", threshold: 0.08 });
+
+        const chapterObserver = new IntersectionObserver((entries) => {
+          const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+          if (!visible?.target.id) return;
+          triggerLabel.textContent = titles.get(visible.target.id) || "Living Book";
+          document.querySelectorAll(".reader-panel li").forEach((item) => {
+            item.classList.toggle("is-active", item.dataset.chapter === visible.target.id);
+          });
+        }, { rootMargin: "-20% 0px -58%", threshold: [0.05, 0.3, 0.6] });
+
+        document.documentElement.classList.add("experience-ready");
+        document.querySelectorAll(".overview, .services, .speaking, .living-book, main > section, .contact-section").forEach((target) => revealObserver.observe(target));
+        chapterIds.forEach((id) => {
+          const chapter = document.getElementById(id);
+          if (chapter) chapterObserver.observe(chapter);
+        });
+
+        trigger.addEventListener("click", () => setPanelOpen(trigger.getAttribute("aria-expanded") !== "true"));
+        scrim.addEventListener("click", () => setPanelOpen(false));
+        panelClose.addEventListener("click", () => setPanelOpen(false));
+        panel.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setPanelOpen(false)));
+        window.addEventListener("keydown", (event) => {
+          if (event.key === "Escape" && trigger.getAttribute("aria-expanded") === "true") setPanelOpen(false);
+        });
+        window.addEventListener("scroll", updateProgress, { passive: true });
+        window.addEventListener("resize", updateProgress);
+
+        signal.addEventListener("pointermove", (event) => {
+          if (event.pointerType === "touch") return;
+          const rect = signal.getBoundingClientRect();
+          const x = (event.clientX - rect.left) / rect.width;
+          const y = (event.clientY - rect.top) / rect.height;
+          signal.style.setProperty("--tilt-x", `${(0.5 - y) * 4}deg`);
+          signal.style.setProperty("--tilt-y", `${(x - 0.5) * 5}deg`);
+          signal.style.setProperty("--glow-x", `${x * 100}%`);
+          signal.style.setProperty("--glow-y", `${y * 100}%`);
+        }, { passive: true });
+        signal.addEventListener("pointerleave", () => {
+          signal.style.setProperty("--tilt-x", "0deg");
+          signal.style.setProperty("--tilt-y", "0deg");
+        });
+
+        updateProgress();
+      })();
+    </script>
   </body>
 </html>
