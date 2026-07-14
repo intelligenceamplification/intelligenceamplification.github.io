@@ -28,3 +28,6 @@
 .chapters section:nth-child(3n) .section-number{color:var(--coral)}
 .text-link:hover,.text-link:focus,.proof-band a:hover,.proof-band a:focus{color:var(--blue)}
 @media(max-width:760px){.hero{background:linear-gradient(180deg,#fff 0%,#fff 68%,#f0f6f8 100%)}.book-hero{margin-inline:-20px;padding-inline:20px}.book-object{box-shadow:10px 16px 0 var(--blue-wash),0 28px 60px rgba(0,0,0,.16)}}
+.book-cover{aspect-ratio:2/3;box-shadow:18px 28px 0 #dce8ee,0 38px 80px rgba(16,28,36,.2);display:block;height:auto;max-width:420px;object-fit:cover;transform:perspective(1100px) rotateY(3deg);width:100%}
+.book-preview{background:linear-gradient(120deg,#fff 50%,#edf4f6)}
+@media(max-width:760px){.book-cover{margin:auto;max-width:340px;box-shadow:10px 16px 0 #dce8ee,0 28px 60px rgba(16,28,36,.18);transform:none}}
