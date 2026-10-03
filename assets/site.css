@@ -121,6 +121,11 @@
 .outcomes{background:var(--blue-wash);display:grid;gap:8vw;grid-template-columns:.8fr 1.2fr}
 .outcomes ul{border-top:1px solid var(--line)}
 .outcomes li{border-bottom:1px solid var(--line);font-size:clamp(17px,1.8vw,24px);padding:17px 0}
+.author-preview{display:grid;grid-template-columns:minmax(0,280px) minmax(0,620px);align-items:center;gap:64px;padding-bottom:0;scroll-margin-top:90px}
+.author-preview img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain}
+.author-preview h2{font-size:40px;font-weight:570;line-height:1.1;margin:0}
+.author-preview div>p:last-child{color:var(--muted);font-size:20px;max-width:520px}
+@media(max-width:760px){.author-preview{grid-template-columns:1fr;gap:32px}.author-preview img{max-width:240px}.author-preview h2{font-size:32px}}
 .practice{display:grid;gap:8vw;grid-template-columns:.65fr 1.35fr}
 .practice .section-heading>p:last-child{color:var(--muted);font-size:18px;max-width:520px}
 .project-list{border-top:1px solid var(--line)}
