@@ -60,3 +60,30 @@
 /* Use SVG attributes for both layouts; do not depend on CSS path support. */
 .rise-mobile{display:none}
 @media(max-width:900px){.rise-desktop{display:none}.rise-mobile{display:block}}
+
+/* Wide landscape phones use the desktop composition at a readable scale. */
+@media (orientation:landscape) and (min-width:700px) and (max-width:900px){
+.rising-journey,.rising-journey ol,.rise-line{height:330px}
+.rise-desktop{display:block}.rise-mobile{display:none}
+.rising-journey li{left:var(--x)!important;top:var(--y);width:14%!important;display:block;text-align:center;transform:translateX(-50%)}
+.rising-journey li:nth-child(1){--x:6%;--y:264px}
+.rising-journey li:nth-child(2){--x:20%;--y:258px}
+.rising-journey li:nth-child(3){--x:34%;--y:243px}
+.rising-journey li:nth-child(4){--x:48%;--y:223px}
+.rising-journey li:nth-child(5){--x:62%;--y:195px}
+.rising-journey li:nth-child(6){--x:75%;--y:167px}
+.rising-journey li:nth-child(7){--x:86%;--y:116px}
+.rising-journey li:nth-child(8){--x:97%;--y:66px;width:12%!important}
+.rising-journey .milestone-model{position:absolute;top:-94px!important;height:72px!important;width:100%;justify-content:flex-end}
+.rising-journey li:nth-child(7) .milestone-model{top:-115px!important}
+.rising-journey .milestone-model strong{font-size:13px}
+.rising-journey .milestone-year{font-size:10px}
+.rising-journey .milestone-level{font-size:12px;margin-top:24px!important}
+.rising-journey .milestone-level span{font-size:9px}
+.rising-journey .milestone-tick{display:block;top:-4px;height:8px}
+.rising-journey .next .milestone-tick{display:none}
+.rising-journey .next .milestone-model{position:static;height:auto!important}
+.rising-journey .next .milestone-model strong{font-size:23px}
+.rising-journey .next .milestone-level{font-size:12px;margin-top:10px!important}
+.rise-apex{left:calc(92.8% - 12px);top:10.81px}
+}
