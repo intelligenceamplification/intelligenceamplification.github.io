@@ -29,3 +29,30 @@
 @media(max-width:900px){.rise-apex{left:calc(95% - 12px);top:14.67px}}
 
 @media(max-width:900px){.rising-journey .rise-past{d:path('M810 400 C810 330 825 255 855 190 S895 110 915 70')}}
+
+/* Include the GPT-5 milestone without crowding the progression. */
+@media(min-width:901px){
+.rising-journey li{width:14%}
+.rising-journey li:nth-child(1){--x:6%;--y:344px}
+.rising-journey li:nth-child(2){--x:20%;--y:336px}
+.rising-journey li:nth-child(3){--x:34%;--y:316px}
+.rising-journey li:nth-child(4){--x:48%;--y:291px}
+.rising-journey li:nth-child(5){--x:62%;--y:254px}
+.rising-journey li:nth-child(6){--x:75%;--y:217px}
+.rising-journey li:nth-child(7){--x:86%;--y:151px;width:14%}
+.rising-journey li:nth-child(8){--x:97%;--y:86px;width:12%}
+.rising-journey li:nth-child(6) .milestone-model{top:-120px!important}
+.rising-journey li:nth-child(7) .milestone-model{top:-155px!important}
+}
+@media(max-width:900px){
+.rising-journey,.rising-journey ol,.rise-line{height:1080px}
+.rising-journey li:nth-child(1){--y:930px}
+.rising-journey li:nth-child(2){--y:800px}
+.rising-journey li:nth-child(3){--y:670px}
+.rising-journey li:nth-child(4){--y:540px}
+.rising-journey li:nth-child(5){--y:410px}
+.rising-journey li:nth-child(6){--y:280px}
+.rising-journey li:nth-child(7){--y:150px}
+.rising-journey li:nth-child(8){--y:20px}
+.rise-apex{top:17.09px}
+}
