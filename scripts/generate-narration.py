@@ -3,6 +3,7 @@
 Run: python scripts/generate-narration.py (requires ffmpeg and requirements-tts.txt).
 Never estimates timings from word length or uses a browser voice.
 """
+import argparse
 import hashlib
 import json
 import re
@@ -40,7 +41,9 @@ class ArticleParser(HTMLParser):
             self.inside = False
 
 
-def generate():
+def generate(edition='issue-01'):
+    if not re.fullmatch(r'issue-\d{2,}', edition):
+        raise ValueError('Edition must have the form issue-01')
     import numpy as np
     import soundfile as sf
     import torch
@@ -92,11 +95,13 @@ def generate():
     with tempfile.TemporaryDirectory() as tmp:
         wav = Path(tmp) / 'sky.wav'
         sf.write(wav, np.concatenate(audio_parts), 24000)
-        subprocess.run(['ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-i', str(wav), '-codec:a', 'libmp3lame', '-b:a', '96k', str(out / 'sky.mp3')], check=True)
-    manifest = {'voice': 'af_sky', 'audio': 'audio/sky.mp3', 'duration': duration, 'alignment': 'kokoro-model-durations', 'textSha256': hashlib.sha256('\n'.join(blocks).encode()).hexdigest(), 'blocks': blocks, 'words': words}
-    (out / 'sky.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
+        subprocess.run(['ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-i', str(wav), '-codec:a', 'libmp3lame', '-b:a', '96k', str(out / f'{edition}.mp3')], check=True)
+    manifest = {'voice': 'af_sky', 'audio': f'audio/{edition}.mp3', 'duration': duration, 'alignment': 'kokoro-model-durations', 'textSha256': hashlib.sha256('\n'.join(blocks).encode()).hexdigest(), 'blocks': blocks, 'words': words}
+    (out / f'{edition}.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
     print(f'Generated {duration:.1f}s; {len(words)} aligned words')
 
 
 if __name__ == '__main__':
-    generate()
+    cli = argparse.ArgumentParser(description=__doc__)
+    cli.add_argument('--edition', default='issue-01', help='Edition audio identifier, such as issue-01')
+    generate(cli.parse_args().edition)

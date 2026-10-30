@@ -88,7 +88,7 @@
 
   async function load() {
     try {
-      const response = await fetch('audio/sky.json');
+      const response = await fetch('audio/issue-01.json');
       if (!response.ok) throw new Error('Missing Sky manifest');
       const data = await response.json();
       const blocks = [...document.querySelectorAll('#article h2, #article .readable')];
