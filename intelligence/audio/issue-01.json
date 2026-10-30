@@ -1,0 +1,5274 @@
+{
+  "voice": "af_sky",
+  "audio": "audio/issue-01.mp3",
+  "duration": 406.35,
+  "alignment": "kokoro-model-durations",
+  "textSha256": "fc35fd09966f60d6197c8346c11d38d08aee1bf347cbbe885a3246e2654b1ccc",
+  "blocks": [
+    "From Intelligence to Agency",
+    "The consequential shift in artificial intelligence is from producing answers toward taking action. New computer-use models and robotics systems are widening the range of tasks people can delegate. The opportunity is substantial, but capability alone is an incomplete measure of progress. This first edition examines the evidence, the infrastructure behind it, and the test that ultimately matters: whether these advances expand human agency and the conditions for living well.",
+    "Frontier AI & Intelligence Amplification",
+    "Reporting: OpenAI introduced GPT-6.1 Terra on October 26. On its Agents’ Last Exam evaluation, the company reports a fifteen-percentage-point improvement over GPT-5.6 Terra at medium reasoning effort, at about one-third the cost. These are publisher-reported results on a particular task suite, not a general measure of intelligence or a guarantee of workplace reliability.",
+    "Google’s October 27 announcement brings Gemini Robotics Embodied Reasoning 2 to public preview on its enterprise platform. The model interprets visual information, plans tasks and coordinates lower-level robot controls. This is an important route from language instructions to physical action. Public preview, however, does not establish that robots can operate safely and economically in every unfamiliar environment.",
+    "The safety challenge is advancing alongside the capability. OpenAI’s October 29 monitoring report describes expanded surveillance of agent behaviour after a gap in evaluation monitoring. Its approach combines model training, access controls, monitoring and human response.",
+    "Interpretation: the useful benchmark is dependable, authorised work completed at an acceptable total cost. That includes supervision, retries and recovery from mistakes. For a person or small organisation, intelligence amplification means being able to accomplish valuable work that was previously beyond reach, while retaining judgment and responsibility.",
+    "Economics & Markets",
+    "Reporting: the International Monetary Fund’s October outlook projects global growth of 3.1 percent in 2026 and 3.4 percent in 2027. These are forecasts, based on information available through October 1. The Fund identifies both AI investment and potential productivity gains as opportunities, while warning about conflict, trade tensions and a possible reassessment of AI expectations.",
+    "Interpretation: spending on AI infrastructure can support economic activity before the eventual productivity benefits are established. Investment, useful output, corporate profits and broadly shared prosperity are different outcomes. They should be measured separately.",
+    "Household Economy Mini-Masterclass",
+    "A United States case study makes the distinction concrete. In September, average hourly earnings for employees on private nonfarm payrolls were 3.0 percent higher than a year earlier, while the consumer price index used to adjust them rose 3.7 percent. The Bureau of Labor Statistics reports that real hourly earnings fell 0.7 percent. An average hour’s pay therefore bought less. This national average does not describe every worker or household.",
+    "Illustration: a worker earning 25 dollars an hour receives a three-percent raise, reaching 25 dollars and 75 cents. If the same basket of purchases becomes 3.7 percent more expensive, that new wage buys what approximately 24 dollars and 83 cents bought before. The pay rise is real in dollars; the loss is real in purchasing power.",
+    "Purchasing power parity, or PPP, answers a related international question: how do price differences between economies change what comparable incomes can buy? It complements domestic inflation adjustment rather than replacing it. Neither measure alone captures housing access, public services or the distribution of income.",
+    "Our organising principle is household stewardship in service of human flourishing: oikos, the household; nomos, its ordering principles; eudaimonia, living well. Eudaimonia is a philosophical standard, not part of the word economics. The question is whether progress creates greater security, meaningful opportunity and time to live.",
+    "Climate & Energy",
+    "Reporting: the International Energy Agency’s October report expects the largest data-centre operators to spend more than 700 billion dollars in capital expenditure during 2026, mostly on new data centres. Its analysis highlights pressure on local grids and concerns about electricity prices, emissions and water.",
+    "Interpretation: an efficient model does not by itself guarantee a smaller total environmental footprint if usage expands. Energy supply, grid investment and who bears the associated costs belong inside the assessment of AI progress.",
+    "Geopolitics",
+    "Reporting: the World Trade Organization says AI-enabling goods, including semiconductors and servers, accounted for 47 percent of global merchandise trade growth in the first half of 2026. At the same time, conflict-related disruption weighed on transport and travel services. Alternative suppliers and routes helped keep essential goods moving.",
+    "Interpretation: AI development depends on international supply chains even as governments pursue technological sovereignty. Resilience requires attention to chips, energy and transport as well as models.",
+    "Science & Space",
+    "Reporting: NASA confirmed a major development milestone for its ultraviolet survey telescope, UVEX, on October 27. The agency commits to launch by January 2031, with a total lifecycle cost of 590 million dollars. The planned mission will survey the sky and investigate events including merging neutron stars. This is a development commitment, not an operational telescope or an already completed discovery.",
+    "Systems Convergence",
+    "Editorial synthesis: software agents, robotics, energy systems and global trade are increasingly interdependent. Lower costs can broaden access to powerful tools; infrastructure constraints and weak safeguards can limit their value. The central test is whether this expanding capacity becomes reliable human capability and better living conditions. The developments to watch next are independently demonstrated task reliability, lower total deployment costs, and measurable benefits reaching beyond the organisations building the technology."
+  ],
+  "words": [
+    {
+      "block": 0,
+      "text": "From",
+      "start": 0.375,
+      "end": 0.525
+    },
+    {
+      "block": 0,
+      "text": "Intelligence",
+      "start": 0.525,
+      "end": 1.25
+    },
+    {
+      "block": 0,
+      "text": "to",
+      "start": 1.25,
+      "end": 1.4125
+    },
+    {
+      "block": 0,
+      "text": "Agency",
+      "start": 1.4125,
+      "end": 2.4
+    },
+    {
+      "block": 1,
+      "text": "The",
+      "start": 3.225,
+      "end": 3.3
+    },
+    {
+      "block": 1,
+      "text": "consequential",
+      "start": 3.3,
+      "end": 3.9875
+    },
+    {
+      "block": 1,
+      "text": "shift",
+      "start": 3.9875,
+      "end": 4.3
+    },
+    {
+      "block": 1,
+      "text": "in",
+      "start": 4.3,
+      "end": 4.4
+    },
+    {
+      "block": 1,
+      "text": "artificial",
+      "start": 4.4,
+      "end": 4.9125
+    },
+    {
+      "block": 1,
+      "text": "intelligence",
+      "start": 4.9125,
+      "end": 5.7875
+    },
+    {
+      "block": 1,
+      "text": "is",
+      "start": 5.7875,
+      "end": 5.925
+    },
+    {
+      "block": 1,
+      "text": "from",
+      "start": 5.925,
+      "end": 6.075
+    },
+    {
+      "block": 1,
+      "text": "producing",
+      "start": 6.075,
+      "end": 6.5625
+    },
+    {
+      "block": 1,
+      "text": "answers",
+      "start": 6.5625,
+      "end": 7.0125
+    },
+    {
+      "block": 1,
+      "text": "toward",
+      "start": 7.0125,
+      "end": 7.3
+    },
+    {
+      "block": 1,
+      "text": "taking",
+      "start": 7.3,
+      "end": 7.6
+    },
+    {
+      "block": 1,
+      "text": "action.",
+      "start": 7.6,
+      "end": 8.5625
+    },
+    {
+      "block": 1,
+      "text": "New",
+      "start": 8.5625,
+      "end": 8.75
+    },
+    {
+      "block": 1,
+      "text": "computer-use",
+      "start": 8.75,
+      "end": 9.3125
+    },
+    {
+      "block": 1,
+      "text": "models",
+      "start": 9.3125,
+      "end": 9.7125
+    },
+    {
+      "block": 1,
+      "text": "and",
+      "start": 9.7125,
+      "end": 9.8125
+    },
+    {
+      "block": 1,
+      "text": "robotics",
+      "start": 9.8125,
+      "end": 10.3
+    },
+    {
+      "block": 1,
+      "text": "systems",
+      "start": 10.3,
+      "end": 10.7875
+    },
+    {
+      "block": 1,
+      "text": "are",
+      "start": 10.7875,
+      "end": 10.925
+    },
+    {
+      "block": 1,
+      "text": "widening",
+      "start": 10.925,
+      "end": 11.2875
+    },
+    {
+      "block": 1,
+      "text": "the",
+      "start": 11.2875,
+      "end": 11.375
+    },
+    {
+      "block": 1,
+      "text": "range",
+      "start": 11.375,
+      "end": 11.6625
+    },
+    {
+      "block": 1,
+      "text": "of",
+      "start": 11.6625,
+      "end": 11.75
+    },
+    {
+      "block": 1,
+      "text": "tasks",
+      "start": 11.75,
+      "end": 12.15
+    },
+    {
+      "block": 1,
+      "text": "people",
+      "start": 12.15,
+      "end": 12.475
+    },
+    {
+      "block": 1,
+      "text": "can",
+      "start": 12.475,
+      "end": 12.65
+    },
+    {
+      "block": 1,
+      "text": "delegate.",
+      "start": 12.65,
+      "end": 13.575
+    },
+    {
+      "block": 1,
+      "text": "The",
+      "start": 13.575,
+      "end": 13.675
+    },
+    {
+      "block": 1,
+      "text": "opportunity",
+      "start": 13.675,
+      "end": 14.25
+    },
+    {
+      "block": 1,
+      "text": "is",
+      "start": 14.25,
+      "end": 14.375
+    },
+    {
+      "block": 1,
+      "text": "substantial,",
+      "start": 14.375,
+      "end": 15.225
+    },
+    {
+      "block": 1,
+      "text": "but",
+      "start": 15.225,
+      "end": 15.375
+    },
+    {
+      "block": 1,
+      "text": "capability",
+      "start": 15.375,
+      "end": 15.975
+    },
+    {
+      "block": 1,
+      "text": "alone",
+      "start": 15.975,
+      "end": 16.375
+    },
+    {
+      "block": 1,
+      "text": "is",
+      "start": 16.375,
+      "end": 16.4875
+    },
+    {
+      "block": 1,
+      "text": "an",
+      "start": 16.4875,
+      "end": 16.6
+    },
+    {
+      "block": 1,
+      "text": "incomplete",
+      "start": 16.6,
+      "end": 17.15
+    },
+    {
+      "block": 1,
+      "text": "measure",
+      "start": 17.15,
+      "end": 17.4375
+    },
+    {
+      "block": 1,
+      "text": "of",
+      "start": 17.4375,
+      "end": 17.525
+    },
+    {
+      "block": 1,
+      "text": "progress.",
+      "start": 17.525,
+      "end": 18.5875
+    },
+    {
+      "block": 1,
+      "text": "This",
+      "start": 18.5875,
+      "end": 18.8
+    },
+    {
+      "block": 1,
+      "text": "first",
+      "start": 18.8,
+      "end": 19.0625
+    },
+    {
+      "block": 1,
+      "text": "edition",
+      "start": 19.0625,
+      "end": 19.425
+    },
+    {
+      "block": 1,
+      "text": "examines",
+      "start": 19.425,
+      "end": 19.9375
+    },
+    {
+      "block": 1,
+      "text": "the",
+      "start": 19.9375,
+      "end": 20.05
+    },
+    {
+      "block": 1,
+      "text": "evidence,",
+      "start": 20.05,
+      "end": 20.85
+    },
+    {
+      "block": 1,
+      "text": "the",
+      "start": 20.85,
+      "end": 21.0
+    },
+    {
+      "block": 1,
+      "text": "infrastructure",
+      "start": 21.0,
+      "end": 21.5875
+    },
+    {
+      "block": 1,
+      "text": "behind",
+      "start": 21.5875,
+      "end": 22.0
+    },
+    {
+      "block": 1,
+      "text": "it,",
+      "start": 22.0,
+      "end": 22.475
+    },
+    {
+      "block": 1,
+      "text": "and",
+      "start": 22.475,
+      "end": 22.5875
+    },
+    {
+      "block": 1,
+      "text": "the",
+      "start": 22.5875,
+      "end": 22.6875
+    },
+    {
+      "block": 1,
+      "text": "test",
+      "start": 22.6875,
+      "end": 23.0
+    },
+    {
+      "block": 1,
+      "text": "that",
+      "start": 23.0,
+      "end": 23.175
+    },
+    {
+      "block": 1,
+      "text": "ultimately",
+      "start": 23.175,
+      "end": 23.75
+    },
+    {
+      "block": 1,
+      "text": "matters:",
+      "start": 23.75,
+      "end": 24.65
+    },
+    {
+      "block": 1,
+      "text": "whether",
+      "start": 24.65,
+      "end": 24.925
+    },
+    {
+      "block": 1,
+      "text": "these",
+      "start": 24.925,
+      "end": 25.15
+    },
+    {
+      "block": 1,
+      "text": "advances",
+      "start": 25.15,
+      "end": 25.75
+    },
+    {
+      "block": 1,
+      "text": "expand",
+      "start": 25.75,
+      "end": 26.25
+    },
+    {
+      "block": 1,
+      "text": "human",
+      "start": 26.25,
+      "end": 26.55
+    },
+    {
+      "block": 1,
+      "text": "agency",
+      "start": 26.55,
+      "end": 27.375
+    },
+    {
+      "block": 1,
+      "text": "and",
+      "start": 27.375,
+      "end": 27.5125
+    },
+    {
+      "block": 1,
+      "text": "the",
+      "start": 27.5125,
+      "end": 27.6
+    },
+    {
+      "block": 1,
+      "text": "conditions",
+      "start": 27.6,
+      "end": 28.175
+    },
+    {
+      "block": 1,
+      "text": "for",
+      "start": 28.175,
+      "end": 28.3
+    },
+    {
+      "block": 1,
+      "text": "living",
+      "start": 28.3,
+      "end": 28.6
+    },
+    {
+      "block": 1,
+      "text": "well.",
+      "start": 28.6,
+      "end": 29.375
+    },
+    {
+      "block": 2,
+      "text": "Frontier",
+      "start": 30.1,
+      "end": 30.5875
+    },
+    {
+      "block": 2,
+      "text": "AI",
+      "start": 30.5875,
+      "end": 31.2125
+    },
+    {
+      "block": 2,
+      "text": "&",
+      "start": 31.2125,
+      "end": 31.3375
+    },
+    {
+      "block": 2,
+      "text": "Intelligence",
+      "start": 31.3375,
+      "end": 31.975
+    },
+    {
+      "block": 2,
+      "text": "Amplification",
+      "start": 31.975,
+      "end": 33.2
+    },
+    {
+      "block": 3,
+      "text": "Reporting:",
+      "start": 34.025,
+      "end": 34.75
+    },
+    {
+      "block": 3,
+      "text": "OpenAI",
+      "start": 34.75,
+      "end": 35.375
+    },
+    {
+      "block": 3,
+      "text": "introduced",
+      "start": 35.375,
+      "end": 35.8875
+    },
+    {
+      "block": 3,
+      "text": "GPT-6.1",
+      "start": 35.8875,
+      "end": 36.925
+    },
+    {
+      "block": 3,
+      "text": "Terra",
+      "start": 36.925,
+      "end": 37.25
+    },
+    {
+      "block": 3,
+      "text": "on",
+      "start": 37.25,
+      "end": 37.375
+    },
+    {
+      "block": 3,
+      "text": "October",
+      "start": 37.375,
+      "end": 37.775
+    },
+    {
+      "block": 3,
+      "text": "26.",
+      "start": 37.775,
+      "end": 38.95
+    },
+    {
+      "block": 3,
+      "text": "On",
+      "start": 38.95,
+      "end": 39.0875
+    },
+    {
+      "block": 3,
+      "text": "its",
+      "start": 39.0875,
+      "end": 39.25
+    },
+    {
+      "block": 3,
+      "text": "Agents’",
+      "start": 39.25,
+      "end": 39.9875
+    },
+    {
+      "block": 3,
+      "text": "Last",
+      "start": 39.9875,
+      "end": 40.3125
+    },
+    {
+      "block": 3,
+      "text": "Exam",
+      "start": 40.3125,
+      "end": 40.6375
+    },
+    {
+      "block": 3,
+      "text": "evaluation,",
+      "start": 40.6375,
+      "end": 41.725
+    },
+    {
+      "block": 3,
+      "text": "the",
+      "start": 41.725,
+      "end": 41.825
+    },
+    {
+      "block": 3,
+      "text": "company",
+      "start": 41.825,
+      "end": 42.15
+    },
+    {
+      "block": 3,
+      "text": "reports",
+      "start": 42.15,
+      "end": 42.5625
+    },
+    {
+      "block": 3,
+      "text": "a",
+      "start": 42.5625,
+      "end": 42.6625
+    },
+    {
+      "block": 3,
+      "text": "fifteen-percentage-point",
+      "start": 42.6625,
+      "end": 43.7125
+    },
+    {
+      "block": 3,
+      "text": "improvement",
+      "start": 43.7125,
+      "end": 44.225
+    },
+    {
+      "block": 3,
+      "text": "over",
+      "start": 44.225,
+      "end": 44.4875
+    },
+    {
+      "block": 3,
+      "text": "GPT-5.6",
+      "start": 44.4875,
+      "end": 45.7125
+    },
+    {
+      "block": 3,
+      "text": "Terra",
+      "start": 45.7125,
+      "end": 46.05
+    },
+    {
+      "block": 3,
+      "text": "at",
+      "start": 46.05,
+      "end": 46.175
+    },
+    {
+      "block": 3,
+      "text": "medium",
+      "start": 46.175,
+      "end": 46.5
+    },
+    {
+      "block": 3,
+      "text": "reasoning",
+      "start": 46.5,
+      "end": 46.9
+    },
+    {
+      "block": 3,
+      "text": "effort,",
+      "start": 46.9,
+      "end": 47.4
+    },
+    {
+      "block": 3,
+      "text": "at",
+      "start": 47.4,
+      "end": 47.4875
+    },
+    {
+      "block": 3,
+      "text": "about",
+      "start": 47.4875,
+      "end": 47.75
+    },
+    {
+      "block": 3,
+      "text": "one-third",
+      "start": 47.75,
+      "end": 48.1625
+    },
+    {
+      "block": 3,
+      "text": "the",
+      "start": 48.1625,
+      "end": 48.25
+    },
+    {
+      "block": 3,
+      "text": "cost.",
+      "start": 48.25,
+      "end": 49.1875
+    },
+    {
+      "block": 3,
+      "text": "These",
+      "start": 49.1875,
+      "end": 49.45
+    },
+    {
+      "block": 3,
+      "text": "are",
+      "start": 49.45,
+      "end": 49.575
+    },
+    {
+      "block": 3,
+      "text": "publisher-reported",
+      "start": 49.575,
+      "end": 50.475
+    },
+    {
+      "block": 3,
+      "text": "results",
+      "start": 50.475,
+      "end": 50.9375
+    },
+    {
+      "block": 3,
+      "text": "on",
+      "start": 50.9375,
+      "end": 51.0375
+    },
+    {
+      "block": 3,
+      "text": "a",
+      "start": 51.0375,
+      "end": 51.1
+    },
+    {
+      "block": 3,
+      "text": "particular",
+      "start": 51.1,
+      "end": 51.65
+    },
+    {
+      "block": 3,
+      "text": "task",
+      "start": 51.65,
+      "end": 52.0375
+    },
+    {
+      "block": 3,
+      "text": "suite,",
+      "start": 52.0375,
+      "end": 52.725
+    },
+    {
+      "block": 3,
+      "text": "not",
+      "start": 52.725,
+      "end": 52.8875
+    },
+    {
+      "block": 3,
+      "text": "a",
+      "start": 52.8875,
+      "end": 52.9625
+    },
+    {
+      "block": 3,
+      "text": "general",
+      "start": 52.9625,
+      "end": 53.4
+    },
+    {
+      "block": 3,
+      "text": "measure",
+      "start": 53.4,
+      "end": 53.725
+    },
+    {
+      "block": 3,
+      "text": "of",
+      "start": 53.725,
+      "end": 53.8125
+    },
+    {
+      "block": 3,
+      "text": "intelligence",
+      "start": 53.8125,
+      "end": 54.5875
+    },
+    {
+      "block": 3,
+      "text": "or",
+      "start": 54.5875,
+      "end": 54.7125
+    },
+    {
+      "block": 3,
+      "text": "a",
+      "start": 54.7125,
+      "end": 54.775
+    },
+    {
+      "block": 3,
+      "text": "guarantee",
+      "start": 54.775,
+      "end": 55.325
+    },
+    {
+      "block": 3,
+      "text": "of",
+      "start": 55.325,
+      "end": 55.475
+    },
+    {
+      "block": 3,
+      "text": "workplace",
+      "start": 55.475,
+      "end": 55.925
+    },
+    {
+      "block": 3,
+      "text": "reliability.",
+      "start": 55.925,
+      "end": 57.15
+    },
+    {
+      "block": 4,
+      "text": "Google’s",
+      "start": 57.875,
+      "end": 58.2375
+    },
+    {
+      "block": 4,
+      "text": "October",
+      "start": 58.2375,
+      "end": 58.65
+    },
+    {
+      "block": 4,
+      "text": "27",
+      "start": 58.65,
+      "end": 59.25
+    },
+    {
+      "block": 4,
+      "text": "announcement",
+      "start": 59.25,
+      "end": 60.075
+    },
+    {
+      "block": 4,
+      "text": "brings",
+      "start": 60.075,
+      "end": 60.4375
+    },
+    {
+      "block": 4,
+      "text": "Gemini",
+      "start": 60.4375,
+      "end": 60.9
+    },
+    {
+      "block": 4,
+      "text": "Robotics",
+      "start": 60.9,
+      "end": 61.5
+    },
+    {
+      "block": 4,
+      "text": "Embodied",
+      "start": 61.5,
+      "end": 62.0
+    },
+    {
+      "block": 4,
+      "text": "Reasoning",
+      "start": 62.0,
+      "end": 62.4125
+    },
+    {
+      "block": 4,
+      "text": "2",
+      "start": 62.4125,
+      "end": 62.7
+    },
+    {
+      "block": 4,
+      "text": "to",
+      "start": 62.7,
+      "end": 62.825
+    },
+    {
+      "block": 4,
+      "text": "public",
+      "start": 62.825,
+      "end": 63.2
+    },
+    {
+      "block": 4,
+      "text": "preview",
+      "start": 63.2,
+      "end": 63.6
+    },
+    {
+      "block": 4,
+      "text": "on",
+      "start": 63.6,
+      "end": 63.7125
+    },
+    {
+      "block": 4,
+      "text": "its",
+      "start": 63.7125,
+      "end": 63.825
+    },
+    {
+      "block": 4,
+      "text": "enterprise",
+      "start": 63.825,
+      "end": 64.3
+    },
+    {
+      "block": 4,
+      "text": "platform.",
+      "start": 64.3,
+      "end": 65.425
+    },
+    {
+      "block": 4,
+      "text": "The",
+      "start": 65.425,
+      "end": 65.525
+    },
+    {
+      "block": 4,
+      "text": "model",
+      "start": 65.525,
+      "end": 65.875
+    },
+    {
+      "block": 4,
+      "text": "interprets",
+      "start": 65.875,
+      "end": 66.4
+    },
+    {
+      "block": 4,
+      "text": "visual",
+      "start": 66.4,
+      "end": 66.6875
+    },
+    {
+      "block": 4,
+      "text": "information,",
+      "start": 66.6875,
+      "end": 67.6625
+    },
+    {
+      "block": 4,
+      "text": "plans",
+      "start": 67.6625,
+      "end": 68.025
+    },
+    {
+      "block": 4,
+      "text": "tasks",
+      "start": 68.025,
+      "end": 68.6125
+    },
+    {
+      "block": 4,
+      "text": "and",
+      "start": 68.6125,
+      "end": 68.75
+    },
+    {
+      "block": 4,
+      "text": "coordinates",
+      "start": 68.75,
+      "end": 69.2875
+    },
+    {
+      "block": 4,
+      "text": "lower-level",
+      "start": 69.2875,
+      "end": 69.875
+    },
+    {
+      "block": 4,
+      "text": "robot",
+      "start": 69.875,
+      "end": 70.225
+    },
+    {
+      "block": 4,
+      "text": "controls.",
+      "start": 70.225,
+      "end": 71.3125
+    },
+    {
+      "block": 4,
+      "text": "This",
+      "start": 71.3125,
+      "end": 71.525
+    },
+    {
+      "block": 4,
+      "text": "is",
+      "start": 71.525,
+      "end": 71.6375
+    },
+    {
+      "block": 4,
+      "text": "an",
+      "start": 71.6375,
+      "end": 71.725
+    },
+    {
+      "block": 4,
+      "text": "important",
+      "start": 71.725,
+      "end": 72.175
+    },
+    {
+      "block": 4,
+      "text": "route",
+      "start": 72.175,
+      "end": 72.4
+    },
+    {
+      "block": 4,
+      "text": "from",
+      "start": 72.4,
+      "end": 72.6
+    },
+    {
+      "block": 4,
+      "text": "language",
+      "start": 72.6,
+      "end": 72.9625
+    },
+    {
+      "block": 4,
+      "text": "instructions",
+      "start": 72.9625,
+      "end": 73.675
+    },
+    {
+      "block": 4,
+      "text": "to",
+      "start": 73.675,
+      "end": 73.8125
+    },
+    {
+      "block": 4,
+      "text": "physical",
+      "start": 73.8125,
+      "end": 74.2
+    },
+    {
+      "block": 4,
+      "text": "action.",
+      "start": 74.2,
+      "end": 75.1875
+    },
+    {
+      "block": 4,
+      "text": "Public",
+      "start": 75.1875,
+      "end": 75.6
+    },
+    {
+      "block": 4,
+      "text": "preview,",
+      "start": 75.6,
+      "end": 76.0
+    },
+    {
+      "block": 4,
+      "text": "however,",
+      "start": 76.0,
+      "end": 76.825
+    },
+    {
+      "block": 4,
+      "text": "does",
+      "start": 76.825,
+      "end": 77.025
+    },
+    {
+      "block": 4,
+      "text": "not",
+      "start": 77.025,
+      "end": 77.2125
+    },
+    {
+      "block": 4,
+      "text": "establish",
+      "start": 77.2125,
+      "end": 77.75
+    },
+    {
+      "block": 4,
+      "text": "that",
+      "start": 77.75,
+      "end": 77.9
+    },
+    {
+      "block": 4,
+      "text": "robots",
+      "start": 77.9,
+      "end": 78.4
+    },
+    {
+      "block": 4,
+      "text": "can",
+      "start": 78.4,
+      "end": 78.5625
+    },
+    {
+      "block": 4,
+      "text": "operate",
+      "start": 78.5625,
+      "end": 79.0625
+    },
+    {
+      "block": 4,
+      "text": "safely",
+      "start": 79.0625,
+      "end": 79.6125
+    },
+    {
+      "block": 4,
+      "text": "and",
+      "start": 79.6125,
+      "end": 79.75
+    },
+    {
+      "block": 4,
+      "text": "economically",
+      "start": 79.75,
+      "end": 80.7
+    },
+    {
+      "block": 4,
+      "text": "in",
+      "start": 80.7,
+      "end": 80.8875
+    },
+    {
+      "block": 4,
+      "text": "every",
+      "start": 80.8875,
+      "end": 81.225
+    },
+    {
+      "block": 4,
+      "text": "unfamiliar",
+      "start": 81.225,
+      "end": 81.8125
+    },
+    {
+      "block": 4,
+      "text": "environment.",
+      "start": 81.8125,
+      "end": 82.85
+    },
+    {
+      "block": 5,
+      "text": "The",
+      "start": 83.575,
+      "end": 83.6875
+    },
+    {
+      "block": 5,
+      "text": "safety",
+      "start": 83.6875,
+      "end": 84.0875
+    },
+    {
+      "block": 5,
+      "text": "challenge",
+      "start": 84.0875,
+      "end": 84.6125
+    },
+    {
+      "block": 5,
+      "text": "is",
+      "start": 84.6125,
+      "end": 84.75
+    },
+    {
+      "block": 5,
+      "text": "advancing",
+      "start": 84.75,
+      "end": 85.325
+    },
+    {
+      "block": 5,
+      "text": "alongside",
+      "start": 85.325,
+      "end": 85.8625
+    },
+    {
+      "block": 5,
+      "text": "the",
+      "start": 85.8625,
+      "end": 85.95
+    },
+    {
+      "block": 5,
+      "text": "capability.",
+      "start": 85.95,
+      "end": 87.1625
+    },
+    {
+      "block": 5,
+      "text": "OpenAI’s",
+      "start": 87.1625,
+      "end": 87.8875
+    },
+    {
+      "block": 5,
+      "text": "October",
+      "start": 87.8875,
+      "end": 88.325
+    },
+    {
+      "block": 5,
+      "text": "29",
+      "start": 88.325,
+      "end": 88.875
+    },
+    {
+      "block": 5,
+      "text": "monitoring",
+      "start": 88.875,
+      "end": 89.4
+    },
+    {
+      "block": 5,
+      "text": "report",
+      "start": 89.4,
+      "end": 89.9125
+    },
+    {
+      "block": 5,
+      "text": "describes",
+      "start": 89.9125,
+      "end": 90.45
+    },
+    {
+      "block": 5,
+      "text": "expanded",
+      "start": 90.45,
+      "end": 91.075
+    },
+    {
+      "block": 5,
+      "text": "surveillance",
+      "start": 91.075,
+      "end": 91.6125
+    },
+    {
+      "block": 5,
+      "text": "of",
+      "start": 91.6125,
+      "end": 91.7375
+    },
+    {
+      "block": 5,
+      "text": "agent",
+      "start": 91.7375,
+      "end": 92.075
+    },
+    {
+      "block": 5,
+      "text": "behaviour",
+      "start": 92.075,
+      "end": 92.775
+    },
+    {
+      "block": 5,
+      "text": "after",
+      "start": 92.775,
+      "end": 93.0625
+    },
+    {
+      "block": 5,
+      "text": "a",
+      "start": 93.0625,
+      "end": 93.125
+    },
+    {
+      "block": 5,
+      "text": "gap",
+      "start": 93.125,
+      "end": 93.45
+    },
+    {
+      "block": 5,
+      "text": "in",
+      "start": 93.45,
+      "end": 93.5375
+    },
+    {
+      "block": 5,
+      "text": "evaluation",
+      "start": 93.5375,
+      "end": 94.175
+    },
+    {
+      "block": 5,
+      "text": "monitoring.",
+      "start": 94.175,
+      "end": 95.325
+    },
+    {
+      "block": 5,
+      "text": "Its",
+      "start": 95.325,
+      "end": 95.5375
+    },
+    {
+      "block": 5,
+      "text": "approach",
+      "start": 95.5375,
+      "end": 95.925
+    },
+    {
+      "block": 5,
+      "text": "combines",
+      "start": 95.925,
+      "end": 96.4125
+    },
+    {
+      "block": 5,
+      "text": "model",
+      "start": 96.4125,
+      "end": 96.775
+    },
+    {
+      "block": 5,
+      "text": "training,",
+      "start": 96.775,
+      "end": 97.6125
+    },
+    {
+      "block": 5,
+      "text": "access",
+      "start": 97.6125,
+      "end": 98.075
+    },
+    {
+      "block": 5,
+      "text": "controls,",
+      "start": 98.075,
+      "end": 99.0125
+    },
+    {
+      "block": 5,
+      "text": "monitoring",
+      "start": 99.0125,
+      "end": 99.8
+    },
+    {
+      "block": 5,
+      "text": "and",
+      "start": 99.8,
+      "end": 99.95
+    },
+    {
+      "block": 5,
+      "text": "human",
+      "start": 99.95,
+      "end": 100.275
+    },
+    {
+      "block": 5,
+      "text": "response.",
+      "start": 100.275,
+      "end": 101.35
+    },
+    {
+      "block": 6,
+      "text": "Interpretation:",
+      "start": 102.1,
+      "end": 103.4
+    },
+    {
+      "block": 6,
+      "text": "the",
+      "start": 103.4,
+      "end": 103.5125
+    },
+    {
+      "block": 6,
+      "text": "useful",
+      "start": 103.5125,
+      "end": 103.925
+    },
+    {
+      "block": 6,
+      "text": "benchmark",
+      "start": 103.925,
+      "end": 104.475
+    },
+    {
+      "block": 6,
+      "text": "is",
+      "start": 104.475,
+      "end": 104.625
+    },
+    {
+      "block": 6,
+      "text": "dependable,",
+      "start": 104.625,
+      "end": 105.5375
+    },
+    {
+      "block": 6,
+      "text": "authorised",
+      "start": 105.5375,
+      "end": 106.125
+    },
+    {
+      "block": 6,
+      "text": "work",
+      "start": 106.125,
+      "end": 106.375
+    },
+    {
+      "block": 6,
+      "text": "completed",
+      "start": 106.375,
+      "end": 106.9125
+    },
+    {
+      "block": 6,
+      "text": "at",
+      "start": 106.9125,
+      "end": 107.0125
+    },
+    {
+      "block": 6,
+      "text": "an",
+      "start": 107.0125,
+      "end": 107.1
+    },
+    {
+      "block": 6,
+      "text": "acceptable",
+      "start": 107.1,
+      "end": 107.725
+    },
+    {
+      "block": 6,
+      "text": "total",
+      "start": 107.725,
+      "end": 108.075
+    },
+    {
+      "block": 6,
+      "text": "cost.",
+      "start": 108.075,
+      "end": 109.0375
+    },
+    {
+      "block": 6,
+      "text": "That",
+      "start": 109.0375,
+      "end": 109.2375
+    },
+    {
+      "block": 6,
+      "text": "includes",
+      "start": 109.2375,
+      "end": 109.6375
+    },
+    {
+      "block": 6,
+      "text": "supervision,",
+      "start": 109.6375,
+      "end": 110.625
+    },
+    {
+      "block": 6,
+      "text": "retries",
+      "start": 110.625,
+      "end": 111.275
+    },
+    {
+      "block": 6,
+      "text": "and",
+      "start": 111.275,
+      "end": 111.3875
+    },
+    {
+      "block": 6,
+      "text": "recovery",
+      "start": 111.3875,
+      "end": 111.9
+    },
+    {
+      "block": 6,
+      "text": "from",
+      "start": 111.9,
+      "end": 112.0375
+    },
+    {
+      "block": 6,
+      "text": "mistakes.",
+      "start": 112.0375,
+      "end": 113.0625
+    },
+    {
+      "block": 6,
+      "text": "For",
+      "start": 113.0625,
+      "end": 113.2125
+    },
+    {
+      "block": 6,
+      "text": "a",
+      "start": 113.2125,
+      "end": 113.275
+    },
+    {
+      "block": 6,
+      "text": "person",
+      "start": 113.275,
+      "end": 113.75
+    },
+    {
+      "block": 6,
+      "text": "or",
+      "start": 113.75,
+      "end": 113.9125
+    },
+    {
+      "block": 6,
+      "text": "small",
+      "start": 113.9125,
+      "end": 114.275
+    },
+    {
+      "block": 6,
+      "text": "organisation,",
+      "start": 114.275,
+      "end": 115.4
+    },
+    {
+      "block": 6,
+      "text": "intelligence",
+      "start": 115.4,
+      "end": 116.025
+    },
+    {
+      "block": 6,
+      "text": "amplification",
+      "start": 116.025,
+      "end": 116.9
+    },
+    {
+      "block": 6,
+      "text": "means",
+      "start": 116.9,
+      "end": 117.2
+    },
+    {
+      "block": 6,
+      "text": "being",
+      "start": 117.2,
+      "end": 117.475
+    },
+    {
+      "block": 6,
+      "text": "able",
+      "start": 117.475,
+      "end": 117.7
+    },
+    {
+      "block": 6,
+      "text": "to",
+      "start": 117.7,
+      "end": 117.85
+    },
+    {
+      "block": 6,
+      "text": "accomplish",
+      "start": 117.85,
+      "end": 118.4875
+    },
+    {
+      "block": 6,
+      "text": "valuable",
+      "start": 118.4875,
+      "end": 119.025
+    },
+    {
+      "block": 6,
+      "text": "work",
+      "start": 119.025,
+      "end": 119.35
+    },
+    {
+      "block": 6,
+      "text": "that",
+      "start": 119.35,
+      "end": 119.4875
+    },
+    {
+      "block": 6,
+      "text": "was",
+      "start": 119.4875,
+      "end": 119.6625
+    },
+    {
+      "block": 6,
+      "text": "previously",
+      "start": 119.6625,
+      "end": 120.225
+    },
+    {
+      "block": 6,
+      "text": "beyond",
+      "start": 120.225,
+      "end": 120.7
+    },
+    {
+      "block": 6,
+      "text": "reach,",
+      "start": 120.7,
+      "end": 121.45
+    },
+    {
+      "block": 6,
+      "text": "while",
+      "start": 121.45,
+      "end": 121.65
+    },
+    {
+      "block": 6,
+      "text": "retaining",
+      "start": 121.65,
+      "end": 122.1625
+    },
+    {
+      "block": 6,
+      "text": "judgment",
+      "start": 122.1625,
+      "end": 122.7
+    },
+    {
+      "block": 6,
+      "text": "and",
+      "start": 122.7,
+      "end": 122.8125
+    },
+    {
+      "block": 6,
+      "text": "responsibility.",
+      "start": 122.8125,
+      "end": 124.2
+    },
+    {
+      "block": 7,
+      "text": "Economics",
+      "start": 124.925,
+      "end": 125.6
+    },
+    {
+      "block": 7,
+      "text": "&",
+      "start": 125.6,
+      "end": 125.725
+    },
+    {
+      "block": 7,
+      "text": "Markets",
+      "start": 125.725,
+      "end": 126.55
+    },
+    {
+      "block": 8,
+      "text": "Reporting:",
+      "start": 127.375,
+      "end": 128.1
+    },
+    {
+      "block": 8,
+      "text": "the",
+      "start": 128.1,
+      "end": 128.225
+    },
+    {
+      "block": 8,
+      "text": "International",
+      "start": 128.225,
+      "end": 128.825
+    },
+    {
+      "block": 8,
+      "text": "Monetary",
+      "start": 128.825,
+      "end": 129.35
+    },
+    {
+      "block": 8,
+      "text": "Fund’s",
+      "start": 129.35,
+      "end": 129.6125
+    },
+    {
+      "block": 8,
+      "text": "October",
+      "start": 129.6125,
+      "end": 130.075
+    },
+    {
+      "block": 8,
+      "text": "outlook",
+      "start": 130.075,
+      "end": 130.6625
+    },
+    {
+      "block": 8,
+      "text": "projects",
+      "start": 130.6625,
+      "end": 131.1
+    },
+    {
+      "block": 8,
+      "text": "global",
+      "start": 131.1,
+      "end": 131.475
+    },
+    {
+      "block": 8,
+      "text": "growth",
+      "start": 131.475,
+      "end": 131.7875
+    },
+    {
+      "block": 8,
+      "text": "of",
+      "start": 131.7875,
+      "end": 131.9125
+    },
+    {
+      "block": 8,
+      "text": "3.1",
+      "start": 131.9125,
+      "end": 132.55
+    },
+    {
+      "block": 8,
+      "text": "percent",
+      "start": 132.55,
+      "end": 132.9
+    },
+    {
+      "block": 8,
+      "text": "in",
+      "start": 132.9,
+      "end": 133.0
+    },
+    {
+      "block": 8,
+      "text": "2026",
+      "start": 133.0,
+      "end": 134.175
+    },
+    {
+      "block": 8,
+      "text": "and",
+      "start": 134.175,
+      "end": 134.3375
+    },
+    {
+      "block": 8,
+      "text": "3.4",
+      "start": 134.3375,
+      "end": 134.975
+    },
+    {
+      "block": 8,
+      "text": "percent",
+      "start": 134.975,
+      "end": 135.3125
+    },
+    {
+      "block": 8,
+      "text": "in",
+      "start": 135.3125,
+      "end": 135.4
+    },
+    {
+      "block": 8,
+      "text": "2027.",
+      "start": 135.4,
+      "end": 136.8375
+    },
+    {
+      "block": 8,
+      "text": "These",
+      "start": 136.8375,
+      "end": 137.0625
+    },
+    {
+      "block": 8,
+      "text": "are",
+      "start": 137.0625,
+      "end": 137.1875
+    },
+    {
+      "block": 8,
+      "text": "forecasts,",
+      "start": 137.1875,
+      "end": 138.1
+    },
+    {
+      "block": 8,
+      "text": "based",
+      "start": 138.1,
+      "end": 138.3375
+    },
+    {
+      "block": 8,
+      "text": "on",
+      "start": 138.3375,
+      "end": 138.4625
+    },
+    {
+      "block": 8,
+      "text": "information",
+      "start": 138.4625,
+      "end": 138.975
+    },
+    {
+      "block": 8,
+      "text": "available",
+      "start": 138.975,
+      "end": 139.5
+    },
+    {
+      "block": 8,
+      "text": "through",
+      "start": 139.5,
+      "end": 139.7125
+    },
+    {
+      "block": 8,
+      "text": "October",
+      "start": 139.7125,
+      "end": 140.175
+    },
+    {
+      "block": 8,
+      "text": "1.",
+      "start": 140.175,
+      "end": 141.025
+    },
+    {
+      "block": 8,
+      "text": "The",
+      "start": 141.025,
+      "end": 141.125
+    },
+    {
+      "block": 8,
+      "text": "Fund",
+      "start": 141.125,
+      "end": 141.375
+    },
+    {
+      "block": 8,
+      "text": "identifies",
+      "start": 141.375,
+      "end": 142.0
+    },
+    {
+      "block": 8,
+      "text": "both",
+      "start": 142.0,
+      "end": 142.2625
+    },
+    {
+      "block": 8,
+      "text": "AI",
+      "start": 142.2625,
+      "end": 142.6125
+    },
+    {
+      "block": 8,
+      "text": "investment",
+      "start": 142.6125,
+      "end": 143.35
+    },
+    {
+      "block": 8,
+      "text": "and",
+      "start": 143.35,
+      "end": 143.5
+    },
+    {
+      "block": 8,
+      "text": "potential",
+      "start": 143.5,
+      "end": 143.975
+    },
+    {
+      "block": 8,
+      "text": "productivity",
+      "start": 143.975,
+      "end": 144.575
+    },
+    {
+      "block": 8,
+      "text": "gains",
+      "start": 144.575,
+      "end": 144.9125
+    },
+    {
+      "block": 8,
+      "text": "as",
+      "start": 144.9125,
+      "end": 145.0125
+    },
+    {
+      "block": 8,
+      "text": "opportunities,",
+      "start": 145.0125,
+      "end": 146.175
+    },
+    {
+      "block": 8,
+      "text": "while",
+      "start": 146.175,
+      "end": 146.35
+    },
+    {
+      "block": 8,
+      "text": "warning",
+      "start": 146.35,
+      "end": 146.6875
+    },
+    {
+      "block": 8,
+      "text": "about",
+      "start": 146.6875,
+      "end": 146.9875
+    },
+    {
+      "block": 8,
+      "text": "conflict,",
+      "start": 146.9875,
+      "end": 147.7625
+    },
+    {
+      "block": 8,
+      "text": "trade",
+      "start": 147.7625,
+      "end": 148.075
+    },
+    {
+      "block": 8,
+      "text": "tensions",
+      "start": 148.075,
+      "end": 148.8375
+    },
+    {
+      "block": 8,
+      "text": "and",
+      "start": 148.8375,
+      "end": 148.9625
+    },
+    {
+      "block": 8,
+      "text": "a",
+      "start": 148.9625,
+      "end": 149.0375
+    },
+    {
+      "block": 8,
+      "text": "possible",
+      "start": 149.0375,
+      "end": 149.55
+    },
+    {
+      "block": 8,
+      "text": "reassessment",
+      "start": 149.55,
+      "end": 150.125
+    },
+    {
+      "block": 8,
+      "text": "of",
+      "start": 150.125,
+      "end": 150.2625
+    },
+    {
+      "block": 8,
+      "text": "AI",
+      "start": 150.2625,
+      "end": 150.6125
+    },
+    {
+      "block": 8,
+      "text": "expectations.",
+      "start": 150.6125,
+      "end": 151.95
+    },
+    {
+      "block": 9,
+      "text": "Interpretation:",
+      "start": 152.7,
+      "end": 154.0125
+    },
+    {
+      "block": 9,
+      "text": "spending",
+      "start": 154.0125,
+      "end": 154.3875
+    },
+    {
+      "block": 9,
+      "text": "on",
+      "start": 154.3875,
+      "end": 154.5875
+    },
+    {
+      "block": 9,
+      "text": "AI",
+      "start": 154.5875,
+      "end": 154.975
+    },
+    {
+      "block": 9,
+      "text": "infrastructure",
+      "start": 154.975,
+      "end": 155.675
+    },
+    {
+      "block": 9,
+      "text": "can",
+      "start": 155.675,
+      "end": 155.85
+    },
+    {
+      "block": 9,
+      "text": "support",
+      "start": 155.85,
+      "end": 156.275
+    },
+    {
+      "block": 9,
+      "text": "economic",
+      "start": 156.275,
+      "end": 156.8375
+    },
+    {
+      "block": 9,
+      "text": "activity",
+      "start": 156.8375,
+      "end": 157.5125
+    },
+    {
+      "block": 9,
+      "text": "before",
+      "start": 157.5125,
+      "end": 157.8375
+    },
+    {
+      "block": 9,
+      "text": "the",
+      "start": 157.8375,
+      "end": 157.95
+    },
+    {
+      "block": 9,
+      "text": "eventual",
+      "start": 157.95,
+      "end": 158.4
+    },
+    {
+      "block": 9,
+      "text": "productivity",
+      "start": 158.4,
+      "end": 159.025
+    },
+    {
+      "block": 9,
+      "text": "benefits",
+      "start": 159.025,
+      "end": 159.55
+    },
+    {
+      "block": 9,
+      "text": "are",
+      "start": 159.55,
+      "end": 159.675
+    },
+    {
+      "block": 9,
+      "text": "established.",
+      "start": 159.675,
+      "end": 160.8875
+    },
+    {
+      "block": 9,
+      "text": "Investment,",
+      "start": 160.8875,
+      "end": 161.7375
+    },
+    {
+      "block": 9,
+      "text": "useful",
+      "start": 161.7375,
+      "end": 162.175
+    },
+    {
+      "block": 9,
+      "text": "output,",
+      "start": 162.175,
+      "end": 162.9625
+    },
+    {
+      "block": 9,
+      "text": "corporate",
+      "start": 162.9625,
+      "end": 163.35
+    },
+    {
+      "block": 9,
+      "text": "profits",
+      "start": 163.35,
+      "end": 163.875
+    },
+    {
+      "block": 9,
+      "text": "and",
+      "start": 163.875,
+      "end": 164.0
+    },
+    {
+      "block": 9,
+      "text": "broadly",
+      "start": 164.0,
+      "end": 164.4125
+    },
+    {
+      "block": 9,
+      "text": "shared",
+      "start": 164.4125,
+      "end": 164.725
+    },
+    {
+      "block": 9,
+      "text": "prosperity",
+      "start": 164.725,
+      "end": 165.4375
+    },
+    {
+      "block": 9,
+      "text": "are",
+      "start": 165.4375,
+      "end": 165.6
+    },
+    {
+      "block": 9,
+      "text": "different",
+      "start": 165.6,
+      "end": 165.9
+    },
+    {
+      "block": 9,
+      "text": "outcomes.",
+      "start": 165.9,
+      "end": 167.0
+    },
+    {
+      "block": 9,
+      "text": "They",
+      "start": 167.0,
+      "end": 167.15
+    },
+    {
+      "block": 9,
+      "text": "should",
+      "start": 167.15,
+      "end": 167.2875
+    },
+    {
+      "block": 9,
+      "text": "be",
+      "start": 167.2875,
+      "end": 167.425
+    },
+    {
+      "block": 9,
+      "text": "measured",
+      "start": 167.425,
+      "end": 167.8125
+    },
+    {
+      "block": 9,
+      "text": "separately.",
+      "start": 167.8125,
+      "end": 168.85
+    },
+    {
+      "block": 10,
+      "text": "Household",
+      "start": 169.575,
+      "end": 170.15
+    },
+    {
+      "block": 10,
+      "text": "Economy",
+      "start": 170.15,
+      "end": 170.825
+    },
+    {
+      "block": 10,
+      "text": "Mini-Masterclass",
+      "start": 170.825,
+      "end": 172.15
+    },
+    {
+      "block": 11,
+      "text": "A",
+      "start": 173.025,
+      "end": 173.1
+    },
+    {
+      "block": 11,
+      "text": "United",
+      "start": 173.1,
+      "end": 173.525
+    },
+    {
+      "block": 11,
+      "text": "States",
+      "start": 173.525,
+      "end": 173.875
+    },
+    {
+      "block": 11,
+      "text": "case",
+      "start": 173.875,
+      "end": 174.125
+    },
+    {
+      "block": 11,
+      "text": "study",
+      "start": 174.125,
+      "end": 174.45
+    },
+    {
+      "block": 11,
+      "text": "makes",
+      "start": 174.45,
+      "end": 174.7125
+    },
+    {
+      "block": 11,
+      "text": "the",
+      "start": 174.7125,
+      "end": 174.7875
+    },
+    {
+      "block": 11,
+      "text": "distinction",
+      "start": 174.7875,
+      "end": 175.275
+    },
+    {
+      "block": 11,
+      "text": "concrete.",
+      "start": 175.275,
+      "end": 176.2875
+    },
+    {
+      "block": 11,
+      "text": "In",
+      "start": 176.2875,
+      "end": 176.45
+    },
+    {
+      "block": 11,
+      "text": "September,",
+      "start": 176.45,
+      "end": 177.2875
+    },
+    {
+      "block": 11,
+      "text": "average",
+      "start": 177.2875,
+      "end": 177.6875
+    },
+    {
+      "block": 11,
+      "text": "hourly",
+      "start": 177.6875,
+      "end": 178.05
+    },
+    {
+      "block": 11,
+      "text": "earnings",
+      "start": 178.05,
+      "end": 178.475
+    },
+    {
+      "block": 11,
+      "text": "for",
+      "start": 178.475,
+      "end": 178.5875
+    },
+    {
+      "block": 11,
+      "text": "employees",
+      "start": 178.5875,
+      "end": 179.0625
+    },
+    {
+      "block": 11,
+      "text": "on",
+      "start": 179.0625,
+      "end": 179.175
+    },
+    {
+      "block": 11,
+      "text": "private",
+      "start": 179.175,
+      "end": 179.525
+    },
+    {
+      "block": 11,
+      "text": "nonfarm",
+      "start": 179.525,
+      "end": 180.0
+    },
+    {
+      "block": 11,
+      "text": "payrolls",
+      "start": 180.0,
+      "end": 180.7625
+    },
+    {
+      "block": 11,
+      "text": "were",
+      "start": 180.7625,
+      "end": 180.9375
+    },
+    {
+      "block": 11,
+      "text": "3.0",
+      "start": 180.9375,
+      "end": 181.175
+    },
+    {
+      "block": 11,
+      "text": "percent",
+      "start": 181.175,
+      "end": 181.525
+    },
+    {
+      "block": 11,
+      "text": "higher",
+      "start": 181.525,
+      "end": 181.8125
+    },
+    {
+      "block": 11,
+      "text": "than",
+      "start": 181.8125,
+      "end": 181.9125
+    },
+    {
+      "block": 11,
+      "text": "a",
+      "start": 181.9125,
+      "end": 181.975
+    },
+    {
+      "block": 11,
+      "text": "year",
+      "start": 181.975,
+      "end": 182.175
+    },
+    {
+      "block": 11,
+      "text": "earlier,",
+      "start": 182.175,
+      "end": 183.025
+    },
+    {
+      "block": 11,
+      "text": "while",
+      "start": 183.025,
+      "end": 183.1875
+    },
+    {
+      "block": 11,
+      "text": "the",
+      "start": 183.1875,
+      "end": 183.275
+    },
+    {
+      "block": 11,
+      "text": "consumer",
+      "start": 183.275,
+      "end": 183.725
+    },
+    {
+      "block": 11,
+      "text": "price",
+      "start": 183.725,
+      "end": 183.9625
+    },
+    {
+      "block": 11,
+      "text": "index",
+      "start": 183.9625,
+      "end": 184.325
+    },
+    {
+      "block": 11,
+      "text": "used",
+      "start": 184.325,
+      "end": 184.5375
+    },
+    {
+      "block": 11,
+      "text": "to",
+      "start": 184.5375,
+      "end": 184.625
+    },
+    {
+      "block": 11,
+      "text": "adjust",
+      "start": 184.625,
+      "end": 184.9625
+    },
+    {
+      "block": 11,
+      "text": "them",
+      "start": 184.9625,
+      "end": 185.5
+    },
+    {
+      "block": 11,
+      "text": "rose",
+      "start": 185.5,
+      "end": 185.8375
+    },
+    {
+      "block": 11,
+      "text": "3.7",
+      "start": 185.8375,
+      "end": 186.55
+    },
+    {
+      "block": 11,
+      "text": "percent.",
+      "start": 186.55,
+      "end": 187.45
+    },
+    {
+      "block": 11,
+      "text": "The",
+      "start": 187.45,
+      "end": 187.55
+    },
+    {
+      "block": 11,
+      "text": "Bureau",
+      "start": 187.55,
+      "end": 187.8625
+    },
+    {
+      "block": 11,
+      "text": "of",
+      "start": 187.8625,
+      "end": 187.95
+    },
+    {
+      "block": 11,
+      "text": "Labor",
+      "start": 187.95,
+      "end": 188.225
+    },
+    {
+      "block": 11,
+      "text": "Statistics",
+      "start": 188.225,
+      "end": 188.825
+    },
+    {
+      "block": 11,
+      "text": "reports",
+      "start": 188.825,
+      "end": 189.3
+    },
+    {
+      "block": 11,
+      "text": "that",
+      "start": 189.3,
+      "end": 189.5125
+    },
+    {
+      "block": 11,
+      "text": "real",
+      "start": 189.5125,
+      "end": 189.8125
+    },
+    {
+      "block": 11,
+      "text": "hourly",
+      "start": 189.8125,
+      "end": 190.2
+    },
+    {
+      "block": 11,
+      "text": "earnings",
+      "start": 190.2,
+      "end": 190.625
+    },
+    {
+      "block": 11,
+      "text": "fell",
+      "start": 190.625,
+      "end": 190.8625
+    },
+    {
+      "block": 11,
+      "text": "0.7",
+      "start": 190.8625,
+      "end": 191.725
+    },
+    {
+      "block": 11,
+      "text": "percent.",
+      "start": 191.725,
+      "end": 192.575
+    },
+    {
+      "block": 11,
+      "text": "An",
+      "start": 192.575,
+      "end": 192.675
+    },
+    {
+      "block": 11,
+      "text": "average",
+      "start": 192.675,
+      "end": 193.0625
+    },
+    {
+      "block": 11,
+      "text": "hour’s",
+      "start": 193.0625,
+      "end": 193.425
+    },
+    {
+      "block": 11,
+      "text": "pay",
+      "start": 193.425,
+      "end": 193.65
+    },
+    {
+      "block": 11,
+      "text": "therefore",
+      "start": 193.65,
+      "end": 194.075
+    },
+    {
+      "block": 11,
+      "text": "bought",
+      "start": 194.075,
+      "end": 194.3
+    },
+    {
+      "block": 11,
+      "text": "less.",
+      "start": 194.3,
+      "end": 195.1375
+    },
+    {
+      "block": 11,
+      "text": "This",
+      "start": 195.1375,
+      "end": 195.35
+    },
+    {
+      "block": 11,
+      "text": "national",
+      "start": 195.35,
+      "end": 195.8
+    },
+    {
+      "block": 11,
+      "text": "average",
+      "start": 195.8,
+      "end": 196.25
+    },
+    {
+      "block": 11,
+      "text": "does",
+      "start": 196.25,
+      "end": 196.425
+    },
+    {
+      "block": 11,
+      "text": "not",
+      "start": 196.425,
+      "end": 196.6375
+    },
+    {
+      "block": 11,
+      "text": "describe",
+      "start": 196.6375,
+      "end": 197.0875
+    },
+    {
+      "block": 11,
+      "text": "every",
+      "start": 197.0875,
+      "end": 197.425
+    },
+    {
+      "block": 11,
+      "text": "worker",
+      "start": 197.425,
+      "end": 197.825
+    },
+    {
+      "block": 11,
+      "text": "or",
+      "start": 197.825,
+      "end": 197.95
+    },
+    {
+      "block": 11,
+      "text": "household.",
+      "start": 197.95,
+      "end": 199.0
+    },
+    {
+      "block": 12,
+      "text": "Illustration:",
+      "start": 199.725,
+      "end": 200.8
+    },
+    {
+      "block": 12,
+      "text": "a",
+      "start": 200.8,
+      "end": 200.9
+    },
+    {
+      "block": 12,
+      "text": "worker",
+      "start": 200.9,
+      "end": 201.275
+    },
+    {
+      "block": 12,
+      "text": "earning",
+      "start": 201.275,
+      "end": 201.55
+    },
+    {
+      "block": 12,
+      "text": "25",
+      "start": 201.55,
+      "end": 202.125
+    },
+    {
+      "block": 12,
+      "text": "dollars",
+      "start": 202.125,
+      "end": 202.575
+    },
+    {
+      "block": 12,
+      "text": "an",
+      "start": 202.575,
+      "end": 202.7125
+    },
+    {
+      "block": 12,
+      "text": "hour",
+      "start": 202.7125,
+      "end": 203.05
+    },
+    {
+      "block": 12,
+      "text": "receives",
+      "start": 203.05,
+      "end": 203.425
+    },
+    {
+      "block": 12,
+      "text": "a",
+      "start": 203.425,
+      "end": 203.5375
+    },
+    {
+      "block": 12,
+      "text": "three-percent",
+      "start": 203.5375,
+      "end": 204.125
+    },
+    {
+      "block": 12,
+      "text": "raise,",
+      "start": 204.125,
+      "end": 204.925
+    },
+    {
+      "block": 12,
+      "text": "reaching",
+      "start": 204.925,
+      "end": 205.275
+    },
+    {
+      "block": 12,
+      "text": "25",
+      "start": 205.275,
+      "end": 205.875
+    },
+    {
+      "block": 12,
+      "text": "dollars",
+      "start": 205.875,
+      "end": 206.3
+    },
+    {
+      "block": 12,
+      "text": "and",
+      "start": 206.3,
+      "end": 206.425
+    },
+    {
+      "block": 12,
+      "text": "75",
+      "start": 206.425,
+      "end": 207.075
+    },
+    {
+      "block": 12,
+      "text": "cents.",
+      "start": 207.075,
+      "end": 207.95
+    },
+    {
+      "block": 12,
+      "text": "If",
+      "start": 207.95,
+      "end": 208.0875
+    },
+    {
+      "block": 12,
+      "text": "the",
+      "start": 208.0875,
+      "end": 208.2125
+    },
+    {
+      "block": 12,
+      "text": "same",
+      "start": 208.2125,
+      "end": 208.55
+    },
+    {
+      "block": 12,
+      "text": "basket",
+      "start": 208.55,
+      "end": 208.9125
+    },
+    {
+      "block": 12,
+      "text": "of",
+      "start": 208.9125,
+      "end": 209.0
+    },
+    {
+      "block": 12,
+      "text": "purchases",
+      "start": 209.0,
+      "end": 209.575
+    },
+    {
+      "block": 12,
+      "text": "becomes",
+      "start": 209.575,
+      "end": 209.9625
+    },
+    {
+      "block": 12,
+      "text": "3.7",
+      "start": 209.9625,
+      "end": 210.75
+    },
+    {
+      "block": 12,
+      "text": "percent",
+      "start": 210.75,
+      "end": 211.1
+    },
+    {
+      "block": 12,
+      "text": "more",
+      "start": 211.1,
+      "end": 211.2875
+    },
+    {
+      "block": 12,
+      "text": "expensive,",
+      "start": 211.2875,
+      "end": 212.375
+    },
+    {
+      "block": 12,
+      "text": "that",
+      "start": 212.375,
+      "end": 212.5875
+    },
+    {
+      "block": 12,
+      "text": "new",
+      "start": 212.5875,
+      "end": 212.775
+    },
+    {
+      "block": 12,
+      "text": "wage",
+      "start": 212.775,
+      "end": 213.125
+    },
+    {
+      "block": 12,
+      "text": "buys",
+      "start": 213.125,
+      "end": 213.4125
+    },
+    {
+      "block": 12,
+      "text": "what",
+      "start": 213.4125,
+      "end": 213.5375
+    },
+    {
+      "block": 12,
+      "text": "approximately",
+      "start": 213.5375,
+      "end": 214.25
+    },
+    {
+      "block": 12,
+      "text": "24",
+      "start": 214.25,
+      "end": 214.775
+    },
+    {
+      "block": 12,
+      "text": "dollars",
+      "start": 214.775,
+      "end": 215.425
+    },
+    {
+      "block": 12,
+      "text": "and",
+      "start": 215.425,
+      "end": 215.5875
+    },
+    {
+      "block": 12,
+      "text": "83",
+      "start": 215.5875,
+      "end": 216.1125
+    },
+    {
+      "block": 12,
+      "text": "cents",
+      "start": 216.1125,
+      "end": 216.4
+    },
+    {
+      "block": 12,
+      "text": "bought",
+      "start": 216.4,
+      "end": 216.625
+    },
+    {
+      "block": 12,
+      "text": "before.",
+      "start": 216.625,
+      "end": 217.675
+    },
+    {
+      "block": 12,
+      "text": "The",
+      "start": 217.675,
+      "end": 217.7875
+    },
+    {
+      "block": 12,
+      "text": "pay",
+      "start": 217.7875,
+      "end": 218.05
+    },
+    {
+      "block": 12,
+      "text": "rise",
+      "start": 218.05,
+      "end": 218.4
+    },
+    {
+      "block": 12,
+      "text": "is",
+      "start": 218.4,
+      "end": 218.5625
+    },
+    {
+      "block": 12,
+      "text": "real",
+      "start": 218.5625,
+      "end": 218.85
+    },
+    {
+      "block": 12,
+      "text": "in",
+      "start": 218.85,
+      "end": 218.975
+    },
+    {
+      "block": 12,
+      "text": "dollars;",
+      "start": 218.975,
+      "end": 219.8
+    },
+    {
+      "block": 12,
+      "text": "the",
+      "start": 219.8,
+      "end": 219.925
+    },
+    {
+      "block": 12,
+      "text": "loss",
+      "start": 219.925,
+      "end": 220.275
+    },
+    {
+      "block": 12,
+      "text": "is",
+      "start": 220.275,
+      "end": 220.4375
+    },
+    {
+      "block": 12,
+      "text": "real",
+      "start": 220.4375,
+      "end": 220.725
+    },
+    {
+      "block": 12,
+      "text": "in",
+      "start": 220.725,
+      "end": 220.875
+    },
+    {
+      "block": 12,
+      "text": "purchasing",
+      "start": 220.875,
+      "end": 221.4
+    },
+    {
+      "block": 12,
+      "text": "power.",
+      "start": 221.4,
+      "end": 222.275
+    },
+    {
+      "block": 13,
+      "text": "Purchasing",
+      "start": 222.95,
+      "end": 223.45
+    },
+    {
+      "block": 13,
+      "text": "power",
+      "start": 223.45,
+      "end": 223.775
+    },
+    {
+      "block": 13,
+      "text": "parity,",
+      "start": 223.775,
+      "end": 224.4
+    },
+    {
+      "block": 13,
+      "text": "or",
+      "start": 224.4,
+      "end": 224.5625
+    },
+    {
+      "block": 13,
+      "text": "PPP,",
+      "start": 224.5625,
+      "end": 225.7375
+    },
+    {
+      "block": 13,
+      "text": "answers",
+      "start": 225.7375,
+      "end": 226.225
+    },
+    {
+      "block": 13,
+      "text": "a",
+      "start": 226.225,
+      "end": 226.3
+    },
+    {
+      "block": 13,
+      "text": "related",
+      "start": 226.3,
+      "end": 226.775
+    },
+    {
+      "block": 13,
+      "text": "international",
+      "start": 226.775,
+      "end": 227.425
+    },
+    {
+      "block": 13,
+      "text": "question:",
+      "start": 227.425,
+      "end": 228.3625
+    },
+    {
+      "block": 13,
+      "text": "how",
+      "start": 228.3625,
+      "end": 228.575
+    },
+    {
+      "block": 13,
+      "text": "do",
+      "start": 228.575,
+      "end": 228.75
+    },
+    {
+      "block": 13,
+      "text": "price",
+      "start": 228.75,
+      "end": 229.075
+    },
+    {
+      "block": 13,
+      "text": "differences",
+      "start": 229.075,
+      "end": 229.575
+    },
+    {
+      "block": 13,
+      "text": "between",
+      "start": 229.575,
+      "end": 229.9
+    },
+    {
+      "block": 13,
+      "text": "economies",
+      "start": 229.9,
+      "end": 230.6375
+    },
+    {
+      "block": 13,
+      "text": "change",
+      "start": 230.6375,
+      "end": 230.9625
+    },
+    {
+      "block": 13,
+      "text": "what",
+      "start": 230.9625,
+      "end": 231.1
+    },
+    {
+      "block": 13,
+      "text": "comparable",
+      "start": 231.1,
+      "end": 231.625
+    },
+    {
+      "block": 13,
+      "text": "incomes",
+      "start": 231.625,
+      "end": 232.075
+    },
+    {
+      "block": 13,
+      "text": "can",
+      "start": 232.075,
+      "end": 232.225
+    },
+    {
+      "block": 13,
+      "text": "buy?",
+      "start": 232.225,
+      "end": 233.025
+    },
+    {
+      "block": 13,
+      "text": "It",
+      "start": 233.025,
+      "end": 233.175
+    },
+    {
+      "block": 13,
+      "text": "complements",
+      "start": 233.175,
+      "end": 233.725
+    },
+    {
+      "block": 13,
+      "text": "domestic",
+      "start": 233.725,
+      "end": 234.2
+    },
+    {
+      "block": 13,
+      "text": "inflation",
+      "start": 234.2,
+      "end": 234.675
+    },
+    {
+      "block": 13,
+      "text": "adjustment",
+      "start": 234.675,
+      "end": 235.3125
+    },
+    {
+      "block": 13,
+      "text": "rather",
+      "start": 235.3125,
+      "end": 235.6625
+    },
+    {
+      "block": 13,
+      "text": "than",
+      "start": 235.6625,
+      "end": 235.775
+    },
+    {
+      "block": 13,
+      "text": "replacing",
+      "start": 235.775,
+      "end": 236.3375
+    },
+    {
+      "block": 13,
+      "text": "it.",
+      "start": 236.3375,
+      "end": 237.025
+    },
+    {
+      "block": 13,
+      "text": "Neither",
+      "start": 237.025,
+      "end": 237.325
+    },
+    {
+      "block": 13,
+      "text": "measure",
+      "start": 237.325,
+      "end": 237.65
+    },
+    {
+      "block": 13,
+      "text": "alone",
+      "start": 237.65,
+      "end": 238.05
+    },
+    {
+      "block": 13,
+      "text": "captures",
+      "start": 238.05,
+      "end": 238.5375
+    },
+    {
+      "block": 13,
+      "text": "housing",
+      "start": 238.5375,
+      "end": 238.9875
+    },
+    {
+      "block": 13,
+      "text": "access,",
+      "start": 238.9875,
+      "end": 239.7
+    },
+    {
+      "block": 13,
+      "text": "public",
+      "start": 239.7,
+      "end": 240.075
+    },
+    {
+      "block": 13,
+      "text": "services",
+      "start": 240.075,
+      "end": 240.8
+    },
+    {
+      "block": 13,
+      "text": "or",
+      "start": 240.8,
+      "end": 240.9375
+    },
+    {
+      "block": 13,
+      "text": "the",
+      "start": 240.9375,
+      "end": 241.025
+    },
+    {
+      "block": 13,
+      "text": "distribution",
+      "start": 241.025,
+      "end": 241.6625
+    },
+    {
+      "block": 13,
+      "text": "of",
+      "start": 241.6625,
+      "end": 241.775
+    },
+    {
+      "block": 13,
+      "text": "income.",
+      "start": 241.775,
+      "end": 242.725
+    },
+    {
+      "block": 14,
+      "text": "Our",
+      "start": 243.45,
+      "end": 243.575
+    },
+    {
+      "block": 14,
+      "text": "organising",
+      "start": 243.575,
+      "end": 244.15
+    },
+    {
+      "block": 14,
+      "text": "principle",
+      "start": 244.15,
+      "end": 244.6
+    },
+    {
+      "block": 14,
+      "text": "is",
+      "start": 244.6,
+      "end": 244.75
+    },
+    {
+      "block": 14,
+      "text": "household",
+      "start": 244.75,
+      "end": 245.25
+    },
+    {
+      "block": 14,
+      "text": "stewardship",
+      "start": 245.25,
+      "end": 245.825
+    },
+    {
+      "block": 14,
+      "text": "in",
+      "start": 245.825,
+      "end": 245.975
+    },
+    {
+      "block": 14,
+      "text": "service",
+      "start": 245.975,
+      "end": 246.3375
+    },
+    {
+      "block": 14,
+      "text": "of",
+      "start": 246.3375,
+      "end": 246.425
+    },
+    {
+      "block": 14,
+      "text": "human",
+      "start": 246.425,
+      "end": 246.775
+    },
+    {
+      "block": 14,
+      "text": "flourishing:",
+      "start": 246.775,
+      "end": 247.8375
+    },
+    {
+      "block": 14,
+      "text": "oikos,",
+      "start": 247.8375,
+      "end": 248.45
+    },
+    {
+      "block": 14,
+      "text": "the",
+      "start": 248.45,
+      "end": 248.55
+    },
+    {
+      "block": 14,
+      "text": "household;",
+      "start": 248.55,
+      "end": 249.5625
+    },
+    {
+      "block": 14,
+      "text": "nomos,",
+      "start": 249.5625,
+      "end": 250.125
+    },
+    {
+      "block": 14,
+      "text": "its",
+      "start": 250.125,
+      "end": 250.325
+    },
+    {
+      "block": 14,
+      "text": "ordering",
+      "start": 250.325,
+      "end": 250.7
+    },
+    {
+      "block": 14,
+      "text": "principles;",
+      "start": 250.7,
+      "end": 251.5625
+    },
+    {
+      "block": 14,
+      "text": "eudaimonia,",
+      "start": 251.5625,
+      "end": 252.375
+    },
+    {
+      "block": 14,
+      "text": "living",
+      "start": 252.375,
+      "end": 252.675
+    },
+    {
+      "block": 14,
+      "text": "well.",
+      "start": 252.675,
+      "end": 253.475
+    },
+    {
+      "block": 14,
+      "text": "Eudaimonia",
+      "start": 253.475,
+      "end": 254.175
+    },
+    {
+      "block": 14,
+      "text": "is",
+      "start": 254.175,
+      "end": 254.2875
+    },
+    {
+      "block": 14,
+      "text": "a",
+      "start": 254.2875,
+      "end": 254.3625
+    },
+    {
+      "block": 14,
+      "text": "philosophical",
+      "start": 254.3625,
+      "end": 255.075
+    },
+    {
+      "block": 14,
+      "text": "standard,",
+      "start": 255.075,
+      "end": 255.8
+    },
+    {
+      "block": 14,
+      "text": "not",
+      "start": 255.8,
+      "end": 256.025
+    },
+    {
+      "block": 14,
+      "text": "part",
+      "start": 256.025,
+      "end": 256.2125
+    },
+    {
+      "block": 14,
+      "text": "of",
+      "start": 256.2125,
+      "end": 256.2875
+    },
+    {
+      "block": 14,
+      "text": "the",
+      "start": 256.2875,
+      "end": 256.375
+    },
+    {
+      "block": 14,
+      "text": "word",
+      "start": 256.375,
+      "end": 256.5625
+    },
+    {
+      "block": 14,
+      "text": "economics.",
+      "start": 256.5625,
+      "end": 257.75
+    },
+    {
+      "block": 14,
+      "text": "The",
+      "start": 257.75,
+      "end": 257.85
+    },
+    {
+      "block": 14,
+      "text": "question",
+      "start": 257.85,
+      "end": 258.3
+    },
+    {
+      "block": 14,
+      "text": "is",
+      "start": 258.3,
+      "end": 258.45
+    },
+    {
+      "block": 14,
+      "text": "whether",
+      "start": 258.45,
+      "end": 258.725
+    },
+    {
+      "block": 14,
+      "text": "progress",
+      "start": 258.725,
+      "end": 259.175
+    },
+    {
+      "block": 14,
+      "text": "creates",
+      "start": 259.175,
+      "end": 259.5875
+    },
+    {
+      "block": 14,
+      "text": "greater",
+      "start": 259.5875,
+      "end": 259.95
+    },
+    {
+      "block": 14,
+      "text": "security,",
+      "start": 259.95,
+      "end": 260.8125
+    },
+    {
+      "block": 14,
+      "text": "meaningful",
+      "start": 260.8125,
+      "end": 261.3
+    },
+    {
+      "block": 14,
+      "text": "opportunity",
+      "start": 261.3,
+      "end": 262.0375
+    },
+    {
+      "block": 14,
+      "text": "and",
+      "start": 262.0375,
+      "end": 262.175
+    },
+    {
+      "block": 14,
+      "text": "time",
+      "start": 262.175,
+      "end": 262.5
+    },
+    {
+      "block": 14,
+      "text": "to",
+      "start": 262.5,
+      "end": 262.625
+    },
+    {
+      "block": 14,
+      "text": "live.",
+      "start": 262.625,
+      "end": 263.4
+    },
+    {
+      "block": 15,
+      "text": "Climate",
+      "start": 264.125,
+      "end": 264.6375
+    },
+    {
+      "block": 15,
+      "text": "&",
+      "start": 264.6375,
+      "end": 264.775
+    },
+    {
+      "block": 15,
+      "text": "Energy",
+      "start": 264.775,
+      "end": 265.6
+    },
+    {
+      "block": 16,
+      "text": "Reporting:",
+      "start": 266.425,
+      "end": 267.225
+    },
+    {
+      "block": 16,
+      "text": "the",
+      "start": 267.225,
+      "end": 267.375
+    },
+    {
+      "block": 16,
+      "text": "International",
+      "start": 267.375,
+      "end": 268.0
+    },
+    {
+      "block": 16,
+      "text": "Energy",
+      "start": 268.0,
+      "end": 268.4
+    },
+    {
+      "block": 16,
+      "text": "Agency’s",
+      "start": 268.4,
+      "end": 269.05
+    },
+    {
+      "block": 16,
+      "text": "October",
+      "start": 269.05,
+      "end": 269.5
+    },
+    {
+      "block": 16,
+      "text": "report",
+      "start": 269.5,
+      "end": 270.15
+    },
+    {
+      "block": 16,
+      "text": "expects",
+      "start": 270.15,
+      "end": 270.675
+    },
+    {
+      "block": 16,
+      "text": "the",
+      "start": 270.675,
+      "end": 270.8
+    },
+    {
+      "block": 16,
+      "text": "largest",
+      "start": 270.8,
+      "end": 271.2
+    },
+    {
+      "block": 16,
+      "text": "data-centre",
+      "start": 271.2,
+      "end": 271.825
+    },
+    {
+      "block": 16,
+      "text": "operators",
+      "start": 271.825,
+      "end": 272.6375
+    },
+    {
+      "block": 16,
+      "text": "to",
+      "start": 272.6375,
+      "end": 272.775
+    },
+    {
+      "block": 16,
+      "text": "spend",
+      "start": 272.775,
+      "end": 273.05
+    },
+    {
+      "block": 16,
+      "text": "more",
+      "start": 273.05,
+      "end": 273.2375
+    },
+    {
+      "block": 16,
+      "text": "than",
+      "start": 273.2375,
+      "end": 273.425
+    },
+    {
+      "block": 16,
+      "text": "700",
+      "start": 273.425,
+      "end": 274.1125
+    },
+    {
+      "block": 16,
+      "text": "billion",
+      "start": 274.1125,
+      "end": 274.5
+    },
+    {
+      "block": 16,
+      "text": "dollars",
+      "start": 274.5,
+      "end": 274.925
+    },
+    {
+      "block": 16,
+      "text": "in",
+      "start": 274.925,
+      "end": 275.075
+    },
+    {
+      "block": 16,
+      "text": "capital",
+      "start": 275.075,
+      "end": 275.525
+    },
+    {
+      "block": 16,
+      "text": "expenditure",
+      "start": 275.525,
+      "end": 276.2375
+    },
+    {
+      "block": 16,
+      "text": "during",
+      "start": 276.2375,
+      "end": 276.5
+    },
+    {
+      "block": 16,
+      "text": "2026,",
+      "start": 276.5,
+      "end": 277.9875
+    },
+    {
+      "block": 16,
+      "text": "mostly",
+      "start": 277.9875,
+      "end": 278.45
+    },
+    {
+      "block": 16,
+      "text": "on",
+      "start": 278.45,
+      "end": 278.625
+    },
+    {
+      "block": 16,
+      "text": "new",
+      "start": 278.625,
+      "end": 278.8
+    },
+    {
+      "block": 16,
+      "text": "data",
+      "start": 278.8,
+      "end": 279.075
+    },
+    {
+      "block": 16,
+      "text": "centres.",
+      "start": 279.075,
+      "end": 280.15
+    },
+    {
+      "block": 16,
+      "text": "Its",
+      "start": 280.15,
+      "end": 280.3625
+    },
+    {
+      "block": 16,
+      "text": "analysis",
+      "start": 280.3625,
+      "end": 280.9625
+    },
+    {
+      "block": 16,
+      "text": "highlights",
+      "start": 280.9625,
+      "end": 281.45
+    },
+    {
+      "block": 16,
+      "text": "pressure",
+      "start": 281.45,
+      "end": 281.85
+    },
+    {
+      "block": 16,
+      "text": "on",
+      "start": 281.85,
+      "end": 282.025
+    },
+    {
+      "block": 16,
+      "text": "local",
+      "start": 282.025,
+      "end": 282.35
+    },
+    {
+      "block": 16,
+      "text": "grids",
+      "start": 282.35,
+      "end": 283.1
+    },
+    {
+      "block": 16,
+      "text": "and",
+      "start": 283.1,
+      "end": 283.25
+    },
+    {
+      "block": 16,
+      "text": "concerns",
+      "start": 283.25,
+      "end": 283.7375
+    },
+    {
+      "block": 16,
+      "text": "about",
+      "start": 283.7375,
+      "end": 283.975
+    },
+    {
+      "block": 16,
+      "text": "electricity",
+      "start": 283.975,
+      "end": 284.6
+    },
+    {
+      "block": 16,
+      "text": "prices,",
+      "start": 284.6,
+      "end": 285.45
+    },
+    {
+      "block": 16,
+      "text": "emissions",
+      "start": 285.45,
+      "end": 286.0125
+    },
+    {
+      "block": 16,
+      "text": "and",
+      "start": 286.0125,
+      "end": 286.15
+    },
+    {
+      "block": 16,
+      "text": "water.",
+      "start": 286.15,
+      "end": 287.025
+    },
+    {
+      "block": 17,
+      "text": "Interpretation:",
+      "start": 287.775,
+      "end": 289.075
+    },
+    {
+      "block": 17,
+      "text": "an",
+      "start": 289.075,
+      "end": 289.175
+    },
+    {
+      "block": 17,
+      "text": "efficient",
+      "start": 289.175,
+      "end": 289.65
+    },
+    {
+      "block": 17,
+      "text": "model",
+      "start": 289.65,
+      "end": 290.0
+    },
+    {
+      "block": 17,
+      "text": "does",
+      "start": 290.0,
+      "end": 290.175
+    },
+    {
+      "block": 17,
+      "text": "not",
+      "start": 290.175,
+      "end": 290.4
+    },
+    {
+      "block": 17,
+      "text": "by",
+      "start": 290.4,
+      "end": 290.575
+    },
+    {
+      "block": 17,
+      "text": "itself",
+      "start": 290.575,
+      "end": 291.0125
+    },
+    {
+      "block": 17,
+      "text": "guarantee",
+      "start": 291.0125,
+      "end": 291.5
+    },
+    {
+      "block": 17,
+      "text": "a",
+      "start": 291.5,
+      "end": 291.625
+    },
+    {
+      "block": 17,
+      "text": "smaller",
+      "start": 291.625,
+      "end": 292.1125
+    },
+    {
+      "block": 17,
+      "text": "total",
+      "start": 292.1125,
+      "end": 292.5
+    },
+    {
+      "block": 17,
+      "text": "environmental",
+      "start": 292.5,
+      "end": 293.1875
+    },
+    {
+      "block": 17,
+      "text": "footprint",
+      "start": 293.1875,
+      "end": 293.7375
+    },
+    {
+      "block": 17,
+      "text": "if",
+      "start": 293.7375,
+      "end": 293.875
+    },
+    {
+      "block": 17,
+      "text": "usage",
+      "start": 293.875,
+      "end": 294.275
+    },
+    {
+      "block": 17,
+      "text": "expands.",
+      "start": 294.275,
+      "end": 295.5375
+    },
+    {
+      "block": 17,
+      "text": "Energy",
+      "start": 295.5375,
+      "end": 295.95
+    },
+    {
+      "block": 17,
+      "text": "supply,",
+      "start": 295.95,
+      "end": 296.7125
+    },
+    {
+      "block": 17,
+      "text": "grid",
+      "start": 296.7125,
+      "end": 296.9625
+    },
+    {
+      "block": 17,
+      "text": "investment",
+      "start": 296.9625,
+      "end": 297.85
+    },
+    {
+      "block": 17,
+      "text": "and",
+      "start": 297.85,
+      "end": 298.0
+    },
+    {
+      "block": 17,
+      "text": "who",
+      "start": 298.0,
+      "end": 298.1875
+    },
+    {
+      "block": 17,
+      "text": "bears",
+      "start": 298.1875,
+      "end": 298.5375
+    },
+    {
+      "block": 17,
+      "text": "the",
+      "start": 298.5375,
+      "end": 298.65
+    },
+    {
+      "block": 17,
+      "text": "associated",
+      "start": 298.65,
+      "end": 299.375
+    },
+    {
+      "block": 17,
+      "text": "costs",
+      "start": 299.375,
+      "end": 299.9125
+    },
+    {
+      "block": 17,
+      "text": "belong",
+      "start": 299.9125,
+      "end": 300.3625
+    },
+    {
+      "block": 17,
+      "text": "inside",
+      "start": 300.3625,
+      "end": 300.8875
+    },
+    {
+      "block": 17,
+      "text": "the",
+      "start": 300.8875,
+      "end": 300.975
+    },
+    {
+      "block": 17,
+      "text": "assessment",
+      "start": 300.975,
+      "end": 301.475
+    },
+    {
+      "block": 17,
+      "text": "of",
+      "start": 301.475,
+      "end": 301.6125
+    },
+    {
+      "block": 17,
+      "text": "AI",
+      "start": 301.6125,
+      "end": 301.95
+    },
+    {
+      "block": 17,
+      "text": "progress.",
+      "start": 301.95,
+      "end": 302.95
+    },
+    {
+      "block": 18,
+      "text": "Geopolitics",
+      "start": 303.675,
+      "end": 304.7
+    },
+    {
+      "block": 19,
+      "text": "Reporting:",
+      "start": 305.475,
+      "end": 306.225
+    },
+    {
+      "block": 19,
+      "text": "the",
+      "start": 306.225,
+      "end": 306.325
+    },
+    {
+      "block": 19,
+      "text": "World",
+      "start": 306.325,
+      "end": 306.625
+    },
+    {
+      "block": 19,
+      "text": "Trade",
+      "start": 306.625,
+      "end": 306.8875
+    },
+    {
+      "block": 19,
+      "text": "Organization",
+      "start": 306.8875,
+      "end": 307.575
+    },
+    {
+      "block": 19,
+      "text": "says",
+      "start": 307.575,
+      "end": 307.8375
+    },
+    {
+      "block": 19,
+      "text": "AI-enabling",
+      "start": 307.8375,
+      "end": 308.525
+    },
+    {
+      "block": 19,
+      "text": "goods,",
+      "start": 308.525,
+      "end": 309.3
+    },
+    {
+      "block": 19,
+      "text": "including",
+      "start": 309.3,
+      "end": 309.7375
+    },
+    {
+      "block": 19,
+      "text": "semiconductors",
+      "start": 309.7375,
+      "end": 310.55
+    },
+    {
+      "block": 19,
+      "text": "and",
+      "start": 310.55,
+      "end": 310.6875
+    },
+    {
+      "block": 19,
+      "text": "servers,",
+      "start": 310.6875,
+      "end": 311.625
+    },
+    {
+      "block": 19,
+      "text": "accounted",
+      "start": 311.625,
+      "end": 312.1
+    },
+    {
+      "block": 19,
+      "text": "for",
+      "start": 312.1,
+      "end": 312.275
+    },
+    {
+      "block": 19,
+      "text": "47",
+      "start": 312.275,
+      "end": 312.95
+    },
+    {
+      "block": 19,
+      "text": "percent",
+      "start": 312.95,
+      "end": 313.2875
+    },
+    {
+      "block": 19,
+      "text": "of",
+      "start": 313.2875,
+      "end": 313.375
+    },
+    {
+      "block": 19,
+      "text": "global",
+      "start": 313.375,
+      "end": 313.725
+    },
+    {
+      "block": 19,
+      "text": "merchandise",
+      "start": 313.725,
+      "end": 314.3
+    },
+    {
+      "block": 19,
+      "text": "trade",
+      "start": 314.3,
+      "end": 314.6
+    },
+    {
+      "block": 19,
+      "text": "growth",
+      "start": 314.6,
+      "end": 315.2375
+    },
+    {
+      "block": 19,
+      "text": "in",
+      "start": 315.2375,
+      "end": 315.3375
+    },
+    {
+      "block": 19,
+      "text": "the",
+      "start": 315.3375,
+      "end": 315.4375
+    },
+    {
+      "block": 19,
+      "text": "first",
+      "start": 315.4375,
+      "end": 315.75
+    },
+    {
+      "block": 19,
+      "text": "half",
+      "start": 315.75,
+      "end": 315.9875
+    },
+    {
+      "block": 19,
+      "text": "of",
+      "start": 315.9875,
+      "end": 316.075
+    },
+    {
+      "block": 19,
+      "text": "2026.",
+      "start": 316.075,
+      "end": 317.5
+    },
+    {
+      "block": 19,
+      "text": "At",
+      "start": 317.5,
+      "end": 317.6375
+    },
+    {
+      "block": 19,
+      "text": "the",
+      "start": 317.6375,
+      "end": 317.7375
+    },
+    {
+      "block": 19,
+      "text": "same",
+      "start": 317.7375,
+      "end": 318.025
+    },
+    {
+      "block": 19,
+      "text": "time,",
+      "start": 318.025,
+      "end": 318.7625
+    },
+    {
+      "block": 19,
+      "text": "conflict-related",
+      "start": 318.7625,
+      "end": 319.675
+    },
+    {
+      "block": 19,
+      "text": "disruption",
+      "start": 319.675,
+      "end": 320.25
+    },
+    {
+      "block": 19,
+      "text": "weighed",
+      "start": 320.25,
+      "end": 320.5125
+    },
+    {
+      "block": 19,
+      "text": "on",
+      "start": 320.5125,
+      "end": 320.625
+    },
+    {
+      "block": 19,
+      "text": "transport",
+      "start": 320.625,
+      "end": 321.25
+    },
+    {
+      "block": 19,
+      "text": "and",
+      "start": 321.25,
+      "end": 321.375
+    },
+    {
+      "block": 19,
+      "text": "travel",
+      "start": 321.375,
+      "end": 321.775
+    },
+    {
+      "block": 19,
+      "text": "services.",
+      "start": 321.775,
+      "end": 322.8875
+    },
+    {
+      "block": 19,
+      "text": "Alternative",
+      "start": 322.8875,
+      "end": 323.45
+    },
+    {
+      "block": 19,
+      "text": "suppliers",
+      "start": 323.45,
+      "end": 324.1
+    },
+    {
+      "block": 19,
+      "text": "and",
+      "start": 324.1,
+      "end": 324.225
+    },
+    {
+      "block": 19,
+      "text": "routes",
+      "start": 324.225,
+      "end": 324.6125
+    },
+    {
+      "block": 19,
+      "text": "helped",
+      "start": 324.6125,
+      "end": 324.95
+    },
+    {
+      "block": 19,
+      "text": "keep",
+      "start": 324.95,
+      "end": 325.2
+    },
+    {
+      "block": 19,
+      "text": "essential",
+      "start": 325.2,
+      "end": 325.675
+    },
+    {
+      "block": 19,
+      "text": "goods",
+      "start": 325.675,
+      "end": 325.95
+    },
+    {
+      "block": 19,
+      "text": "moving.",
+      "start": 325.95,
+      "end": 326.85
+    },
+    {
+      "block": 20,
+      "text": "Interpretation:",
+      "start": 327.6,
+      "end": 328.9625
+    },
+    {
+      "block": 20,
+      "text": "AI",
+      "start": 328.9625,
+      "end": 329.375
+    },
+    {
+      "block": 20,
+      "text": "development",
+      "start": 329.375,
+      "end": 329.95
+    },
+    {
+      "block": 20,
+      "text": "depends",
+      "start": 329.95,
+      "end": 330.3375
+    },
+    {
+      "block": 20,
+      "text": "on",
+      "start": 330.3375,
+      "end": 330.5
+    },
+    {
+      "block": 20,
+      "text": "international",
+      "start": 330.5,
+      "end": 331.175
+    },
+    {
+      "block": 20,
+      "text": "supply",
+      "start": 331.175,
+      "end": 331.5625
+    },
+    {
+      "block": 20,
+      "text": "chains",
+      "start": 331.5625,
+      "end": 332.3
+    },
+    {
+      "block": 20,
+      "text": "even",
+      "start": 332.3,
+      "end": 332.6
+    },
+    {
+      "block": 20,
+      "text": "as",
+      "start": 332.6,
+      "end": 332.75
+    },
+    {
+      "block": 20,
+      "text": "governments",
+      "start": 332.75,
+      "end": 333.25
+    },
+    {
+      "block": 20,
+      "text": "pursue",
+      "start": 333.25,
+      "end": 333.5875
+    },
+    {
+      "block": 20,
+      "text": "technological",
+      "start": 333.5875,
+      "end": 334.35
+    },
+    {
+      "block": 20,
+      "text": "sovereignty.",
+      "start": 334.35,
+      "end": 335.5125
+    },
+    {
+      "block": 20,
+      "text": "Resilience",
+      "start": 335.5125,
+      "end": 336.15
+    },
+    {
+      "block": 20,
+      "text": "requires",
+      "start": 336.15,
+      "end": 336.675
+    },
+    {
+      "block": 20,
+      "text": "attention",
+      "start": 336.675,
+      "end": 337.15
+    },
+    {
+      "block": 20,
+      "text": "to",
+      "start": 337.15,
+      "end": 337.3
+    },
+    {
+      "block": 20,
+      "text": "chips,",
+      "start": 337.3,
+      "end": 338.025
+    },
+    {
+      "block": 20,
+      "text": "energy",
+      "start": 338.025,
+      "end": 338.5
+    },
+    {
+      "block": 20,
+      "text": "and",
+      "start": 338.5,
+      "end": 338.625
+    },
+    {
+      "block": 20,
+      "text": "transport",
+      "start": 338.625,
+      "end": 339.225
+    },
+    {
+      "block": 20,
+      "text": "as",
+      "start": 339.225,
+      "end": 339.375
+    },
+    {
+      "block": 20,
+      "text": "well",
+      "start": 339.375,
+      "end": 339.5625
+    },
+    {
+      "block": 20,
+      "text": "as",
+      "start": 339.5625,
+      "end": 339.7
+    },
+    {
+      "block": 20,
+      "text": "models.",
+      "start": 339.7,
+      "end": 340.675
+    },
+    {
+      "block": 21,
+      "text": "Science",
+      "start": 341.45,
+      "end": 341.9
+    },
+    {
+      "block": 21,
+      "text": "&",
+      "start": 341.9,
+      "end": 342.025
+    },
+    {
+      "block": 21,
+      "text": "Space",
+      "start": 342.025,
+      "end": 342.775
+    },
+    {
+      "block": 22,
+      "text": "Reporting:",
+      "start": 343.625,
+      "end": 344.35
+    },
+    {
+      "block": 22,
+      "text": "NASA",
+      "start": 344.35,
+      "end": 344.675
+    },
+    {
+      "block": 22,
+      "text": "confirmed",
+      "start": 344.675,
+      "end": 345.1
+    },
+    {
+      "block": 22,
+      "text": "a",
+      "start": 345.1,
+      "end": 345.2125
+    },
+    {
+      "block": 22,
+      "text": "major",
+      "start": 345.2125,
+      "end": 345.5
+    },
+    {
+      "block": 22,
+      "text": "development",
+      "start": 345.5,
+      "end": 346.025
+    },
+    {
+      "block": 22,
+      "text": "milestone",
+      "start": 346.025,
+      "end": 346.625
+    },
+    {
+      "block": 22,
+      "text": "for",
+      "start": 346.625,
+      "end": 346.7375
+    },
+    {
+      "block": 22,
+      "text": "its",
+      "start": 346.7375,
+      "end": 346.875
+    },
+    {
+      "block": 22,
+      "text": "ultraviolet",
+      "start": 346.875,
+      "end": 347.525
+    },
+    {
+      "block": 22,
+      "text": "survey",
+      "start": 347.525,
+      "end": 347.85
+    },
+    {
+      "block": 22,
+      "text": "telescope,",
+      "start": 347.85,
+      "end": 348.8375
+    },
+    {
+      "block": 22,
+      "text": "UVEX,",
+      "start": 348.8375,
+      "end": 349.7375
+    },
+    {
+      "block": 22,
+      "text": "on",
+      "start": 349.7375,
+      "end": 349.85
+    },
+    {
+      "block": 22,
+      "text": "October",
+      "start": 349.85,
+      "end": 350.225
+    },
+    {
+      "block": 22,
+      "text": "27.",
+      "start": 350.225,
+      "end": 351.375
+    },
+    {
+      "block": 22,
+      "text": "The",
+      "start": 351.375,
+      "end": 351.5
+    },
+    {
+      "block": 22,
+      "text": "agency",
+      "start": 351.5,
+      "end": 351.975
+    },
+    {
+      "block": 22,
+      "text": "commits",
+      "start": 351.975,
+      "end": 352.275
+    },
+    {
+      "block": 22,
+      "text": "to",
+      "start": 352.275,
+      "end": 352.4
+    },
+    {
+      "block": 22,
+      "text": "launch",
+      "start": 352.4,
+      "end": 352.7
+    },
+    {
+      "block": 22,
+      "text": "by",
+      "start": 352.7,
+      "end": 352.875
+    },
+    {
+      "block": 22,
+      "text": "January",
+      "start": 352.875,
+      "end": 353.425
+    },
+    {
+      "block": 22,
+      "text": "2031,",
+      "start": 353.425,
+      "end": 354.675
+    },
+    {
+      "block": 22,
+      "text": "with",
+      "start": 354.675,
+      "end": 354.8125
+    },
+    {
+      "block": 22,
+      "text": "a",
+      "start": 354.8125,
+      "end": 354.8875
+    },
+    {
+      "block": 22,
+      "text": "total",
+      "start": 354.8875,
+      "end": 355.275
+    },
+    {
+      "block": 22,
+      "text": "lifecycle",
+      "start": 355.275,
+      "end": 355.85
+    },
+    {
+      "block": 22,
+      "text": "cost",
+      "start": 355.85,
+      "end": 356.225
+    },
+    {
+      "block": 22,
+      "text": "of",
+      "start": 356.225,
+      "end": 356.325
+    },
+    {
+      "block": 22,
+      "text": "590",
+      "start": 356.325,
+      "end": 357.15
+    },
+    {
+      "block": 22,
+      "text": "million",
+      "start": 357.15,
+      "end": 357.475
+    },
+    {
+      "block": 22,
+      "text": "dollars.",
+      "start": 357.475,
+      "end": 358.425
+    },
+    {
+      "block": 22,
+      "text": "The",
+      "start": 358.425,
+      "end": 358.525
+    },
+    {
+      "block": 22,
+      "text": "planned",
+      "start": 358.525,
+      "end": 358.8125
+    },
+    {
+      "block": 22,
+      "text": "mission",
+      "start": 358.8125,
+      "end": 359.15
+    },
+    {
+      "block": 22,
+      "text": "will",
+      "start": 359.15,
+      "end": 359.3
+    },
+    {
+      "block": 22,
+      "text": "survey",
+      "start": 359.3,
+      "end": 359.6625
+    },
+    {
+      "block": 22,
+      "text": "the",
+      "start": 359.6625,
+      "end": 359.7875
+    },
+    {
+      "block": 22,
+      "text": "sky",
+      "start": 359.7875,
+      "end": 360.2
+    },
+    {
+      "block": 22,
+      "text": "and",
+      "start": 360.2,
+      "end": 360.3125
+    },
+    {
+      "block": 22,
+      "text": "investigate",
+      "start": 360.3125,
+      "end": 360.9125
+    },
+    {
+      "block": 22,
+      "text": "events",
+      "start": 360.9125,
+      "end": 361.35
+    },
+    {
+      "block": 22,
+      "text": "including",
+      "start": 361.35,
+      "end": 361.7875
+    },
+    {
+      "block": 22,
+      "text": "merging",
+      "start": 361.7875,
+      "end": 362.175
+    },
+    {
+      "block": 22,
+      "text": "neutron",
+      "start": 362.175,
+      "end": 362.625
+    },
+    {
+      "block": 22,
+      "text": "stars.",
+      "start": 362.625,
+      "end": 363.6125
+    },
+    {
+      "block": 22,
+      "text": "This",
+      "start": 363.6125,
+      "end": 363.825
+    },
+    {
+      "block": 22,
+      "text": "is",
+      "start": 363.825,
+      "end": 363.9375
+    },
+    {
+      "block": 22,
+      "text": "a",
+      "start": 363.9375,
+      "end": 364.0
+    },
+    {
+      "block": 22,
+      "text": "development",
+      "start": 364.0,
+      "end": 364.5
+    },
+    {
+      "block": 22,
+      "text": "commitment,",
+      "start": 364.5,
+      "end": 365.275
+    },
+    {
+      "block": 22,
+      "text": "not",
+      "start": 365.275,
+      "end": 365.4625
+    },
+    {
+      "block": 22,
+      "text": "an",
+      "start": 365.4625,
+      "end": 365.55
+    },
+    {
+      "block": 22,
+      "text": "operational",
+      "start": 365.55,
+      "end": 366.15
+    },
+    {
+      "block": 22,
+      "text": "telescope",
+      "start": 366.15,
+      "end": 366.975
+    },
+    {
+      "block": 22,
+      "text": "or",
+      "start": 366.975,
+      "end": 367.1125
+    },
+    {
+      "block": 22,
+      "text": "an",
+      "start": 367.1125,
+      "end": 367.2375
+    },
+    {
+      "block": 22,
+      "text": "already",
+      "start": 367.2375,
+      "end": 367.625
+    },
+    {
+      "block": 22,
+      "text": "completed",
+      "start": 367.625,
+      "end": 368.1
+    },
+    {
+      "block": 22,
+      "text": "discovery.",
+      "start": 368.1,
+      "end": 369.225
+    },
+    {
+      "block": 23,
+      "text": "Systems",
+      "start": 369.975,
+      "end": 370.5
+    },
+    {
+      "block": 23,
+      "text": "Convergence",
+      "start": 370.5,
+      "end": 371.5
+    },
+    {
+      "block": 24,
+      "text": "Editorial",
+      "start": 372.325,
+      "end": 372.9125
+    },
+    {
+      "block": 24,
+      "text": "synthesis:",
+      "start": 372.9125,
+      "end": 373.9375
+    },
+    {
+      "block": 24,
+      "text": "software",
+      "start": 373.9375,
+      "end": 374.45
+    },
+    {
+      "block": 24,
+      "text": "agents,",
+      "start": 374.45,
+      "end": 375.075
+    },
+    {
+      "block": 24,
+      "text": "robotics,",
+      "start": 375.075,
+      "end": 375.85
+    },
+    {
+      "block": 24,
+      "text": "energy",
+      "start": 375.85,
+      "end": 376.2
+    },
+    {
+      "block": 24,
+      "text": "systems",
+      "start": 376.2,
+      "end": 376.7
+    },
+    {
+      "block": 24,
+      "text": "and",
+      "start": 376.7,
+      "end": 376.825
+    },
+    {
+      "block": 24,
+      "text": "global",
+      "start": 376.825,
+      "end": 377.2
+    },
+    {
+      "block": 24,
+      "text": "trade",
+      "start": 377.2,
+      "end": 377.6875
+    },
+    {
+      "block": 24,
+      "text": "are",
+      "start": 377.6875,
+      "end": 377.85
+    },
+    {
+      "block": 24,
+      "text": "increasingly",
+      "start": 377.85,
+      "end": 378.575
+    },
+    {
+      "block": 24,
+      "text": "interdependent.",
+      "start": 378.575,
+      "end": 379.8625
+    },
+    {
+      "block": 24,
+      "text": "Lower",
+      "start": 379.8625,
+      "end": 380.2
+    },
+    {
+      "block": 24,
+      "text": "costs",
+      "start": 380.2,
+      "end": 380.625
+    },
+    {
+      "block": 24,
+      "text": "can",
+      "start": 380.625,
+      "end": 380.8
+    },
+    {
+      "block": 24,
+      "text": "broaden",
+      "start": 380.8,
+      "end": 381.175
+    },
+    {
+      "block": 24,
+      "text": "access",
+      "start": 381.175,
+      "end": 381.6
+    },
+    {
+      "block": 24,
+      "text": "to",
+      "start": 381.6,
+      "end": 381.7
+    },
+    {
+      "block": 24,
+      "text": "powerful",
+      "start": 381.7,
+      "end": 382.15
+    },
+    {
+      "block": 24,
+      "text": "tools;",
+      "start": 382.15,
+      "end": 383.025
+    },
+    {
+      "block": 24,
+      "text": "infrastructure",
+      "start": 383.025,
+      "end": 383.625
+    },
+    {
+      "block": 24,
+      "text": "constraints",
+      "start": 383.625,
+      "end": 384.2625
+    },
+    {
+      "block": 24,
+      "text": "and",
+      "start": 384.2625,
+      "end": 384.4
+    },
+    {
+      "block": 24,
+      "text": "weak",
+      "start": 384.4,
+      "end": 384.625
+    },
+    {
+      "block": 24,
+      "text": "safeguards",
+      "start": 384.625,
+      "end": 385.3875
+    },
+    {
+      "block": 24,
+      "text": "can",
+      "start": 385.3875,
+      "end": 385.575
+    },
+    {
+      "block": 24,
+      "text": "limit",
+      "start": 385.575,
+      "end": 385.85
+    },
+    {
+      "block": 24,
+      "text": "their",
+      "start": 385.85,
+      "end": 386.025
+    },
+    {
+      "block": 24,
+      "text": "value.",
+      "start": 386.025,
+      "end": 387.0125
+    },
+    {
+      "block": 24,
+      "text": "The",
+      "start": 387.0125,
+      "end": 387.1625
+    },
+    {
+      "block": 24,
+      "text": "central",
+      "start": 387.1625,
+      "end": 387.5875
+    },
+    {
+      "block": 24,
+      "text": "test",
+      "start": 387.5875,
+      "end": 388.0
+    },
+    {
+      "block": 24,
+      "text": "is",
+      "start": 388.0,
+      "end": 388.15
+    },
+    {
+      "block": 24,
+      "text": "whether",
+      "start": 388.15,
+      "end": 388.425
+    },
+    {
+      "block": 24,
+      "text": "this",
+      "start": 388.425,
+      "end": 388.6
+    },
+    {
+      "block": 24,
+      "text": "expanding",
+      "start": 388.6,
+      "end": 389.2
+    },
+    {
+      "block": 24,
+      "text": "capacity",
+      "start": 389.2,
+      "end": 389.9
+    },
+    {
+      "block": 24,
+      "text": "becomes",
+      "start": 389.9,
+      "end": 390.325
+    },
+    {
+      "block": 24,
+      "text": "reliable",
+      "start": 390.325,
+      "end": 390.9
+    },
+    {
+      "block": 24,
+      "text": "human",
+      "start": 390.9,
+      "end": 391.25
+    },
+    {
+      "block": 24,
+      "text": "capability",
+      "start": 391.25,
+      "end": 392.0375
+    },
+    {
+      "block": 24,
+      "text": "and",
+      "start": 392.0375,
+      "end": 392.175
+    },
+    {
+      "block": 24,
+      "text": "better",
+      "start": 392.175,
+      "end": 392.525
+    },
+    {
+      "block": 24,
+      "text": "living",
+      "start": 392.525,
+      "end": 392.825
+    },
+    {
+      "block": 24,
+      "text": "conditions.",
+      "start": 392.825,
+      "end": 393.9625
+    },
+    {
+      "block": 24,
+      "text": "The",
+      "start": 394.425,
+      "end": 394.5
+    },
+    {
+      "block": 24,
+      "text": "developments",
+      "start": 394.5,
+      "end": 395.075
+    },
+    {
+      "block": 24,
+      "text": "to",
+      "start": 395.075,
+      "end": 395.2
+    },
+    {
+      "block": 24,
+      "text": "watch",
+      "start": 395.2,
+      "end": 395.525
+    },
+    {
+      "block": 24,
+      "text": "next",
+      "start": 395.525,
+      "end": 396.0375
+    },
+    {
+      "block": 24,
+      "text": "are",
+      "start": 396.0375,
+      "end": 396.2125
+    },
+    {
+      "block": 24,
+      "text": "independently",
+      "start": 396.2125,
+      "end": 396.9
+    },
+    {
+      "block": 24,
+      "text": "demonstrated",
+      "start": 396.9,
+      "end": 397.6625
+    },
+    {
+      "block": 24,
+      "text": "task",
+      "start": 397.6625,
+      "end": 398.075
+    },
+    {
+      "block": 24,
+      "text": "reliability,",
+      "start": 398.075,
+      "end": 399.3625
+    },
+    {
+      "block": 24,
+      "text": "lower",
+      "start": 399.3625,
+      "end": 399.725
+    },
+    {
+      "block": 24,
+      "text": "total",
+      "start": 399.725,
+      "end": 400.05
+    },
+    {
+      "block": 24,
+      "text": "deployment",
+      "start": 400.05,
+      "end": 400.5
+    },
+    {
+      "block": 24,
+      "text": "costs,",
+      "start": 400.5,
+      "end": 401.375
+    },
+    {
+      "block": 24,
+      "text": "and",
+      "start": 401.375,
+      "end": 401.5
+    },
+    {
+      "block": 24,
+      "text": "measurable",
+      "start": 401.5,
+      "end": 402.0
+    },
+    {
+      "block": 24,
+      "text": "benefits",
+      "start": 402.0,
+      "end": 402.625
+    },
+    {
+      "block": 24,
+      "text": "reaching",
+      "start": 402.625,
+      "end": 403.05
+    },
+    {
+      "block": 24,
+      "text": "beyond",
+      "start": 403.05,
+      "end": 403.4125
+    },
+    {
+      "block": 24,
+      "text": "the",
+      "start": 403.4125,
+      "end": 403.525
+    },
+    {
+      "block": 24,
+      "text": "organisations",
+      "start": 403.525,
+      "end": 404.4
+    },
+    {
+      "block": 24,
+      "text": "building",
+      "start": 404.4,
+      "end": 404.7125
+    },
+    {
+      "block": 24,
+      "text": "the",
+      "start": 404.7125,
+      "end": 404.8
+    },
+    {
+      "block": 24,
+      "text": "technology.",
+      "start": 404.8,
+      "end": 406.0
+    }
+  ]
+}

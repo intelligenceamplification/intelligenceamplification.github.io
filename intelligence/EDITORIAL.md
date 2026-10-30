@@ -1,4 +1,4 @@
-# I AM Intelligence
+# IAM Intelligence
 
 Descriptor: A Periodical Brief.
 
@@ -22,7 +22,7 @@ These departments are an agreed framework, not an obligation to fill every headi
 
 ## Edition presentation
 
-- Identity: I AM Intelligence. Descriptor: A Periodical Brief.
+- Identity: IAM Intelligence. Descriptor: A Periodical Brief.
 - Actual publication date, sequential issue number, estimated reading time and recording duration. Assign the first issue number only when the first genuine issue is published. Never date the demonstration as a published issue.
 - One concise opening paragraph identifying the edition's most consequential signal. Discuss the opening and first issue with the editor before authoring them.
 - Accessible descriptive source links adjacent to claims and/or in a clearly linked sources section. Prefer original evidence; attribute vendor claims and uncertainty. Explicitly distinguish reporting from interpretation.
@@ -32,4 +32,4 @@ These departments are an agreed framework, not an obligation to fill every headi
 
 ## Current state
 
-The page remains an editorial reader demonstration with its existing matched recording and word timings. Metadata states that it is not yet a published issue. The evidence/corrections presentation is prepared; real source links and correction entries accompany genuine editions. No opening signal, first news edition or publication schedule is commissioned by this presentation change.
+Issue 01, From Intelligence to Agency, is being prepared at the editor’s request on 30 October 2026. It replaces the reader demonstration with a sourced, narrated first edition. Each subsequent edition still requires the editor’s prompt. The issue opening and contents may be refined in response to editorial direction.

@@ -1,0 +1,145 @@
+{
+  "issue": "01",
+  "title": "From Intelligence to Agency",
+  "checked_at": "2026-10-30",
+  "sources": [
+    {
+      "id": "openai-terra",
+      "publisher": "OpenAI",
+      "date": "2026-10-26",
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "claims": [
+        "GPT-6.1 Terra introduction",
+        "15 percentage points above GPT-5.6 Terra on Agents’ Last Exam at medium reasoning effort, at about one-third cost"
+      ],
+      "status": "Publisher-reported task evaluation, not independent general reliability evidence"
+    },
+    {
+      "id": "google-robotics",
+      "publisher": "Google Cloud",
+      "date": "2026-10-27",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-robotics-embodied-reasoning-2-is-now-available-on-google-cloud",
+      "claims": [
+        "ER 2 enterprise platform public preview",
+        "High-level robot planning and lower-level control orchestration"
+      ],
+      "status": "Vendor announcement, preview status; not a universal field deployment result"
+    },
+    {
+      "id": "google-robotics-docs",
+      "publisher": "Google",
+      "url": "https://ai.google.dev/gemini-api/docs/robotics-overview",
+      "claims": [
+        "Model is in preview",
+        "Spatial and temporal reasoning; task orchestration"
+      ],
+      "status": "Current primary documentation"
+    },
+    {
+      "id": "openai-monitoring",
+      "publisher": "OpenAI",
+      "date": "2026-10-29",
+      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment/",
+      "claims": [
+        "Monitoring coverage expanded following gap in evaluation monitoring",
+        "Layered approach including training, access controls, monitoring and human intervention"
+      ],
+      "status": "Company account of its own safety systems; no claim that monitoring guarantees containment"
+    },
+    {
+      "id": "imf-weo",
+      "publisher": "IMF",
+      "date": "2026-10-13",
+      "url": "https://www.imf.org/en/Publications/WEO/Issues/2026/10/13/world-economic-outlook-october-2026",
+      "claims": [
+        "3.1% global growth in 2026 and 3.4% in 2027",
+        "Statistical cutoff October 1, 2026",
+        "AI-related upside and downside; conflict and trade risks"
+      ],
+      "status": "Forecasts, not realised outcomes"
+    },
+    {
+      "id": "bls-real-earnings",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "date": "2026-10-14",
+      "url": "https://www.bls.gov/news.release/archives/realer_10142026.htm",
+      "claims": [
+        "September 2026 vs September 2025: hourly earnings +3.0%, CPI-U +3.7%, real hourly earnings -0.7%",
+        "All employees on private nonfarm payrolls, seasonally adjusted"
+      ],
+      "status": "September preliminary; U.S. average, not global or an individual household"
+    },
+    {
+      "id": "worldbank-ppp",
+      "publisher": "World Bank",
+      "url": "https://www.worldbank.org/en/programs/icp/methodology",
+      "claims": [
+        "PPP adjusts international comparisons for differences in price levels"
+      ],
+      "status": "Methodological definition; no invented international wage comparison"
+    },
+    {
+      "id": "aristotle-ethics",
+      "publisher": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/aristotle-ethics/",
+      "claims": [
+        "Eudaimonia as living well/human flourishing"
+      ],
+      "status": "Philosophical context; IAM's stewardship standard is an editorial framing"
+    },
+    {
+      "id": "iea-infrastructure",
+      "publisher": "International Energy Agency",
+      "date": "2026-10-14",
+      "url": "https://www.iea.org/reports/powering-artificial-intelligence/executive-summary",
+      "claims": [
+        "Largest data centre operators expected capex above $700bn in 2026, mostly new data centres",
+        "Grid, price, emissions and water implications"
+      ],
+      "status": "Annual spending expectation, not realised final spending",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "wto-trade",
+      "publisher": "World Trade Organization",
+      "date": "2026-10-08",
+      "url": "https://www.wto.org/english/news_e/news26_e/stat_08oct26_510_e.htm",
+      "claims": [
+        "AI-enabling goods accounted for 47% of global merchandise trade growth in H1 2026",
+        "Transport/travel services affected by conflict; supply chains adapted"
+      ],
+      "status": "Goods share is share of trade growth, not share of all trade"
+    },
+    {
+      "id": "nasa-uvex",
+      "publisher": "NASA",
+      "date": "2026-10-27",
+      "url": "https://science.nasa.gov/blogs/uvex/2026/10/27/nasas-uvex-space-telescope-successfully-passes-key-milestone/",
+      "claims": [
+        "KDP-C confirmation",
+        "Launch commitment by January 2031; $590m lifecycle cost",
+        "Planned ultraviolet survey and neutron star merger followup"
+      ],
+      "status": "Development milestone, not a completed discovery or operational mission"
+    }
+  ],
+  "calculations": [
+    {
+      "label": "Illustrative purchasing power",
+      "inputs": {
+        "initial_hourly_wage": 25,
+        "wage_growth": 0.03,
+        "price_growth": 0.037
+      },
+      "formula": "25 * 1.03 / 1.037",
+      "result": 24.831243972999037,
+      "rounded": 24.83,
+      "scope": "Hypothetical worker and fixed basket, not a BLS microdata claim"
+    }
+  ],
+  "editorial_notes": [
+    "Reporting, interpretation, illustrative calculations and synthesis are distinguished.",
+    "The opening and analysis are IAM's synthesis; not attributed as direct institutional conclusions.",
+    "No automatic publishing cadence. This edition follows the user's explicit prompt."
+  ]
+}
