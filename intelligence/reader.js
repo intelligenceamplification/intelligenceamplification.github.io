@@ -53,7 +53,7 @@
       if (audio.ended) audio.currentTime = 0;
       await audio.play();
     } catch (_) {
-      status.textContent = 'Playback could not start. Tap Play Sky to retry.';
+      status.textContent = 'Playback could not start. Tap Play to retry.';
     } finally {
       pending = false;
       play.disabled = !ready;
@@ -65,24 +65,24 @@
   speed.addEventListener('change', () => { audio.playbackRate = Number(speed.value); });
   seek.addEventListener('input', () => { audio.currentTime = Number(seek.value); render(); });
   audio.addEventListener('play', () => {
-    play.textContent = 'Ⅱ Pause'; status.textContent = 'Playing Sky';
+    play.textContent = 'Ⅱ Pause'; status.textContent = 'Playing';
     cancelAnimationFrame(frame); tick();
   });
   audio.addEventListener('pause', () => {
-    cancelAnimationFrame(frame); render(); play.textContent = '▶ Resume Sky';
+    cancelAnimationFrame(frame); render(); play.textContent = '▶ Resume';
     if (!audio.ended) status.textContent = 'Paused';
   });
   audio.addEventListener('ended', () => {
-    cancelAnimationFrame(frame); render(); play.textContent = '▶ Replay Sky'; status.textContent = 'Finished';
+    cancelAnimationFrame(frame); render(); play.textContent = '▶ Replay'; status.textContent = 'Finished';
   });
   audio.addEventListener('timeupdate', render);
   audio.addEventListener('seeked', render);
-  audio.addEventListener('waiting', () => { status.textContent = 'Buffering Sky audio…'; });
-  audio.addEventListener('playing', () => { status.textContent = 'Playing Sky'; });
+  audio.addEventListener('waiting', () => { status.textContent = 'Buffering audio…'; });
+  audio.addEventListener('playing', () => { status.textContent = 'Playing'; });
   audio.addEventListener('error', () => {
     ready = false;
     play.disabled = restart.disabled = seek.disabled = true;
-    status.textContent = 'Sky recording could not load. Reload the page to retry.';
+    status.textContent = 'Audio recording could not load. Reload the page to retry.';
   });
   window.addEventListener('pagehide', () => audio.pause());
 
@@ -123,9 +123,9 @@
       audio.playbackRate = Number(speed.value);
       ready = true;
       play.disabled = restart.disabled = seek.disabled = false;
-      status.textContent = 'Ready · Sky'; render();
+      status.textContent = 'Ready'; render();
     } catch (error) {
-      status.textContent = 'Sky narration is unavailable for this edition. The text is still available to read.';
+      status.textContent = 'Narration is unavailable for this edition. The text is still available to read.';
       console.error('Sky reader:', error);
     }
   }
