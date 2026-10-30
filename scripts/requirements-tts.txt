@@ -1,0 +1,6 @@
+kokoro==0.9.4
+soundfile==0.13.1
+transformers==4.51.3
+huggingface-hub>=0.30,<1
+torch>=2.6,<2.7
+spacy>=3.8,<3.9

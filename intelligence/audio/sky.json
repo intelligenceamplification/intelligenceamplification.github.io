@@ -1,0 +1,805 @@
+{
+  "voice": "af_sky",
+  "audio": "audio/sky.mp3",
+  "duration": 66.275,
+  "alignment": "kokoro-model-durations",
+  "textSha256": "88869460c589105b8141da3fc0161db25388e7e4d3c6570e21a2dfbd877ebe6c",
+  "blocks": [
+    "Understanding the signals",
+    "The purpose of an intelligence briefing is not to accumulate more information. It is to distinguish consequential developments from noise, examine their evidence, and understand how separate systems interact.",
+    "Technology and human agency",
+    "Frontier artificial intelligence is changing how people research, build, and coordinate work. The central question is not simply what increasingly capable systems can do, but whether their deployment improves human judgment, security, and opportunity.",
+    "The household economy",
+    "Economic growth and household flourishing are related, but they are not identical. Oikonomia originally concerned the stewardship of the household. Eudaimonia asks a wider ethical question: what conditions help human beings live well?",
+    "Systems convergence",
+    "Artificial intelligence, energy, labour markets, and public institutions influence one another. A useful briefing makes those connections visible without mistaking forecasts for facts."
+  ],
+  "words": [
+    {
+      "block": 0,
+      "text": "Understanding",
+      "start": 0.375,
+      "end": 1.175
+    },
+    {
+      "block": 0,
+      "text": "the",
+      "start": 1.175,
+      "end": 1.3125
+    },
+    {
+      "block": 0,
+      "text": "signals",
+      "start": 1.3125,
+      "end": 2.125
+    },
+    {
+      "block": 1,
+      "text": "The",
+      "start": 2.95,
+      "end": 3.0625
+    },
+    {
+      "block": 1,
+      "text": "purpose",
+      "start": 3.0625,
+      "end": 3.5
+    },
+    {
+      "block": 1,
+      "text": "of",
+      "start": 3.5,
+      "end": 3.5875
+    },
+    {
+      "block": 1,
+      "text": "an",
+      "start": 3.5875,
+      "end": 3.6625
+    },
+    {
+      "block": 1,
+      "text": "intelligence",
+      "start": 3.6625,
+      "end": 4.3
+    },
+    {
+      "block": 1,
+      "text": "briefing",
+      "start": 4.3,
+      "end": 4.95
+    },
+    {
+      "block": 1,
+      "text": "is",
+      "start": 4.95,
+      "end": 5.125
+    },
+    {
+      "block": 1,
+      "text": "not",
+      "start": 5.125,
+      "end": 5.35
+    },
+    {
+      "block": 1,
+      "text": "to",
+      "start": 5.35,
+      "end": 5.5
+    },
+    {
+      "block": 1,
+      "text": "accumulate",
+      "start": 5.5,
+      "end": 6.175
+    },
+    {
+      "block": 1,
+      "text": "more",
+      "start": 6.175,
+      "end": 6.3625
+    },
+    {
+      "block": 1,
+      "text": "information.",
+      "start": 6.3625,
+      "end": 7.575
+    },
+    {
+      "block": 1,
+      "text": "It",
+      "start": 7.575,
+      "end": 7.725
+    },
+    {
+      "block": 1,
+      "text": "is",
+      "start": 7.725,
+      "end": 7.875
+    },
+    {
+      "block": 1,
+      "text": "to",
+      "start": 7.875,
+      "end": 7.975
+    },
+    {
+      "block": 1,
+      "text": "distinguish",
+      "start": 7.975,
+      "end": 8.5875
+    },
+    {
+      "block": 1,
+      "text": "consequential",
+      "start": 8.5875,
+      "end": 9.275
+    },
+    {
+      "block": 1,
+      "text": "developments",
+      "start": 9.275,
+      "end": 9.85
+    },
+    {
+      "block": 1,
+      "text": "from",
+      "start": 9.85,
+      "end": 10.05
+    },
+    {
+      "block": 1,
+      "text": "noise,",
+      "start": 10.05,
+      "end": 10.9375
+    },
+    {
+      "block": 1,
+      "text": "examine",
+      "start": 10.9375,
+      "end": 11.475
+    },
+    {
+      "block": 1,
+      "text": "their",
+      "start": 11.475,
+      "end": 11.675
+    },
+    {
+      "block": 1,
+      "text": "evidence,",
+      "start": 11.675,
+      "end": 12.525
+    },
+    {
+      "block": 1,
+      "text": "and",
+      "start": 12.525,
+      "end": 12.65
+    },
+    {
+      "block": 1,
+      "text": "understand",
+      "start": 12.65,
+      "end": 13.2
+    },
+    {
+      "block": 1,
+      "text": "how",
+      "start": 13.2,
+      "end": 13.4
+    },
+    {
+      "block": 1,
+      "text": "separate",
+      "start": 13.4,
+      "end": 13.825
+    },
+    {
+      "block": 1,
+      "text": "systems",
+      "start": 13.825,
+      "end": 14.225
+    },
+    {
+      "block": 1,
+      "text": "interact.",
+      "start": 14.225,
+      "end": 15.275
+    },
+    {
+      "block": 2,
+      "text": "Technology",
+      "start": 15.975,
+      "end": 16.825
+    },
+    {
+      "block": 2,
+      "text": "and",
+      "start": 16.825,
+      "end": 16.975
+    },
+    {
+      "block": 2,
+      "text": "human",
+      "start": 16.975,
+      "end": 17.325
+    },
+    {
+      "block": 2,
+      "text": "agency",
+      "start": 17.325,
+      "end": 18.3
+    },
+    {
+      "block": 3,
+      "text": "Frontier",
+      "start": 19.125,
+      "end": 19.6
+    },
+    {
+      "block": 3,
+      "text": "artificial",
+      "start": 19.6,
+      "end": 20.1625
+    },
+    {
+      "block": 3,
+      "text": "intelligence",
+      "start": 20.1625,
+      "end": 20.8625
+    },
+    {
+      "block": 3,
+      "text": "is",
+      "start": 20.8625,
+      "end": 21.0375
+    },
+    {
+      "block": 3,
+      "text": "changing",
+      "start": 21.0375,
+      "end": 21.45
+    },
+    {
+      "block": 3,
+      "text": "how",
+      "start": 21.45,
+      "end": 21.625
+    },
+    {
+      "block": 3,
+      "text": "people",
+      "start": 21.625,
+      "end": 22.0125
+    },
+    {
+      "block": 3,
+      "text": "research,",
+      "start": 22.0125,
+      "end": 22.8875
+    },
+    {
+      "block": 3,
+      "text": "build,",
+      "start": 22.8875,
+      "end": 23.475
+    },
+    {
+      "block": 3,
+      "text": "and",
+      "start": 23.475,
+      "end": 23.6
+    },
+    {
+      "block": 3,
+      "text": "coordinate",
+      "start": 23.6,
+      "end": 24.05
+    },
+    {
+      "block": 3,
+      "text": "work.",
+      "start": 24.05,
+      "end": 24.95
+    },
+    {
+      "block": 3,
+      "text": "The",
+      "start": 24.95,
+      "end": 25.0875
+    },
+    {
+      "block": 3,
+      "text": "central",
+      "start": 25.0875,
+      "end": 25.475
+    },
+    {
+      "block": 3,
+      "text": "question",
+      "start": 25.475,
+      "end": 25.9875
+    },
+    {
+      "block": 3,
+      "text": "is",
+      "start": 25.9875,
+      "end": 26.15
+    },
+    {
+      "block": 3,
+      "text": "not",
+      "start": 26.15,
+      "end": 26.4
+    },
+    {
+      "block": 3,
+      "text": "simply",
+      "start": 26.4,
+      "end": 26.725
+    },
+    {
+      "block": 3,
+      "text": "what",
+      "start": 26.725,
+      "end": 26.875
+    },
+    {
+      "block": 3,
+      "text": "increasingly",
+      "start": 26.875,
+      "end": 27.6
+    },
+    {
+      "block": 3,
+      "text": "capable",
+      "start": 27.6,
+      "end": 28.05
+    },
+    {
+      "block": 3,
+      "text": "systems",
+      "start": 28.05,
+      "end": 28.45
+    },
+    {
+      "block": 3,
+      "text": "can",
+      "start": 28.45,
+      "end": 28.65
+    },
+    {
+      "block": 3,
+      "text": "do,",
+      "start": 28.65,
+      "end": 29.375
+    },
+    {
+      "block": 3,
+      "text": "but",
+      "start": 29.375,
+      "end": 29.525
+    },
+    {
+      "block": 3,
+      "text": "whether",
+      "start": 29.525,
+      "end": 29.7625
+    },
+    {
+      "block": 3,
+      "text": "their",
+      "start": 29.7625,
+      "end": 29.925
+    },
+    {
+      "block": 3,
+      "text": "deployment",
+      "start": 29.925,
+      "end": 30.475
+    },
+    {
+      "block": 3,
+      "text": "improves",
+      "start": 30.475,
+      "end": 30.9875
+    },
+    {
+      "block": 3,
+      "text": "human",
+      "start": 30.9875,
+      "end": 31.35
+    },
+    {
+      "block": 3,
+      "text": "judgment,",
+      "start": 31.35,
+      "end": 32.1375
+    },
+    {
+      "block": 3,
+      "text": "security,",
+      "start": 32.1375,
+      "end": 32.85
+    },
+    {
+      "block": 3,
+      "text": "and",
+      "start": 32.85,
+      "end": 32.9625
+    },
+    {
+      "block": 3,
+      "text": "opportunity.",
+      "start": 32.9625,
+      "end": 34.15
+    },
+    {
+      "block": 4,
+      "text": "The",
+      "start": 34.875,
+      "end": 35.0125
+    },
+    {
+      "block": 4,
+      "text": "household",
+      "start": 35.0125,
+      "end": 35.675
+    },
+    {
+      "block": 4,
+      "text": "economy",
+      "start": 35.675,
+      "end": 36.6
+    },
+    {
+      "block": 5,
+      "text": "Economic",
+      "start": 37.425,
+      "end": 37.95
+    },
+    {
+      "block": 5,
+      "text": "growth",
+      "start": 37.95,
+      "end": 38.35
+    },
+    {
+      "block": 5,
+      "text": "and",
+      "start": 38.35,
+      "end": 38.475
+    },
+    {
+      "block": 5,
+      "text": "household",
+      "start": 38.475,
+      "end": 39.0
+    },
+    {
+      "block": 5,
+      "text": "flourishing",
+      "start": 39.0,
+      "end": 39.5625
+    },
+    {
+      "block": 5,
+      "text": "are",
+      "start": 39.5625,
+      "end": 39.7
+    },
+    {
+      "block": 5,
+      "text": "related,",
+      "start": 39.7,
+      "end": 40.6
+    },
+    {
+      "block": 5,
+      "text": "but",
+      "start": 40.6,
+      "end": 40.75
+    },
+    {
+      "block": 5,
+      "text": "they",
+      "start": 40.75,
+      "end": 40.9
+    },
+    {
+      "block": 5,
+      "text": "are",
+      "start": 40.9,
+      "end": 41.0
+    },
+    {
+      "block": 5,
+      "text": "not",
+      "start": 41.0,
+      "end": 41.225
+    },
+    {
+      "block": 5,
+      "text": "identical.",
+      "start": 41.225,
+      "end": 42.3125
+    },
+    {
+      "block": 5,
+      "text": "Oikonomia",
+      "start": 42.3125,
+      "end": 43.0625
+    },
+    {
+      "block": 5,
+      "text": "originally",
+      "start": 43.0625,
+      "end": 43.55
+    },
+    {
+      "block": 5,
+      "text": "concerned",
+      "start": 43.55,
+      "end": 44.0125
+    },
+    {
+      "block": 5,
+      "text": "the",
+      "start": 44.0125,
+      "end": 44.1
+    },
+    {
+      "block": 5,
+      "text": "stewardship",
+      "start": 44.1,
+      "end": 44.6625
+    },
+    {
+      "block": 5,
+      "text": "of",
+      "start": 44.6625,
+      "end": 44.7375
+    },
+    {
+      "block": 5,
+      "text": "the",
+      "start": 44.7375,
+      "end": 44.825
+    },
+    {
+      "block": 5,
+      "text": "household.",
+      "start": 44.825,
+      "end": 45.925
+    },
+    {
+      "block": 5,
+      "text": "Eudaimonia",
+      "start": 45.925,
+      "end": 46.6875
+    },
+    {
+      "block": 5,
+      "text": "asks",
+      "start": 46.6875,
+      "end": 47.1
+    },
+    {
+      "block": 5,
+      "text": "a",
+      "start": 47.1,
+      "end": 47.225
+    },
+    {
+      "block": 5,
+      "text": "wider",
+      "start": 47.225,
+      "end": 47.625
+    },
+    {
+      "block": 5,
+      "text": "ethical",
+      "start": 47.625,
+      "end": 48.025
+    },
+    {
+      "block": 5,
+      "text": "question:",
+      "start": 48.025,
+      "end": 48.875
+    },
+    {
+      "block": 5,
+      "text": "what",
+      "start": 48.875,
+      "end": 49.05
+    },
+    {
+      "block": 5,
+      "text": "conditions",
+      "start": 49.05,
+      "end": 49.55
+    },
+    {
+      "block": 5,
+      "text": "help",
+      "start": 49.55,
+      "end": 49.8
+    },
+    {
+      "block": 5,
+      "text": "human",
+      "start": 49.8,
+      "end": 50.1
+    },
+    {
+      "block": 5,
+      "text": "beings",
+      "start": 50.1,
+      "end": 50.475
+    },
+    {
+      "block": 5,
+      "text": "live",
+      "start": 50.475,
+      "end": 50.7
+    },
+    {
+      "block": 5,
+      "text": "well?",
+      "start": 50.7,
+      "end": 51.5
+    },
+    {
+      "block": 6,
+      "text": "Systems",
+      "start": 52.25,
+      "end": 52.775
+    },
+    {
+      "block": 6,
+      "text": "convergence",
+      "start": 52.775,
+      "end": 53.775
+    },
+    {
+      "block": 7,
+      "text": "Artificial",
+      "start": 54.6,
+      "end": 55.1375
+    },
+    {
+      "block": 7,
+      "text": "intelligence,",
+      "start": 55.1375,
+      "end": 56.1375
+    },
+    {
+      "block": 7,
+      "text": "energy,",
+      "start": 56.1375,
+      "end": 56.9625
+    },
+    {
+      "block": 7,
+      "text": "labour",
+      "start": 56.9625,
+      "end": 57.3
+    },
+    {
+      "block": 7,
+      "text": "markets,",
+      "start": 57.3,
+      "end": 57.825
+    },
+    {
+      "block": 7,
+      "text": "and",
+      "start": 57.825,
+      "end": 57.95
+    },
+    {
+      "block": 7,
+      "text": "public",
+      "start": 57.95,
+      "end": 58.3125
+    },
+    {
+      "block": 7,
+      "text": "institutions",
+      "start": 58.3125,
+      "end": 59.1625
+    },
+    {
+      "block": 7,
+      "text": "influence",
+      "start": 59.1625,
+      "end": 59.675
+    },
+    {
+      "block": 7,
+      "text": "one",
+      "start": 59.675,
+      "end": 59.8125
+    },
+    {
+      "block": 7,
+      "text": "another.",
+      "start": 59.8125,
+      "end": 60.7875
+    },
+    {
+      "block": 7,
+      "text": "A",
+      "start": 60.7875,
+      "end": 60.9125
+    },
+    {
+      "block": 7,
+      "text": "useful",
+      "start": 60.9125,
+      "end": 61.325
+    },
+    {
+      "block": 7,
+      "text": "briefing",
+      "start": 61.325,
+      "end": 61.775
+    },
+    {
+      "block": 7,
+      "text": "makes",
+      "start": 61.775,
+      "end": 62.05
+    },
+    {
+      "block": 7,
+      "text": "those",
+      "start": 62.05,
+      "end": 62.275
+    },
+    {
+      "block": 7,
+      "text": "connections",
+      "start": 62.275,
+      "end": 62.825
+    },
+    {
+      "block": 7,
+      "text": "visible",
+      "start": 62.825,
+      "end": 63.4625
+    },
+    {
+      "block": 7,
+      "text": "without",
+      "start": 63.4625,
+      "end": 63.7875
+    },
+    {
+      "block": 7,
+      "text": "mistaking",
+      "start": 63.7875,
+      "end": 64.3
+    },
+    {
+      "block": 7,
+      "text": "forecasts",
+      "start": 64.3,
+      "end": 64.875
+    },
+    {
+      "block": 7,
+      "text": "for",
+      "start": 64.875,
+      "end": 65.025
+    },
+    {
+      "block": 7,
+      "text": "facts.",
+      "start": 65.025,
+      "end": 65.925
+    }
+  ]
+}
