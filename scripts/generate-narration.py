@@ -26,7 +26,8 @@ class ArticleParser(HTMLParser):
         attrs = dict(attrs)
         if tag == 'article' and attrs.get('id') == 'article':
             self.inside = True
-        if self.inside and (tag == 'h2' or 'readable' in attrs.get('class', '').split()):
+        classes = attrs.get('class', '').split()
+        if self.inside and (tag in ('h2', 'h3') or 'readable' in classes or 'section-deck' in classes):
             self.current = []
 
     def handle_data(self, data):
@@ -34,16 +35,19 @@ class ArticleParser(HTMLParser):
             self.current.append(data)
 
     def handle_endtag(self, tag):
-        if self.current is not None and tag in ('h2', 'p'):
+        if self.current is not None and tag in ('h2', 'h3', 'p'):
             self.blocks.append(''.join(self.current))
             self.current = None
         if tag == 'article':
             self.inside = False
 
 
-def generate(edition='issue-01'):
+def generate(edition='issue-01', revision=None):
     if not re.fullmatch(r'issue-\d{2,}', edition):
         raise ValueError('Edition must have the form issue-01')
+    if revision is not None and not re.fullmatch(r'\d{8}', revision):
+        raise ValueError('Revision must be a date in YYYYMMDD form')
+    asset_name = f'{edition}-{revision}' if revision else edition
     import numpy as np
     import soundfile as sf
     import torch
@@ -95,13 +99,15 @@ def generate(edition='issue-01'):
     with tempfile.TemporaryDirectory() as tmp:
         wav = Path(tmp) / 'sky.wav'
         sf.write(wav, np.concatenate(audio_parts), 24000)
-        subprocess.run(['ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-i', str(wav), '-codec:a', 'libmp3lame', '-b:a', '96k', str(out / f'{edition}.mp3')], check=True)
-    manifest = {'voice': 'af_sky', 'audio': f'audio/{edition}.mp3', 'duration': duration, 'alignment': 'kokoro-model-durations', 'textSha256': hashlib.sha256('\n'.join(blocks).encode()).hexdigest(), 'blocks': blocks, 'words': words}
-    (out / f'{edition}.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
+        subprocess.run(['ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-i', str(wav), '-codec:a', 'libmp3lame', '-b:a', '96k', str(out / f'{asset_name}.mp3')], check=True)
+    manifest = {'voice': 'af_sky', 'audio': f'audio/{asset_name}.mp3', 'duration': duration, 'alignment': 'kokoro-model-durations', 'textSha256': hashlib.sha256('\n'.join(blocks).encode()).hexdigest(), 'blocks': blocks, 'words': words}
+    (out / f'{asset_name}.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
     print(f'Generated {duration:.1f}s; {len(words)} aligned words')
 
 
 if __name__ == '__main__':
     cli = argparse.ArgumentParser(description=__doc__)
     cli.add_argument('--edition', default='issue-01', help='Edition audio identifier, such as issue-01')
-    generate(cli.parse_args().edition)
+    cli.add_argument('--revision', help='Optional YYYYMMDD asset version; does not change the issue number')
+    args = cli.parse_args()
+    generate(args.edition, args.revision)

@@ -16,7 +16,7 @@ From the repository root, with Python 3.12 and ffmpeg installed:
 
 ```sh
 python -m pip install -r scripts/requirements-tts.txt
-python scripts/generate-narration.py --edition issue-01
+python scripts/generate-narration.py --edition issue-01 --revision 20261031
 ```
 
 For a CPU-only Linux environment, install the CPU build of torch 2.6.0 from
@@ -24,13 +24,18 @@ PyTorch's official CPU wheel index before installing the requirements. Kokoro's
 first run downloads model weights, Sky's voice pack and the English language
 model. Visitors only download the MP3 and timing manifest.
 
-The generator extracts the article's headings and readable paragraphs. It maps
+The generator extracts the article's section headings, lesson subheadings,
+subtitles and readable paragraphs. It maps
 Kokoro's token timestamps onto the displayed words and rejects missing or
 nonmonotonic alignments. The player rejects mismatched text/timings rather than
-silently narrating a stale recording. Regenerate and commit both `audio/issue-01.mp3`
-and `audio/issue-01.json` after editing narration content. Use edition-specific
+silently narrating a stale recording. The Issue 01 refresh uses
+`audio/issue-01-20261031.mp3` and `audio/issue-01-20261031.json` so cached recordings
+cannot be paired with refreshed text. Regenerate and commit both files after
+editing narration content. Use revision-specific
 audio filenames and update the manifest path in reader.js for a new issue.
-The first demonstration's `audio/sky.*` files are retained as historical assets.
+The first demonstration's `audio/sky.*` files and the first published Issue 01
+recording are retained as historical assets. An asset revision does not change
+the public issue number or the original publication date, 30 October 2026.
 
 Controls include pause/resume, restart, seeking, playback speed, and optional
 automatic scrolling. Reduced-motion preferences are respected. Browser/iPhone

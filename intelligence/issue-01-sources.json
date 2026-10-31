@@ -1,7 +1,7 @@
 {
   "issue": "01",
   "title": "From Intelligence to Agency",
-  "checked_at": "2026-10-30",
+  "checked_at": "2026-10-31",
   "sources": [
     {
       "id": "openai-terra",
@@ -59,26 +59,6 @@
       "status": "Forecasts, not realised outcomes"
     },
     {
-      "id": "bls-real-earnings",
-      "publisher": "U.S. Bureau of Labor Statistics",
-      "date": "2026-10-14",
-      "url": "https://www.bls.gov/news.release/archives/realer_10142026.htm",
-      "claims": [
-        "September 2026 vs September 2025: hourly earnings +3.0%, CPI-U +3.7%, real hourly earnings -0.7%",
-        "All employees on private nonfarm payrolls, seasonally adjusted"
-      ],
-      "status": "September preliminary; U.S. average, not global or an individual household"
-    },
-    {
-      "id": "worldbank-ppp",
-      "publisher": "World Bank",
-      "url": "https://www.worldbank.org/en/programs/icp/methodology",
-      "claims": [
-        "PPP adjusts international comparisons for differences in price levels"
-      ],
-      "status": "Methodological definition; no invented international wage comparison"
-    },
-    {
       "id": "aristotle-ethics",
       "publisher": "Stanford Encyclopedia of Philosophy",
       "url": "https://plato.stanford.edu/entries/aristotle-ethics/",
@@ -111,35 +91,192 @@
       "status": "Goods share is share of trade growth, not share of all trade"
     },
     {
-      "id": "nasa-uvex",
-      "publisher": "NASA",
-      "date": "2026-10-27",
-      "url": "https://science.nasa.gov/blogs/uvex/2026/10/27/nasas-uvex-space-telescope-successfully-passes-key-milestone/",
+      "id": "anthropic-orchestration",
+      "publisher": "Anthropic",
+      "url": "https://www.anthropic.com/research/multi-agent-research-system",
       "claims": [
-        "KDP-C confirmation",
-        "Launch commitment by January 2031; $590m lifecycle cost",
-        "Planned ultraviolet survey and neutron star merger followup"
+        "Lead-agent coordination, parallel subagents and separate context windows",
+        "Coordination, evaluation and resource trade-offs"
       ],
-      "status": "Development milestone, not a completed discovery or operational mission"
+      "status": "Company engineering account; not a general guarantee that additional agents improve every task",
+      "date": "2025-06-13"
+    },
+    {
+      "id": "codex-development",
+      "publisher": "OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-5-3-codex/",
+      "claims": [
+        "Early GPT-5.3-Codex versions helped debug training, manage deployment and diagnose evaluations"
+      ],
+      "status": "Publisher account of AI-assisted model development; not autonomous creation of the whole model",
+      "date": "2026-02-05"
+    },
+    {
+      "id": "alphaevolve",
+      "publisher": "Google DeepMind",
+      "url": "https://deepmind.google/blog/alphaevolve-impact/",
+      "claims": [
+        "Gemini-powered algorithm improvement in AI infrastructure",
+        "Regular use in next-generation TPU design"
+      ],
+      "status": "Publisher-reported applications",
+      "date": "2026-05-07"
+    },
+    {
+      "id": "aide2",
+      "publisher": "Srikanth and colleagues",
+      "url": "https://arxiv.org/abs/2609.26457",
+      "claims": [
+        "Research agent proposes, benchmarks and retains changes to its own code",
+        "Seven successive improvements in an eight-day run; transfer to held-out tasks"
+      ],
+      "status": "Preprint; bounded improvement of agent research code, not unlimited frontier-model self-improvement",
+      "date": "2026-09-22"
+    },
+    {
+      "id": "fed-inflation",
+      "publisher": "Federal Reserve Bank of Cleveland",
+      "url": "https://www.clevelandfed.org/center-for-inflation-research/inflation-explained-your-guide-to-inflation-basics/how-is-inflation-measured",
+      "claims": [
+        "Price levels versus inflation rates",
+        "Stagflation combines high inflation with a weak economy and elevated unemployment"
+      ],
+      "status": "Educational definitions; no claim that the current economy is in stagflation"
+    },
+    {
+      "id": "taxi-history",
+      "publisher": "Los Angeles Board of Taxicab Commissioners",
+      "url": "https://cityclerk.lacity.org/onlinedocs/2009/09-0525_RPT_BTC_03-18-11.pdf#page=19",
+      "claims": [
+        "February 2011 US city tariff comparison in Attachment E",
+        "New York $2/mile, Boston $2.80/mile, Seattle $2.50/mile",
+        "Columbus $2.025 per additional mile, $2.75 initial charge"
+      ],
+      "status": "Table visually inspected; taxi farebox receipts, not after-expense wages or a uniform national minimum",
+      "date": "2011-03-18"
+    },
+    {
+      "id": "markup-receipts",
+      "publisher": "The Markup",
+      "url": "https://themarkup.org/working-for-an-algorithm/2022/03/01/secretive-algorithm-will-now-determine-uber-driver-pay-in-many-cities",
+      "claims": [
+        "Two reported Columbus Uber trip receipts imply payments below $1 per passenger mile"
+      ],
+      "status": "Individual examples, not national averages; Uber disputed representativeness of its share",
+      "date": "2022-03-01"
+    },
+    {
+      "id": "uber-upfront",
+      "publisher": "Uber",
+      "url": "https://www.uber.com/us/en/blog/all-new-upfront-fares/",
+      "claims": [
+        "Upfront Fares use more than fixed time and distance",
+        "Fixed component rates no longer posted in these markets"
+      ],
+      "status": "Company explanation; accounts for additional payments and adjustments",
+      "date": "2025-03-05"
+    },
+    {
+      "id": "rsg-rebalancing",
+      "publisher": "The Rideshare Guy",
+      "url": "https://therideshareguy.com/upfront-pricing-for-drivers/",
+      "claims": [
+        "Rate rebalancing can reduce pay on longer trips",
+        "Passenger fares and driver payments are decoupled"
+      ],
+      "status": "Driver-industry reporting; not a nationwide longitudinal wage estimate",
+      "date": "2023-09-20"
+    },
+    {
+      "id": "rsg-current",
+      "publisher": "The Rideshare Guy",
+      "url": "https://therideshareguy.beehiiv.com/p/are-drivers-actually-making-less-now",
+      "claims": [
+        "Related reporting on pay compression and variation under upfront fares"
+      ],
+      "status": "Further reporting, not the source for a national per-mile figure",
+      "date": "2026-04-22"
+    },
+    {
+      "id": "mpu-related",
+      "publisher": "More Perfect Union",
+      "url": "https://www.youtube.com/watch?v=tLIgmEibBL0",
+      "claims": [],
+      "status": "Related documentary link identified; full video not independently reviewed; no numeric claims in the brief rely on it"
+    },
+    {
+      "id": "instacart-earlier",
+      "publisher": "Instacart",
+      "url": "https://company.instacart.com/shopper-community/state-of-pay-update",
+      "claims": [
+        "Earlier full-service minimum batch payments of $7–$10"
+      ],
+      "status": "Historical company policy, not individual shopper earnings"
+    },
+    {
+      "id": "instacart-2023",
+      "publisher": "Instacart",
+      "url": "https://company.instacart.com/shopper-community/creating-new-ways-to-earn",
+      "claims": [
+        "Smallest, quickest batches can pay $4 before tips"
+      ],
+      "status": "Payment floor, not a claim every shopper experienced the same proportional income cut",
+      "date": "2023-07-20"
+    },
+    {
+      "id": "freelance-study",
+      "publisher": "Hui, Reshef and Zhou",
+      "url": "https://www.aeaweb.org/conference/2025/program/paper/T485kaTk",
+      "claims": [
+        "Relative earnings and employment declines in more AI-exposed online freelance occupations"
+      ],
+      "status": "Platform study; distinguishes fewer contracts from explicit rate cuts; not all-worker causal evidence",
+      "date": "2024-10-12"
+    },
+    {
+      "id": "worldbank-ppp",
+      "publisher": "World Bank",
+      "url": "https://www.worldbank.org/en/programs/icp/faq",
+      "claims": [
+        "PPP adjusts price-level differences across economies",
+        "PPP spatial comparisons differ from CPI comparisons over time"
+      ],
+      "status": "Methodological framework, not a personalised living-cost measure"
+    },
+    {
+      "id": "suncatcher",
+      "publisher": "Google Research",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+      "claims": [
+        "Prompt sent to onboard Gemma 4; generated response downlinked over Svalbard",
+        "Successful end-to-end orbital inference exchange"
+      ],
+      "status": "Prototype milestone, not proof of commercially viable orbital data centres",
+      "date": "2026-10-30"
     }
   ],
   "calculations": [
     {
-      "label": "Illustrative purchasing power",
+      "label": "Illustrative combined pay and price change",
       "inputs": {
-        "initial_hourly_wage": 25,
-        "wage_growth": 0.03,
-        "price_growth": 0.037
+        "initial_hourly_pay": 25,
+        "pay_change": -0.1,
+        "price_change": 0.2
       },
-      "formula": "25 * 1.03 / 1.037",
-      "result": 24.831243972999037,
-      "rounded": 24.83,
-      "scope": "Hypothetical worker and fixed basket, not a BLS microdata claim"
+      "formula": "25 * 0.9 / 1.2",
+      "result": 18.75,
+      "purchasing_power_decline": 0.25,
+      "scope": "Hypothetical comparison at comparable hours; no claim these rates represent an observed population"
     }
   ],
   "editorial_notes": [
     "Reporting, interpretation, illustrative calculations and synthesis are distinguished.",
     "The opening and analysis are IAM's synthesis; not attributed as direct institutional conclusions.",
-    "No automatic publishing cadence. This edition follows the user's explicit prompt."
-  ]
+    "No automatic publishing cadence. This edition follows the user's explicit prompt.",
+    "Issue 01 refresh preserves original issue number and publication date.",
+    "The approved nine-minute estimate is reading time; recording duration is measured separately.",
+    "Compounding acceleration is an interpretation; no universal exponential rate is asserted."
+  ],
+  "original_publication_date": "2026-10-30",
+  "refresh_date": "2026-10-31"
 }

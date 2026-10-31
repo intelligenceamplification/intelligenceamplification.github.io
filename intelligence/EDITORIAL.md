@@ -32,4 +32,10 @@ These departments are an agreed framework, not an obligation to fill every headi
 
 ## Current state
 
-Issue 01, From Intelligence to Agency, is being prepared at the editor’s request on 30 October 2026. It replaces the reader demonstration with a sourced, narrated first edition. Each subsequent edition still requires the editor’s prompt. The issue opening and contents may be refined in response to editorial direction.
+Issue 01, From Intelligence to Agency, was published on 30 October 2026. The
+editor approved a behind-the-scenes refresh on 31 October 2026, expanding
+multi-agent orchestration and AI-assisted development, the household lesson,
+and AI’s impact on science and space technology. This remains Issue 01 and
+retains its original publication date. Reading and listening estimates must
+match the refreshed text and recording. Each subsequent edition still requires
+the editor’s prompt.

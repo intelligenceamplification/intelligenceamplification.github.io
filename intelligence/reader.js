@@ -88,10 +88,10 @@
 
   async function load() {
     try {
-      const response = await fetch('audio/issue-01.json');
+      const response = await fetch('audio/issue-01-20261031.json');
       if (!response.ok) throw new Error('Missing Sky manifest');
       const data = await response.json();
-      const blocks = [...document.querySelectorAll('#article h2, #article .readable')];
+      const blocks = [...document.querySelectorAll('#article h2, #article h3, #article .readable, #article .section-deck')];
       if (data.voice !== 'af_sky' || data.alignment !== 'kokoro-model-durations' ||
           !Number.isFinite(data.duration) || data.duration <= 0 ||
           JSON.stringify(blocks.map(el => el.textContent)) !== JSON.stringify(data.blocks)) {
