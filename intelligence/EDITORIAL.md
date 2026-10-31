@@ -29,6 +29,7 @@ These departments are an agreed framework, not an obligation to fill every headi
 - Display a correction date and description only when an actual correction is made. Preserve the original publication date. Regenerate audio and timings when narrated content changes.
 - Remove Reader laboratory and Development preview when the first genuine edition replaces the demonstration, not before.
 - Retain the shared IA visual theme and compact translucent controls. Use Play, Pause, Resume and Replay without the voice name.
+- In every edition, readers can tap any narrated word to start or resume the audio and synchronized highlighting from that word. Preserve text selection and source-link behavior.
 
 ## Current state
 

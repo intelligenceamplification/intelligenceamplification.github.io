@@ -64,6 +64,16 @@
   restart.addEventListener('click', () => { audio.currentTime = 0; render(); start(); });
   speed.addEventListener('change', () => { audio.playbackRate = Number(speed.value); });
   seek.addEventListener('input', () => { audio.currentTime = Number(seek.value); render(); });
+  $('article').addEventListener('click', event => {
+    const word = event.target.closest('.word');
+    const selection = window.getSelection();
+    if (!ready || !word || (selection && !selection.isCollapsed)) return;
+    const index = Number(word.dataset.wordIndex);
+    if (!Number.isInteger(index) || !words[index]) return;
+    audio.currentTime = words[index].start;
+    render();
+    if (audio.paused) start();
+  });
   audio.addEventListener('play', () => {
     play.textContent = 'Ⅱ Pause'; status.textContent = 'Playing';
     cancelAnimationFrame(frame); tick();
@@ -112,6 +122,7 @@
           else {
             const span = document.createElement('span');
             span.className = 'word'; span.textContent = piece;
+            span.dataset.wordIndex = spans.length;
             spans.push(span); fragment.append(span);
           }
         }
