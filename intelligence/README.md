@@ -41,6 +41,11 @@ Controls include pause/resume, restart, seeking, playback speed, and optional
 automatic scrolling. Reduced-motion preferences are respected. Browser/iPhone
 audio quality and alignment should be reviewed before merging.
 
+Tap or click any narrated word to seek to its model-derived start time and
+start or resume playback there. This is standard reader behavior for all future
+editions. Text selection and source links retain their usual behavior; the
+recording, playback speed and Follow narration preference remain unchanged.
+
 Model and library: [hexgrad/Kokoro](https://github.com/hexgrad/kokoro),
 [Kokoro-82M model card and license](https://huggingface.co/hexgrad/Kokoro-82M).
 
