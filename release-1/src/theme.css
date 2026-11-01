@@ -1,0 +1,3 @@
+/* Exact existing IA site palette. No new brand colors. */
+:root{--ink:#0a0a0a;--paper:#ffffff;--soft:#f4f4f1;--muted:#62625d;--line:#d9d9d4;--blue-wash:#e9f1f7;--blue:#2d607b;--coral-wash:#f7e8e1;--coral:#c85f43;--hero-wash:#f0f6f8;}
+@media(prefers-color-scheme:dark){:root{--ink:#f2f3ef;--paper:#0d0f10;--soft:#171a1b;--muted:#a7acab;--line:#34393a;--blue-wash:#14242c;--blue:#91c6df;--coral-wash:#2b1d1a;--coral:#f09a7d;--hero-wash:#14242c}}
