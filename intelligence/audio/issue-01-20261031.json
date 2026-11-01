@@ -3,10 +3,10 @@
   "audio": "audio/issue-01-20261031.mp3",
   "duration": 753.4,
   "alignment": "kokoro-model-durations",
-  "textSha256": "538e2cccd1e9f15373a41180edf271d29e2684a7f2efed8f592c1532ff6ebac5",
+  "textSha256": "191752945609a528347994ce43b5b29e0650d9cd11a47e11216bb304386abed6",
   "blocks": [
     "From Intelligence to Agency",
-    "Artificial intelligence is moving from producing answers toward coordinating work and helping improve the systems that perform it. Through multi-agent orchestration, a model can delegate research, coding and checking to specialised agents, then combine their results. This resembles how people advance individually and collectively: learning from attempts, sharing knowledge, and improving the tools that make further progress possible. AI can run parts of that cycle at machine speed and in parallel, creating the potential for compounding advances. This edition examines that growing capability alongside the practical test of intelligence amplification: whether it expands human agency and the conditions for living well.",
+    "Artificial intelligence is moving from producing answers toward coordinating work and helping improve the systems that perform it. Through multi-agent orchestration, a model can delegate research, coding and checking to specialized agents, then combine their results. This resembles how people advance individually and collectively: learning from attempts, sharing knowledge, and improving the tools that make further progress possible. AI can run parts of that cycle at machine speed and in parallel, creating the potential for compounding advances. This edition examines that growing capability alongside the practical test of intelligence amplification: whether it expands human agency and the conditions for living well.",
     "Frontier AI & Intelligence Amplification",
     "Intelligence is increasingly amplified through coordination. A lead agent can break a problem into tasks, dispatch other agents to investigate different approaches, and assemble their findings. Anthropic’s published account of its research system describes this architecture in operation. Parallel work broadens the search; separate context windows let agents pursue different lines of inquiry. The orchestration matters: useful results depend on task design, communication and evaluation, and additional agents consume more resources.",
     "AI is also contributing to its own development. OpenAI reports that early versions of GPT-5.3-Codex helped debug its training, manage deployment, and diagnose evaluations. Google DeepMind reports that AlphaEvolve, powered by Gemini, improves algorithms used in AI infrastructure and has become a regular tool for designing the next generation of its TPU chips. Existing systems are helping build the foundations of their successors.",
@@ -38,7 +38,7 @@
     "What remains for living well?",
     "Interpretation: our standard is household stewardship in service of human flourishing: oikos, the household; nomos, its ordering principles; eudaimonia, living well. Progress should leave people with greater security, meaningful choices, and time beyond earning enough to get through the week. Higher output becomes a household benefit when it improves those conditions.",
     "Climate & Energy",
-    "Reporting: the International Energy Agency’s October report expects the largest data-centre operators to spend more than 700 billion dollars in capital expenditure during 2026, mostly on new data centres. Its analysis highlights pressure on local grids and concerns about electricity prices, emissions and water.",
+    "Reporting: the International Energy Agency’s October report expects the largest data-center operators to spend more than 700 billion dollars in capital expenditure during 2026, mostly on new data centers. Its analysis highlights pressure on local grids and concerns about electricity prices, emissions and water.",
     "Interpretation: an efficient model does not by itself guarantee a smaller total environmental footprint if usage expands. Energy supply, grid investment and who bears the associated costs belong inside the assessment of AI progress.",
     "Geopolitics",
     "Reporting: the World Trade Organization says AI-enabling goods, including semiconductors and servers, accounted for 47 percent of global merchandise trade growth in the first half of 2026. At the same time, conflict-related disruption weighed on transport and travel services. Alternative suppliers and routes helped keep essential goods moving.",
@@ -46,7 +46,7 @@
     "AI’s Impact on Science and Space Tech",
     "A Prompt to Orbit. A Response to Earth.",
     "Reporting: on October 30, Google announced that its Project Suncatcher prototype had received a prompt from Earth, processed it with the Gemma 4 model running aboard the satellite, and returned the generated response. Engineers asked for a haiku about being in space. The poem was downlinked as the satellite passed Svalbard, Norway.",
-    "The significance lies in the completed exchange: an instruction travelled from a ground station to an orbiting AI system, computation took place there, and a usable result came back. It is an early demonstration of the infrastructure needed to operate AI beyond terrestrial data centres.",
+    "The significance lies in the completed exchange: an instruction travelled from a ground station to an orbiting AI system, computation took place there, and a usable result came back. It is an early demonstration of the infrastructure needed to operate AI beyond terrestrial data centers.",
     "Interpretation: the next questions concern sustained operation, useful workloads, communications capacity, radiation tolerance, heat management and total cost. A successful response establishes a technical milestone; a reliable, affordable orbital computing service requires much more. The human value will depend on what such systems enable researchers and society to accomplish.",
     "Systems Convergence",
     "Editorial synthesis: software agents, robotics, orbital computing, energy systems and global trade are becoming increasingly connected. Their expanding capabilities create opportunities for discovery and useful work. The household economy supplies an equally important measure of progress: whether people can earn a sustainable living, afford necessities, and exercise greater choice over their time. Intelligence amplification should be judged by the connection between those advances and those outcomes. The developments to watch are dependable systems, lower total costs, and benefits reaching the people whose work and lives are being reshaped."
@@ -258,7 +258,7 @@
     },
     {
       "block": 1,
-      "text": "specialised",
+      "text": "specialized",
       "start": 14.9,
       "end": 15.475
     },
@@ -8070,7 +8070,7 @@
     },
     {
       "block": 33,
-      "text": "data-centre",
+      "text": "data-center",
       "start": 573.75,
       "end": 574.375
     },
@@ -8178,7 +8178,7 @@
     },
     {
       "block": 33,
-      "text": "centres.",
+      "text": "centers.",
       "start": 581.625,
       "end": 582.7
     },
@@ -9594,7 +9594,7 @@
     },
     {
       "block": 41,
-      "text": "centres.",
+      "text": "centers.",
       "start": 688.125,
       "end": 689.1
     },

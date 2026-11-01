@@ -117,7 +117,7 @@
       for (const el of blocks) {
         const text = el.textContent;
         const fragment = document.createDocumentFragment();
-        for (const piece of text.match(/\S+|\s+/g) || []) {
+        for (const piece of text.match(/\S+\s*|\s+/g) || []) {
           if (/^\s+$/.test(piece)) fragment.append(document.createTextNode(piece));
           else {
             const span = document.createElement('span');
