@@ -210,3 +210,9 @@ h1, h2, h3 { letter-spacing: -.015em !important; line-height: 1.12 !important; f
 @media(max-width:700px) { .ia-curve-scroll { overflow-x:auto; } .ia-curve { min-width:740px; } .ia-swipe { display:block; color:var(--muted); font-size:13px; margin:28px 0 -28px; } }
 .ia-curve .frontier-points .fp-f { stroke:#4e6b9a; }
 .ia-model-key .dot-f { background:#4e6b9a; }
+
+/* Restore cool light surfaces and retain the existing dark appearance. */
+:root { --soft: #f0f6f8; --hero-wash: #f0f6f8; }
+@media (prefers-color-scheme: dark) {
+  :root { --soft: #171a1b; --hero-wash: #14242c; }
+}
