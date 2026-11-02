@@ -1,0 +1,212 @@
+/* Humanist typography, developed from the approved visual direction. */
+:root {
+  --sans: 'Avenir Next', Avenir, 'Helvetica Neue', Arial, sans-serif;
+  --serif: 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif;
+}
+body, body * { font-family: var(--sans) !important; }
+h1, h1 *, h2, h2 *, h3, h3 * { font-family: var(--serif) !important; }
+h1, h2, h3 { letter-spacing: -.015em !important; line-height: 1.12 !important; font-weight: 400 !important; }
+/* The ability names introduce the main sections, so their typography echoes the headings. */
+#capability-explorer .ability-selector button,
+#capability-explorer .ability-selector button span:not(.icon-disc) {
+  font-family: var(--serif) !important;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+#capability-explorer .ability-selector button.selected,
+#capability-explorer .ability-selector button.selected span:not(.icon-disc) {
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .site-header nav { gap: 10px; }
+  .site-header nav a { font-size: 12px !important; }
+}
+
+/* A connected pill keeps the three abilities together as one choice. */
+#capability-explorer .ability-selector {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--blue-wash) 45%, var(--paper));
+  box-shadow: inset 0 1px 0 var(--paper), 0 7px 22px color-mix(in srgb, var(--blue) 8%, transparent);
+}
+#capability-explorer .ability-selector button,
+#capability-explorer .ability-selector button:last-child {
+  position: relative;
+  min-width: 0;
+  min-height: 82px;
+  gap: 17px;
+  padding: 10px 23px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: transparent;
+  box-shadow: none;
+  font-size: clamp(20px, 1.9vw, 24px);
+  transition: color 180ms ease, background-color 180ms ease, box-shadow 180ms ease;
+}
+#capability-explorer .ability-selector button .icon-disc {
+  flex: 0 0 52px;
+  width: 52px;
+  min-width: 52px;
+  height: 52px;
+  color: var(--blue);
+  background: color-mix(in srgb, var(--blue-wash) 75%, var(--paper));
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+#capability-explorer .ability-selector button.selected {
+  border-color: transparent;
+  color: var(--ink);
+  background: transparent;
+  box-shadow: none;
+}
+#capability-explorer .ability-selector button span:last-child {
+  border-bottom: 2px solid transparent;
+  padding-bottom: 4px;
+  margin-top: 6px;
+}
+#capability-explorer .ability-selector button.selected span:last-child {
+  border-color: var(--blue);
+}
+#capability-explorer .ability-selector button.selected .icon-disc {
+  background: var(--blue-wash);
+}
+@media (hover: hover) {
+  #capability-explorer .ability-selector button:not(.selected):hover {
+    color: var(--ink);
+    background: transparent;
+  }
+  #capability-explorer .ability-selector button:not(.selected):hover .icon-disc { transform: scale(1.06); }
+}
+@media (max-width: 640px) {
+  #capability-explorer .ability-selector { border-radius: 32px; padding: 3px; }
+  #capability-explorer .ability-selector button,
+  #capability-explorer .ability-selector button:last-child {
+    min-height: 104px;
+    gap: 6px;
+    padding: 10px 3px;
+    border-radius: 27px;
+    font-size: 15px;
+  }
+  #capability-explorer .ability-selector button.selected { border-radius: 27px; }
+  #capability-explorer .ability-selector button .icon-disc {
+    flex: 0 0 40px;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  #capability-explorer .ability-selector button,
+  #capability-explorer .ability-selector button .icon-disc { transition: none; }
+  #capability-explorer .ability-selector button:not(.selected):hover .icon-disc { transform: none; }
+}
+
+/* Keep the selector as quiet as the surrounding Humanist typography. */
+#capability-explorer .ability-selector {
+  background: var(--paper);
+  box-shadow: none;
+}
+#capability-explorer .ability-selector button,
+#capability-explorer .ability-selector button:last-child {
+  justify-content: center;
+  min-height: 68px;
+  gap: 11px;
+  padding: 9px 12px;
+  font-size: clamp(19px, 1.7vw, 22px);
+}
+#capability-explorer .ability-selector button .icon-disc,
+#capability-explorer .ability-selector button.selected .icon-disc {
+  flex-basis: 28px;
+  width: 28px;
+  min-width: 28px;
+  height: 28px;
+  background: transparent;
+  color: var(--muted);
+}
+#capability-explorer .ability-selector button.selected .icon-disc { color: var(--blue); }
+#capability-explorer .ability-selector .icon-disc svg { width: 27px; height: 27px; }
+#capability-explorer .ability-selector button span:last-child { border-bottom-width: 1px; }
+@media (max-width: 640px) {
+  #capability-explorer .ability-selector { border-radius: 28px; }
+  #capability-explorer .ability-selector button,
+  #capability-explorer .ability-selector button:last-child {
+    min-height: 87px;
+    gap: 6px;
+    padding: 10px 3px;
+    font-size: 15px;
+  }
+  #capability-explorer .ability-selector button .icon-disc,
+  #capability-explorer .ability-selector button.selected .icon-disc {
+    flex-basis: 24px;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+  }
+  #capability-explorer .ability-selector .icon-disc svg { width: 23px; height: 23px; }
+}
+
+/* The label leads; small icons and an underline invite exploration. */
+#capability-explorer .ability-selector .icon-disc svg { width: 20px; height: 20px; }
+@media (hover: hover) {
+  #capability-explorer .ability-selector button:not(.selected):hover span:last-child { border-color: var(--blue); }
+  #capability-explorer .ability-selector button:not(.selected):hover .icon-disc { color: var(--blue); }
+}
+@media (max-width: 640px) {
+  #capability-explorer .ability-selector .icon-disc svg { width: 19px; height: 19px; }
+}
+
+/* Capability backdrop: a qualitative trajectory followed by measured scores. */
+.capability-backdrop h2 { max-width: 17ch; }
+.ia-trajectory { margin: 64px 0 80px; padding: 0; }
+.ia-trajectory-kicker,.ia-score-heading { color: var(--blue); font-size: 13px; letter-spacing: .06em; text-transform: uppercase; font-weight: 650; }
+.ia-trajectory h3,.ia-frontier h3 { font-size: clamp(32px, 3.3vw, 48px); margin: 12px 0; }
+.ia-trajectory figcaption p,.ia-frontier>div>p:not(.section-number):not(.ia-score-heading):not(.ia-curve-note) { color: var(--muted); font-size: 18px; max-width: 55ch; }
+.ia-curve { display:block; width:100%; height:auto; max-height:400px; overflow:visible; margin:35px 0 0; }
+.ia-curve .axis { stroke:var(--line); stroke-width:1.3; }
+.ia-curve .curve { fill:none; stroke:var(--blue); stroke-width:3; stroke-linecap:round; }
+.ia-curve circle { fill:var(--blue); }
+.ia-curve-labels { display:flex; justify-content:space-between; margin-top:9px; gap:20px; }
+.ia-curve-labels span { display:grid; gap:3px; color:var(--muted); font-size:14px; }
+.ia-curve-labels span:last-child { text-align:right; }
+.ia-curve-labels strong { color:var(--ink); font-size:17px; }
+.ia-curve-note { color:var(--muted); font-size:14px; line-height:1.7; max-width:78ch; margin:28px 0 0; }
+.ia-curve-note a { color:var(--blue); text-underline-offset:3px; }
+.ia-frontier { display:grid; grid-template-columns: .8fr 1.2fr; gap:clamp(36px,8vw,120px); padding:48px 0 45px; border-top:1px solid var(--line); }
+.ia-score-heading { margin:0 0 18px; }
+.ia-score-list { list-style:none; margin:0; padding:0; border-top:1px solid var(--line); }
+.ia-score-list li { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:15px 0; border-bottom:1px solid var(--line); font-size:19px; }
+.ia-score-list small { display:block; color:var(--muted); font-size:13px; margin-top:3px; }
+.ia-score-list strong { font-size:25px; font-weight:550; }
+@media(max-width:700px) { .ia-trajectory { margin:48px 0 60px; } .ia-curve { margin-top:45px; } .ia-frontier { grid-template-columns:1fr; gap:28px; } .ia-score-list li { font-size:17px; } }
+.ia-milestones { border-block:1px solid var(--line); padding:18px 0; margin:0 0 34px; }
+.ia-milestones summary { cursor:pointer; color:var(--blue); font-size:17px; font-weight:600; min-height:44px; }
+.ia-milestones ol { list-style:none; padding:0; margin:30px 0 0; }
+.ia-milestones li { display:grid; grid-template-columns:85px 1fr; gap:20px; padding:16px 0; border-top:1px solid var(--line); }
+.ia-milestones time { color:var(--blue); font-size:14px; }
+.ia-milestones strong { font-size:20px; font-weight:600; }
+.ia-milestones li p { margin:5px 0 0; font-size:15px; line-height:1.6; color:var(--muted); }
+.ia-milestones a { color:var(--blue); text-underline-offset:3px; }
+.ia-curve .projection { stroke-dasharray:8 9; opacity:.7; }
+.ia-curve .axis-label { fill:var(--muted); font-size:14px; }
+.ia-curve .year-labels { fill:var(--muted); font-size:14px; text-anchor:middle; }
+.ia-curve .plot-labels line { stroke:var(--line); stroke-width:1.3; }
+.ia-curve .plot-labels text { fill:var(--ink); font-size:14px; text-anchor:middle; }
+.ia-model-key { margin-top:36px; padding-top:20px; border-top:1px solid var(--line); }
+.ia-model-key p { font-size:14px; font-weight:600; margin:0 0 13px; }
+.ia-model-key p span { color:var(--muted); font-weight:400; }
+.ia-model-key ul { display:flex; gap:12px 25px; flex-wrap:wrap; list-style:none; padding:0; margin:0; }
+.ia-model-key li { display:flex; gap:8px; align-items:center; font-size:14px; }
+.ia-model-key i { display:block; width:9px; height:9px; border-radius:50%; flex:0 0 auto; }
+.ia-model-key .dot-a { background:#315f79; } .ia-model-key .dot-b { background:#a15d3f; } .ia-model-key .dot-c { background:#8c7292; } .ia-model-key .dot-d { background:#50826d; } .ia-model-key .dot-e { background:#bb8944; }
+@media(max-width:700px) { .ia-curve .plot-labels text { font-size:18px; } .ia-curve .year-labels { font-size:16px; } .ia-model-key ul { gap:10px 18px; } }
+.ia-curve .frontier-points path { fill:none; stroke:var(--line); stroke-width:1.2; }
+.ia-curve .frontier-points text { fill:var(--ink); font-size:14px; text-anchor:end; }
+.ia-curve .frontier-points circle { fill:var(--paper); stroke-width:2; }
+.ia-curve .frontier-points .fp-a { stroke:#315f79; } .ia-curve .frontier-points .fp-b { stroke:#a15d3f; } .ia-curve .frontier-points .fp-c { stroke:#8c7292; } .ia-curve .frontier-points .fp-d { stroke:#50826d; } .ia-curve .frontier-points .fp-e { stroke:#bb8944; }
+@media(max-width:700px) { .ia-curve .frontier-points text { font-size:18px; } }
+.ia-swipe { display:none; }
+@media(max-width:700px) { .ia-curve-scroll { overflow-x:auto; } .ia-curve { min-width:740px; } .ia-swipe { display:block; color:var(--muted); font-size:13px; margin:28px 0 -28px; } }
+.ia-curve .frontier-points .fp-f { stroke:#4e6b9a; }
+.ia-model-key .dot-f { background:#4e6b9a; }
