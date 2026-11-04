@@ -216,3 +216,12 @@ h1, h2, h3 { letter-spacing: -.015em !important; line-height: 1.12 !important; f
 @media (prefers-color-scheme: dark) {
   :root { --soft: #171a1b; --hero-wash: #14242c; }
 }
+
+/* Keep the transparent IA lens legible against the dark hero. */
+@media (prefers-color-scheme: dark) {
+  #capability-explorer .lens {
+    filter: invert(1) hue-rotate(180deg) brightness(2.5);
+    mix-blend-mode: screen;
+    opacity: .88;
+  }
+}
