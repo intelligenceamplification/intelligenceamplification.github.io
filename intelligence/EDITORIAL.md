@@ -4,21 +4,25 @@ Descriptor: A Periodical Brief.
 
 ## Editorial direction
 
-A globally relevant public periodical. Desmond Wood manually guides and prompts each publication. No fixed cadence, daily update obligation, scheduled publishing or automatic publication. Publish when consequential AI and robotics breakthroughs warrant an edition; avoid hype-cycle filler. Do not introduce the personalized ChatGPT brief into this thread or workflow. This change does not modify separate scheduled tasks.
+A globally relevant public monthly periodical. Desmond Wood guides and approves each publication. Publish one numbered issue per calendar month, creating twelve issues per year; do not create an automatic publishing task. Issue 02 is the November 2026 edition and Issue 03 is planned for December 2026. Later polishing retains the issue number and original publication date. Actual reporting corrections receive a dated explanation; changes to narrated wording require matching regenerated audio and timings. Avoid hype-cycle filler. Do not introduce the personalized ChatGPT brief into this thread or workflow. This change does not modify separate scheduled tasks.
 
 The frontier section takes inspiration from the user's description of Dr. Alan D. Thompson's Epic Memo Report: substantive, selective synthesis. This reference is not an affiliation or permission to reproduce paid material.
 
 ## Agreed departments
 
-1. Frontier AI & Intelligence Amplification: lead with agents, robotics, autonomy, security and practical human capability. Explain what developments enable and what remains unproven.
-2. Economics & Markets: economic conditions, investment and productivity; consequences rather than routine market movements.
-3. Household Economy Mini-Masterclass: employment, real wages, affordability, purchasing power and PPP; household stewardship and human flourishing through oikos, nomos and eudaimonia. Distinguish domestic real purchasing power from international PPP. Identify the country, population, reference period and source of statistics.
-4. Climate & Energy: globally consequential developments when meaningful. Omit routine local weather.
-5. Geopolitics: selective international developments with practical consequences and uncertainty.
-6. Science & Space: significant discoveries and milestones; distinguish demonstrations from ambitions.
-7. Systems Convergence: brief closing synthesis supported by the edition's evidence.
+1. Frontier AI, Software & Research Agents.
+2. Medicine & Health.
+3. Education, Learning & Accessibility.
+4. Scientific Discovery & Space Technology.
+5. Robotics & Physical Work.
+6. Climate, Energy & Infrastructure.
+7. Work, Economics & the Household, including the Household Economy Mini-Masterclass.
+8. Geopolitics, Safety & Public Power.
+9. Systems Convergence: What to Watch Next.
 
-These departments are an agreed framework, not an obligation to fill every heading in every issue. Keep global relevance and signal over noise. Omit personal information and local driving alerts.
+This expanded structure was approved for Issue 02 after assessment of Issue 01. Each case should explain whose capability improves, the task and baseline, measured outcome, conditions, costs, access, oversight, limitations, and beneficiaries. Distinguish domestic purchasing power from international PPP and historical evidence from new reporting. Connect productivity to net income, human agency, and conditions for living well. Cite Acemoglu, Brynjolfsson, Autor, and individual Digitalist Papers essays when their specific work supports the analysis.
+
+Use seven to nine substantive departments rather than filling weak headings by obligation. Keep global relevance and signal over noise. Omit personal information and local driving alerts.
 
 ## Edition presentation
 

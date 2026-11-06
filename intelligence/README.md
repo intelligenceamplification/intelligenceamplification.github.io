@@ -1,8 +1,21 @@
 # IAM Intelligence reader
 
-Route: `/intelligence/`. Issue 01, From Intelligence to Agency, is the first
-source-linked periodical edition. Editorial direction and the seven departments
-are recorded in EDITORIAL.md. Publication is manual, at the editor's prompt.
+The current issue opens directly at `/intelligence/`, with full read-along
+controls and one quiet Previous issues link. `/intelligence/archive/` lists
+published editions; permanent readers live at `/intelligence/issues/01/`,
+`/intelligence/issues/02/`, and subsequent issue numbers. Issue 02 is the
+November 2026 edition. Publish one issue per calendar month, twelve per year,
+with editorial approval. Issue 03 is planned for December 2026. No automated
+publishing schedule is created. Polishing retains the issue number and date.
+
+`editions.json` contains released edition metadata. `scripts/build-issue-archive.py`
+selects the newest published issue as the current reader, updates navigation,
+groups the growing archive by year, and rejects duplicate issue numbers or
+more than one release in a calendar month. Draft entries are excluded. Generate
+matching narration before release, then run the archive builder to refresh
+actual listening duration. Each edition's script tag supplies its own manifest
+URL. Audio URLs resolve against that edition's asset base, including on nested
+archive routes. Every edition has canonical and social-sharing metadata.
 
 ## Narration
 
@@ -19,6 +32,13 @@ python -m pip install -r scripts/requirements-tts.txt
 python scripts/generate-narration.py --edition issue-01 --revision 20261031
 ```
 
+For a new permanent edition page, select it explicitly:
+
+```sh
+python scripts/generate-narration.py --edition issue-02 --revision 20261106 --input intelligence/issues/02/index.html
+python scripts/build-issue-archive.py
+```
+
 For a CPU-only Linux environment, install the CPU build of torch 2.6.0 from
 PyTorch's official CPU wheel index before installing the requirements. Kokoro's
 first run downloads model weights, Sky's voice pack and the English language
@@ -32,7 +52,7 @@ silently narrating a stale recording. The Issue 01 refresh uses
 `audio/issue-01-20261031.mp3` and `audio/issue-01-20261031.json` so cached recordings
 cannot be paired with refreshed text. Regenerate and commit both files after
 editing narration content. Use revision-specific
-audio filenames and update the manifest path in reader.js for a new issue.
+audio filenames and set the reader script's `data-manifest` URL for each issue.
 The first demonstration's `audio/sky.*` files and the first published Issue 01
 recording are retained as historical assets. An asset revision does not change
 the public issue number or the original publication date, 30 October 2026.
