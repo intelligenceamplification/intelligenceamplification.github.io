@@ -1,0 +1,97 @@
+{
+  "issue": "02",
+  "title": "Where Amplified Intelligence Is Making a Difference",
+  "checked_at": "2026-11-06",
+  "narrated_words": 2288,
+  "sources": [
+    {
+      "note": "Sources: Google DeepMind: agentic cheminformatics · 3 November 2026 · publisher technical walkthrough.",
+      "urls": [
+        "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/"
+      ]
+    },
+    {
+      "note": "Sources: Google: October clinical-study announcement; researchers' March 2026 manuscript, methods and clinician-survey results · March manuscript methods and October study announcement.",
+      "urls": [
+        "https://blog.google/innovation-and-ai/technology/health/amie-clinical-study-lancet/",
+        "https://arxiv.org/html/2603.08448v1"
+      ]
+    },
+    {
+      "note": "Sources: Yang, Van Alstyne and Dellarocas: tutoring structure and modality · September 2026 preprint; Liu and colleagues: university tutoring trial · October 2026 working paper. Different populations, interventions, and outcome measures.",
+      "urls": [
+        "https://arxiv.org/html/2609.23958v1",
+        "https://docs.iza.org/dp18989.pdf"
+      ]
+    },
+    {
+      "note": "Sources: NASA: lunar model, evaluated tasks, and research resources · September 2026 · agency research account.",
+      "urls": [
+        "https://science.nasa.gov/science-research/artificial-intelligence-lunar-foundation-model/"
+      ]
+    },
+    {
+      "note": "Sources: Physical Intelligence: API beta and partner examples · 13 October 2026 · publisher account; independent operating metrics not established here.",
+      "urls": [
+        "https://www.pi.website/blog/api-beta"
+      ]
+    },
+    {
+      "note": "Sources: OpenAI: Grid Protectors Program and Georgia agreement · 2 November 2026 · company commitment, not a realized outcome.",
+      "urls": [
+        "https://openai.com/index/grid-protectors-program/"
+      ]
+    },
+    {
+      "note": "Sources: Brynjolfsson, Li and Raymond: Generative AI at Work · 2025 journal study; Acemoglu, Autor and Johnson: Building Pro-Worker Artificial Intelligence · February 2026 framework; Autor and Thompson: expertise, The Digitalist Papers, Volume 2 · interpretive essay.",
+      "urls": [
+        "https://academic.oup.com/qje/article/140/2/889/7990658",
+        "https://shapingwork.mit.edu/research/building-pro-worker-ai/",
+        "https://www.digitalistpapers.com/vol2/autorthompson"
+      ]
+    },
+    {
+      "note": "Sources: Acemoglu and Johnson: machinery, labor, and the early Industrial Revolution · 2024 historical analysis; Autor: the history and future of workplace automation · 2015; Autor and Thompson: how learned capabilities change the expertise question · interpretive framework.",
+      "urls": [
+        "https://www.annualreviews.org/content/journals/10.1146/annurev-economics-091823-025129",
+        "https://economics.mit.edu/sites/default/files/publications/why%20are%20there%20still%20jobs%202014.pdf",
+        "https://www.digitalistpapers.com/vol2/autorthompson"
+      ]
+    },
+    {
+      "note": "Sources: Anthropic: Economic Primitives · 15 January 2026 · supplied report, pages 45–47 and 51; modeled task-removal analysis, with classification and education-proxy limitations.",
+      "urls": [
+        "https://www.anthropic.com/research/anthropic-economic-index-january-2026-report"
+      ]
+    },
+    {
+      "note": "Sources: OpenAI: recurring work beyond occupational boundaries · 16 September 2026 · observational usage study; Anthropic: employment inside the company · 16 October 2026 · company-specific evidence. The learning-ladder implications are IAM's interpretation.",
+      "urls": [
+        "https://openai.com/index/unlocking-new-ways-of-working/",
+        "https://www.anthropic.com/research/employment-at-anthropic"
+      ]
+    },
+    {
+      "note": "Sources: Editorial illustration. Arithmetic is hypothetical, not a wage estimate or a forecast. All working time is included in the stated hours; tax and other unlisted costs are excluded.",
+      "urls": []
+    },
+    {
+      "note": "Sources: GovTech Singapore: AntiScam Pango beta · 4 November 2026; Jennifer Pahlka: AI Meets the Cascade of Rigidity, The Digitalist Papers, Volume 1 · 2024 essay. The application of her argument to Pango is IAM's interpretation.",
+      "urls": [
+        "https://www.tech.gov.sg/media/govtech-launches-antiscam-pango-beta-to-help-users-spot-suspicious-scam-messages-/",
+        "https://www.digitalistpapers.com/essays/ai-meets-the-cascade-of-rigidity"
+      ]
+    }
+  ],
+  "limitations": [
+    "Company and agency results are attributed; this verification is not independent replication.",
+    "AMIE setting and preparation-survey denominator were checked in the March manuscript. October journal full text was not independently retrieved. No clinical recommendation is made.",
+    "The MBA trial randomized 86 students; 46 remained in its screened main assessment analysis. The undergraduate trial had approximately 15% tutor take-up. Different designs do not rank all AI tutors.",
+    "Anthropic January 2026 deskilling is modeled removal of tasks using November 2025 usage and an imperfect education proxy; it is not observed worker skill loss or a causal wage estimate.",
+    "Anthropic October evidence concerns its own workforce. OpenAI September evidence concerns recurring cross-occupation usage, not independent mastery or higher pay.",
+    "The Digitalist Papers contains individual authors’ arguments, not a consensus forecast.",
+    "Grid Protectors concerns commitments for planned infrastructure, not realized bill reductions. Robotics examples do not establish general autonomy.",
+    "The household calculations are hypothetical, before tax, with specified hours and costs.",
+    "Earlier evidence is explicitly dated; this is a selective monthly edition, not an exhaustive news roundup."
+  ]
+}

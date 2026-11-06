@@ -1,0 +1,28 @@
+{
+  "cadence": "monthly",
+  "nextIssueMonth": "2026-12",
+  "editions": [
+    {
+      "issue": "02",
+      "date": "2026-11-06",
+      "month": "2026-11",
+      "title": "Where Amplified Intelligence Is Making a Difference",
+      "summary": "From scientific agents and clinical preparation to deskilling, public capacity, and who keeps the productivity gain.",
+      "readingMinutes": 12,
+      "manifest": "audio/issue-02-20261106.json",
+      "status": "published",
+      "listeningSeconds": 1025.45
+    },
+    {
+      "issue": "01",
+      "date": "2026-10-30",
+      "month": "2026-10",
+      "title": "From Intelligence to Agency",
+      "summary": "Agents, AI-assisted development, the household economy, and the conditions for living well.",
+      "readingMinutes": 9,
+      "manifest": "audio/issue-01-20261031.json",
+      "status": "published",
+      "listeningSeconds": 753.4
+    }
+  ]
+}

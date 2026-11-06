@@ -2,6 +2,7 @@
 (() => {
   'use strict';
   const $ = id => document.getElementById(id);
+  const manifestUrl = new URL(document.currentScript.dataset.manifest || 'audio/issue-01-20261031.json', document.baseURI);
   const play = $('play'), restart = $('restart'), speed = $('speed');
   const seek = $('seek'), status = $('status'), follow = $('follow');
   const audio = new Audio();
@@ -98,7 +99,7 @@
 
   async function load() {
     try {
-      const response = await fetch('audio/issue-01-20261031.json');
+      const response = await fetch(manifestUrl);
       if (!response.ok) throw new Error('Missing Sky manifest');
       const data = await response.json();
       const blocks = [...document.querySelectorAll('#article h2, #article h3, #article .readable, #article .section-deck')];
@@ -130,7 +131,7 @@
       }
       words = data.words; duration = data.duration;
       seek.max = duration;
-      audio.src = data.audio;
+      audio.src = new URL(data.audio, new URL('../', manifestUrl)).href;
       audio.playbackRate = Number(speed.value);
       ready = true;
       play.disabled = restart.disabled = seek.disabled = false;

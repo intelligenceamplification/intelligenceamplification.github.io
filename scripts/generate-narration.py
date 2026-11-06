@@ -42,7 +42,7 @@ class ArticleParser(HTMLParser):
             self.inside = False
 
 
-def generate(edition='issue-01', revision=None):
+def generate(edition='issue-01', revision=None, input_path=None):
     if not re.fullmatch(r'issue-\d{2,}', edition):
         raise ValueError('Edition must have the form issue-01')
     if revision is not None and not re.fullmatch(r'\d{8}', revision):
@@ -55,7 +55,7 @@ def generate(edition='issue-01', revision=None):
 
     torch.set_num_threads(4)
     parser = ArticleParser()
-    parser.feed((ROOT / 'intelligence/index.html').read_text())
+    parser.feed((input_path or ROOT / 'intelligence/index.html').read_text())
     blocks = parser.blocks
     assert blocks, 'No narration content found'
     pipeline = KPipeline(lang_code='a', repo_id='hexgrad/Kokoro-82M', device='cpu')
@@ -109,5 +109,6 @@ if __name__ == '__main__':
     cli = argparse.ArgumentParser(description=__doc__)
     cli.add_argument('--edition', default='issue-01', help='Edition audio identifier, such as issue-01')
     cli.add_argument('--revision', help='Optional YYYYMMDD asset version; does not change the issue number')
+    cli.add_argument('--input', type=Path, help='Optional permanent edition HTML path')
     args = cli.parse_args()
-    generate(args.edition, args.revision)
+    generate(args.edition, args.revision, args.input)
