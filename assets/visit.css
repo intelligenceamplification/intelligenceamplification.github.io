@@ -1,0 +1,94 @@
+.visit-wrap {
+  width: min(100% - 2.5rem, 70rem);
+  margin-inline: auto;
+}
+.visit-wrap[hidden], #visit-opening [hidden], #visit-takeaway [hidden], #visit-services [hidden] { display: none; }
+#visit-summary { padding-block: 1rem; }
+#visit-thread, #visit-original { overflow-wrap: anywhere; white-space: pre-wrap; }
+.visit-opening { margin-block: 0 1.25rem; max-width: 45rem; }
+#capability-explorer .visit-opening h2 { font-size: clamp(1.25rem, 3vw, 1.75rem); margin: 0 0 .55rem; }
+.visit-panel { padding-block: clamp(1.75rem, 5vw, 3.5rem); border-top: 1px solid currentColor; }
+.visit-bridge { max-width: 57rem; padding-block: 2rem; }
+.visit-row { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin-block: .65rem; }
+.visit-links { font-size: .92rem; }
+.visit-storage { font-size: .86rem; }
+#visit-opening label, #visit-takeaway label { display: block; margin-block: .5rem .25rem; }
+#visit-opening input, #visit-takeaway input[type="text"], #visit-takeaway textarea {
+  min-width: 0;
+  color: inherit;
+  background: transparent;
+  border: 1px solid currentColor;
+  border-radius: .45rem;
+  padding: .65rem .75rem;
+  font: inherit;
+}
+#visit-question { flex: 1 1 13rem; }
+#visit-takeaway input[type="text"], #visit-takeaway textarea { width: 100%; max-width: 45rem; display: block; }
+#visit-takeaway [hidden] { display: none; }
+.visit-panel fieldset, #visit-intents fieldset { border: 0; padding: 0; margin-block: 1rem; }
+.visit-panel button, #visit-opening button, #visit-apps button {
+  min-height: 44px;
+  padding: .45rem .85rem;
+  border: 1px solid currentColor;
+  border-radius: .4rem;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+#visit-opening .visit-link, .visit-panel .visit-link { border: 0; padding-inline: 0; text-decoration: underline; }
+#visit-opening .button.dark { background: var(--ink, #182127); color: var(--paper, #fff); }
+#visit-opening [aria-pressed="true"], #visit-services [aria-pressed="true"] { box-shadow: inset 0 0 0 1px currentColor; font-weight: 700; }
+#visit-opening :focus-visible, .visit-wrap :focus-visible, #visit-apps :focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.visit-wrap details > summary { cursor: pointer; }
+#visit-choices label { display: flex; gap: .5rem; align-items: baseline; }
+.visit-samples { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%, 14rem),1fr)); gap: 1.5rem; margin-top: 2rem; }
+.visit-samples section { border-top: 1px solid currentColor; padding-top: .85rem; }
+.visit-samples h3 { margin-top: 0; }
+#visit-apps [hidden] { display: none; }
+.visit-breath-emblem {
+  display: grid;
+  place-items: center;
+  width: 6rem;
+  aspect-ratio: 1;
+  margin-block: 1rem;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  isolation: isolate;
+}
+#visit-breath-shape, #visit-breath-count { grid-area: 1 / 1; }
+#visit-breath-shape {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: color-mix(in srgb, currentColor 14%, transparent);
+  transform: scale(var(--visit-breath-scale, .12));
+}
+#visit-breath-count { font-size: 1.75rem; font-variant-numeric: tabular-nums; }
+.visit-lesson-words { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; }
+.visit-lesson-words dt { font-weight: 600; }
+.visit-lesson-words dd { margin: 0; }
+#visit-phrase-words { min-width: 0; margin: 1rem 0 0; padding: 0; border: 0; }
+#visit-phrase-words button:disabled { opacity: .55; cursor: default; }
+#visit-listen-speed { font: inherit; }
+.visit-lesson-more { margin-block: 1rem; }
+.visit-lesson-more summary { cursor: pointer; }
+.visit-lesson-phrase { margin: .4rem 0; font-family: var(--serif, Georgia, serif); font-size: 1.5rem; }
+#visit-takeaway, #visit-opening, #language-xray, #capability-explorer #experience { scroll-margin-top: 6rem; }
+@media (prefers-reduced-motion: reduce) {
+  #visit-breath-shape { transform: scale(.12); }
+}
+@media print {
+  body.visit-printing > :not(main), body.visit-printing main > :not(#visit-print) { display: none !important; }
+  body.visit-printing #visit-print { display: block !important; white-space: pre-wrap; overflow-wrap: anywhere; color: #000; }
+  body.visit-printing { background: #fff !important; }
+}
+#visit-confirm {
+  width: min(34rem, calc(100% - 2rem));
+  padding: 1.5rem;
+  border: 1px solid currentColor;
+  border-radius: .5rem;
+  background: var(--paper);
+  color: var(--ink);
+}
+#visit-confirm::backdrop { background: rgb(0 0 0 / .4); }
