@@ -92,3 +92,21 @@
   color: var(--ink);
 }
 #visit-confirm::backdrop { background: rgb(0 0 0 / .4); }
+
+#visit-opening #visit-brief-fields textarea {
+  display: block;
+  width: 100%;
+  padding: .65rem .75rem;
+  border: 1px solid currentColor;
+  border-radius: .45rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+#visit-question-confirmed, #visit-plan-preview dd { overflow-wrap: anywhere; white-space: pre-wrap; }
+#visit-intent-next:empty, #visit-plan-progress:empty { display: none; }
+.visit-test-example { margin-block: .75rem; }
+.visit-test-example summary { cursor: pointer; }
+#visit-plan-preview { margin-block: 1rem; }
+#visit-plan-preview dt { font-weight: 600; }
+#visit-plan-preview dd { margin: 0 0 .6rem; }

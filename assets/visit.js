@@ -14,6 +14,18 @@
   const defaultPrompts = ['What question do you want to pursue?', 'What would count as a useful answer?', 'What can you do first?'];
   const briefKeys = ['pursue', 'evidence', 'move'];
 
+  const briefFields = `<div id="visit-brief-fields">
+      ${briefKeys.map(name => `<label for="visit-${name}"></label><textarea rows="2" maxlength="2000" id="visit-${name}"></textarea>`).join('')}
+      </div>`;
+  const testMethods = {
+    Understand: 'Write down your current explanation. Check it against a source or observation and record what changes your mind.',
+    Decide: 'Compare your options using the same criterion. Record what would make you switch your choice.',
+    Build: 'Try the smallest useful version. Record where it meets your criterion and where it falls short.'
+  };
+  function testMethod() {
+    return testMethods[visit.intent] || 'Record what happens. Compare it with the evidence you chose and decide what to try next.';
+  }
+
   function read() {
     try {
       const saved = JSON.parse(sessionStorage.getItem(key));
@@ -49,7 +61,7 @@
       <h2 id="visit-heading">What would you like to make possible?</h2>
       <form id="visit-question-form">
         <label for="visit-question">Bring a question of your own</label>
-        <div class="visit-row"><input id="visit-question" type="text" required maxlength="500">
+        <div class="visit-row"><input id="visit-question" type="text" required maxlength="500" placeholder="How can I make time to read after work?">
         <button class="button dark" type="submit">Use this question</button></div>
       </form>
       <div class="visit-row visit-links">
@@ -62,17 +74,25 @@
         <button type="button" data-starter>Learn a language deeply.</button>
       </div>
       <div id="visit-intents" hidden>
+        <p id="visit-question-confirmed" role="status"></p>
         <fieldset><legend>What are you trying to do?</legend>
           <div class="visit-row">${Object.keys(prompts).map(intent => `<button type="button" data-intent="${intent}" aria-pressed="false">${intent}</button>`).join('')}</div>
         </fieldset>
-        <p id="visit-intent-next" role="status"></p>
-        <a href="#visit-takeaway">Shape your brief</a>
+        <p id="visit-intent-next"></p>
+        <p>Turn your question into a small test. Name the evidence you would trust and one step you can take.</p>
+        ${briefFields}
+        <details class="visit-test-example">
+          <summary>See an example of a small test</summary>
+          <p>How can I make time to read after work? Tonight I’ll leave my phone in another room and set a 20-minute timer. I’ll note how long I read and what interrupted me.</p>
+        </details>
+        <p id="visit-plan-progress" role="status"></p>
+        <a href="#visit-takeaway">Review your test plan</a>
       </div>
       <p class="visit-storage"></p>
     </section>`);
   const summary = mount('visit-summary', `
     <details><summary>Your thread</summary><p id="visit-thread"></p>
-    <div class="visit-row"><a href="#visit-takeaway">Return to your brief</a>
+    <div class="visit-row"><a href="#visit-takeaway">Review your test plan</a>
     <a href="index.html#visit-opening">Change your question</a></div></details>`);
   const takeaway = mount('visit-takeaway', `
     <section class="visit-panel" aria-labelledby="visit-takeaway-title">
@@ -80,10 +100,18 @@
       <p>Put what you noticed into words you can use again.</p>
       <p id="visit-original"></p>
       <p id="visit-start-link"><a href="index.html#visit-opening">Start with a question</a></p>
-      <div id="visit-brief-fields">
-      ${briefKeys.map(name => `<label for="visit-${name}"></label><textarea rows="2" maxlength="2000" id="visit-${name}"></textarea>`).join('')}
-      </div>
-      <label for="visit-insight">What would you want to check in your own question?</label>
+      ${opening ? '' : briefFields}
+      <section id="visit-plan-preview" hidden aria-labelledby="visit-plan-title">
+        <h3 id="visit-plan-title">Your test plan</h3>
+        <dl>
+          <dt>Question to test</dt><dd id="visit-plan-question"></dd>
+          <dt>Evidence to look for</dt><dd id="visit-plan-evidence"></dd>
+          <dt>First step</dt><dd id="visit-plan-move"></dd>
+        </dl>
+        <p id="visit-plan-method"></p>
+        <a href="index.html#visit-opening">Edit the plan</a>
+      </section>
+      <label for="visit-insight" id="visit-insight-label">What did you learn or notice?</label>
       <textarea id="visit-insight" rows="2" maxlength="2000"></textarea>
       <fieldset id="visit-choices" hidden><legend>Include prepared exercise notes</legend>
         ${resultKinds.map(kind => `<label hidden><input type="checkbox" data-result="${kind}"><span></span></label>`).join('')}
@@ -196,7 +224,8 @@
         const value = visit.brief[briefKeys[i]];
         return value?.trim() ? label + '\n' + value : '';
       }),
-      visit.insight.trim() && 'My insight\n' + visit.insight,
+      visit.question && visit.brief.evidence?.trim() && visit.brief.move?.trim() && 'How to check\n' + testMethod(),
+      visit.insight.trim() && 'What happened or what I learned\n' + visit.insight,
       selectedNotes().length && 'Prepared exercise notes\n' + selectedNotes().join('\n')
     ].filter(Boolean).join('\n\n');
   }
@@ -211,7 +240,10 @@
       for (const button of opening.querySelectorAll('[data-intent]')) {
         button.setAttribute('aria-pressed', String(button.dataset.intent === visit.intent));
       }
-      find('visit-intent-next').textContent = visit.intent ? prompts[visit.intent][0] : '';
+      find('visit-question-confirmed').textContent = visit.question ? 'Your question: ' + visit.question : '';
+      find('visit-intent-next').textContent = visit.intent ? testMethod() : '';
+      find('visit-plan-progress').textContent = visit.brief.evidence?.trim() && visit.brief.move?.trim()
+        ? 'Your plan is ready to try.' : '';
     }
     document.querySelectorAll('.visit-storage').forEach(node => {
       node.textContent = storageAvailable ? 'Your visit is kept in this browser tab. You can clear it below.' :
@@ -220,10 +252,17 @@
     if (!takeaway) return;
     find('visit-start-link').hidden = Boolean(visit.question);
     find('visit-original').textContent = visit.question ? 'Original question: ' + visit.question : '';
+    find('visit-plan-preview').hidden = !visit.question;
+    find('visit-plan-question').textContent = visit.brief.pursue?.trim() || visit.question;
+    find('visit-plan-evidence').textContent = visit.brief.evidence?.trim() || 'Add the evidence you would trust.';
+    find('visit-plan-move').textContent = visit.brief.move?.trim() || 'Add one step you can try.';
+    find('visit-plan-method').textContent = testMethod();
+    find('visit-insight-label').textContent = visit.question ? 'What happened when you tried it? (Optional)' : 'What did you learn or notice?';
     const activePrompts = prompts[visit.intent] || defaultPrompts;
     briefKeys.forEach((name, i) => {
       const input = find('visit-' + name);
-      takeaway.querySelector('label[for="' + input.id + '"]').textContent = activePrompts[i];
+      input.labels[0].textContent = activePrompts[i];
+      if (name === 'pursue') input.placeholder = visit.question;
       if (input !== document.activeElement) input.value = visit.brief[name] || '';
     });
     if (find('visit-insight') !== document.activeElement) find('visit-insight').value = visit.insight;
@@ -285,6 +324,8 @@
       Object.assign(visit, {intent: '', brief: {}, insight: '', results: {}, attempts: {}});
     }
     visit.question = value;
+    find('visit-starters').hidden = true;
+    find('visit-starters-toggle').setAttribute('aria-expanded', 'false');
     find('visit-question').setCustomValidity('');
     find('visit-question').value = value;
     save();
