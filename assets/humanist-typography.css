@@ -225,3 +225,14 @@ h1, h2, h3 { letter-spacing: -.015em !important; line-height: 1.12 !important; f
     opacity: .88;
   }
 }
+
+/* Direct labels for the task-horizon curve. */
+.ia-curve .ia-scenario-point { fill: var(--paper); stroke: var(--blue); stroke-width: 2; }
+.ia-curve .plot-labels .axis-label { fill: var(--muted); font-size: 12px; }
+.ia-curve-highlight { margin-top: 1.25rem; }
+.ia-curve-highlight strong { color: var(--ink); }
+
+.ia-curve .ia-frontier-on-curve path { stroke: var(--muted); stroke-width: 1; opacity: .55; }
+.ia-curve .ia-frontier-on-curve circle { stroke-width: 1.4; }
+.ia-curve .ia-frontier-on-curve .axis-label { fill: var(--muted); font-size: 12px; }
+@media (max-width: 700px) { .ia-curve:has(.ia-frontier-on-curve) { min-width: 880px; } }
