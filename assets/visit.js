@@ -159,42 +159,43 @@
         </div>
       </section>
       <section aria-labelledby="visit-listening-title">
-        <p class="section-number">Nuevo Flow · A1 · Identity and origin</p>
-        <h3 id="visit-listening-title">Say where you’re from in Spanish</h3>
-        <p>Imagine someone asks where you’re from. Start with the reply “I’m from Indiana.”</p>
-        <p class="visit-lesson-phrase" lang="es">Soy de Indiana.</p>
-        <dl class="visit-lesson-words">
-          <div><dt lang="es">Soy</dt><dd>I am</dd></div>
-          <div><dt lang="es">de</dt><dd>from</dd></div>
-          <div><dt lang="es">Indiana</dt><dd>Indiana</dd></div>
-        </dl>
-        <p>Listen and follow the words above. Then try saying the phrase aloud.</p>
-        <audio id="visit-lesson-audio" preload="none" src="assets/app-samples/es-origin-native-castilian-a3dc7d41dd38-tempo85.m4a"></audio>
+        <p class="section-number">Nuevo Flow · B1 · A supported view</p>
+        <h3 id="visit-listening-title">Make an argument in three languages</h3>
+        <p>I think public transport should improve because many people depend on it.</p>
+        <label for="visit-lesson-language">Practice language</label>
+        <select id="visit-lesson-language"><option value="es">Spanish</option><option value="vi">Vietnamese</option></select>
+        <div id="visit-lesson-model">
+          <p class="visit-lesson-phrase" id="visit-model-phrase" lang="es"></p>
+          <details>
+            <summary>Compare the Spanish and Vietnamese structures</summary>
+            <dl class="visit-lesson-words">
+              <div><dt>State your view</dt><dd><span lang="es">Creo que</span> · <span lang="vi">Tôi nghĩ</span></dd></div>
+              <div><dt>Make the recommendation</dt><dd><span lang="es">debería mejorar</span> uses the conditional of <i lang="es">deber</i> with an infinitive. <span lang="vi">nên được cải thiện</span> uses <i lang="vi">nên</i> for “should” and <i lang="vi">được cải thiện</i> for “be improved.”</dd></div>
+              <div><dt>Give a reason</dt><dd><span lang="es">porque</span> and <span lang="vi">vì</span> introduce why the change matters.</dd></div>
+            </dl>
+          </details>
+        </div>
+        <audio id="visit-lesson-audio" preload="none"></audio>
         <div class="visit-row">
           <button type="button" id="visit-listen">Listen to Spanish</button>
           <label for="visit-listen-speed">Speed</label>
           <select id="visit-listen-speed"><option value="1">Normal</option><option value="0.75">Slow</option></select>
         </div>
         <p id="visit-listen-status" role="status"></p>
-        <button type="button" id="visit-practice-start" aria-expanded="false" aria-controls="visit-phrase-practice">Build the phrase</button>
+        <button type="button" id="visit-practice-start" aria-expanded="false" aria-controls="visit-phrase-practice">Build the argument</button>
         <div id="visit-phrase-practice" hidden>
-          <fieldset id="visit-phrase-words">
-            <legend>Put “I’m from Indiana” in Spanish word order.</legend>
-            <div class="visit-row">
-              <button type="button" lang="es" data-word="de">de</button>
-              <button type="button" lang="es" data-word="Indiana">Indiana</button>
-              <button type="button" lang="es" data-word="Soy">Soy</button>
-            </div>
+          <fieldset>
+            <legend>Put the parts in order.</legend>
+            <div class="visit-row" id="visit-phrase-words"></div>
           </fieldset>
-          <p>Your phrase: <strong id="visit-phrase-answer" lang="es"></strong></p>
+          <p>Your argument: <strong id="visit-phrase-answer" lang="es"></strong></p>
           <p id="visit-phrase-status" role="status"></p>
-          <button type="button" id="visit-phrase-reset">Start over</button>
+          <div class="visit-row">
+            <button type="button" id="visit-phrase-check" disabled>Check word order</button>
+            <button type="button" id="visit-phrase-undo" disabled>Undo</button>
+            <button type="button" id="visit-phrase-reset">Start over</button>
+          </div>
         </div>
-        <details class="visit-lesson-more">
-          <summary>Compare another language</summary>
-          <p><strong>Vietnamese</strong> · <span lang="vi">Mình đến từ Indiana.</span></p>
-          <a href="index.html#language-xray">Explore the words in Language X-Ray</a>
-        </details>
       </section>
     </div>`);
   const work = mount('visit-services', `
@@ -500,55 +501,103 @@
   }
 
   function mountListening() {
+    const models = {
+      es: {
+        name: 'Spanish', audio: 'es-supported-view-52ef16eb.wav',
+        chunks: ['Creo que', 'el transporte público', 'debería mejorar', 'porque', 'muchas personas', 'dependen de él'],
+        order: [3, 5, 1, 2, 0, 4],
+      },
+      vi: {
+        name: 'Vietnamese', audio: 'vi-supported-view-853e3edd.wav',
+        chunks: ['Tôi nghĩ', 'giao thông công cộng', 'nên được cải thiện', 'vì', 'nhiều người', 'phụ thuộc vào nó'],
+        order: [4, 2, 0, 5, 3, 1],
+      },
+    };
     const audio = find('visit-lesson-audio');
     const listen = find('visit-listen');
     const speed = find('visit-listen-speed');
+    const language = find('visit-lesson-language');
+    const model = find('visit-lesson-model');
+    const modelPhrase = find('visit-model-phrase');
     const status = find('visit-listen-status');
     const practice = find('visit-phrase-practice');
     const start = find('visit-practice-start');
-    const words = Array.from(find('visit-phrase-words').querySelectorAll('[data-word]'));
+    const words = find('visit-phrase-words');
     const answer = find('visit-phrase-answer');
     const feedback = find('visit-phrase-status');
+    const check = find('visit-phrase-check');
+    const undo = find('visit-phrase-undo');
     const reset = find('visit-phrase-reset');
     let selected = [];
     let playback = 0;
+    let playing = false;
+    const current = () => models[language.value];
 
     function stop() {
       playback += 1;
+      playing = false;
       audio.pause();
       if (audio.readyState) audio.currentTime = 0;
-      listen.textContent = 'Listen to Spanish';
+      listen.textContent = 'Listen to ' + current().name;
     }
 
-    function resetPhrase() {
+    function updatePhrase(message = '') {
+      for (const button of words.querySelectorAll('button')) {
+        button.disabled = selected.includes(Number(button.dataset.chunk));
+      }
+      answer.textContent = selected.map(index => current().chunks[index]).join(' ');
+      feedback.textContent = message;
+      check.disabled = selected.length !== current().chunks.length;
+      undo.disabled = selected.length === 0;
+    }
+
+    function setPractice(open) {
+      practice.hidden = !open;
+      model.hidden = open;
+      start.setAttribute('aria-expanded', String(open));
+      start.textContent = open ? 'Show the model again' : 'Build the argument';
       selected = [];
-      answer.textContent = '';
-      feedback.textContent = '';
-      words.forEach(word => { word.disabled = false; });
+      updatePhrase();
+    }
+
+    function loadLanguage() {
+      stop();
+      status.textContent = '';
+      const { audio: filename, chunks, order } = current();
+      audio.src = 'assets/app-samples/' + filename;
+      modelPhrase.lang = answer.lang = language.value;
+      modelPhrase.textContent = chunks.join(' ') + '.';
+      words.replaceChildren(...order.map(index => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.lang = language.value;
+        button.dataset.chunk = String(index);
+        button.textContent = chunks[index];
+        return button;
+      }));
+      setPractice(!practice.hidden);
     }
 
     resetListening = () => {
-      stop();
-      resetPhrase();
-      practice.hidden = true;
-      start.setAttribute('aria-expanded', 'false');
-      status.textContent = '';
+      language.value = 'es';
+      speed.value = '1';
+      setPractice(false);
+      loadLanguage();
     };
 
     function reportAudioError() {
       stop();
-      status.textContent = 'Audio could not play. Try listening again or build the phrase using the words above.';
+      status.textContent = 'Audio could not play. Try Listen again or open the written model.';
     }
 
     speed.addEventListener('change', () => { audio.playbackRate = Number(speed.value); });
+    language.addEventListener('change', loadLanguage);
     listen.addEventListener('click', async () => {
-      if (listen.textContent === 'Stop Spanish') {
-        stop();
-        return;
-      }
+      if (playing) { stop(); return; }
       const attempt = ++playback;
       status.textContent = '';
-      listen.textContent = 'Stop Spanish';
+      playing = true;
+      listen.textContent = 'Stop ' + current().name;
       try {
         audio.playbackRate = Number(speed.value);
         await audio.play();
@@ -560,33 +609,39 @@
     audio.addEventListener('ended', stop);
 
     start.addEventListener('click', () => {
-      practice.hidden = !practice.hidden;
-      start.setAttribute('aria-expanded', String(!practice.hidden));
-      if (!practice.hidden) (words.find(word => !word.disabled) || reset).focus();
+      setPractice(practice.hidden);
+      if (!practice.hidden) words.querySelector('button')?.focus();
+    });
+    words.addEventListener('click', ({ target }) => {
+      const tile = target.closest('button[data-chunk]');
+      if (!tile || tile.disabled) return;
+      selected.push(Number(tile.dataset.chunk));
+      updatePhrase('Added ' + tile.textContent + '.');
+      (words.querySelector('button:not(:disabled)') || check).focus();
+    });
+    undo.addEventListener('click', () => {
+      const restored = selected.pop();
+      updatePhrase();
+      words.querySelector('[data-chunk="' + restored + '"]')?.focus();
     });
     reset.addEventListener('click', () => {
-      resetPhrase();
-      words[0].focus();
+      selected = [];
+      updatePhrase();
+      words.querySelector('button')?.focus();
     });
-    words.forEach(word => word.addEventListener('click', () => {
-      selected.push(word.dataset.word);
-      word.disabled = true;
-      answer.textContent = selected.join(' ');
-      const next = words.find(candidate => !candidate.disabled);
-      if (next) {
-        feedback.textContent = 'Added ' + word.dataset.word + '. Choose the next word.';
-        next.focus();
-        return;
-      }
-      const correct = answer.textContent === 'Soy de Indiana';
-      if (correct) answer.textContent += '.';
+    check.addEventListener('click', () => {
+      const correct = selected.every((index, position) => index === position);
       feedback.textContent = correct
-        ? 'You built “I’m from Indiana.” Say the whole phrase aloud.'
-        : 'Try again. Start with the word for “I am,” then add “from” and the place.';
-      visit.attempts['Nuevo Flow'] = correct ? 'Built the A1 introduction in Spanish' : 'Practiced the A1 introduction in Spanish';
-      save();
-      reset.focus();
-    }));
+        ? 'Correct. You stated your view, made a recommendation, and gave a reason. Try the other language with the same meaning.'
+        : 'Start with the opinion and recommendation. Then add the connector and the reason. Use Undo to revise.';
+      if (correct) {
+        answer.textContent = current().chunks.join(' ') + '.';
+        visit.attempts['Nuevo Flow'] = 'Built the B1 supported view in ' + current().name;
+        save();
+      }
+    });
+
+    loadLanguage();
   }
 
   if (apps) {
