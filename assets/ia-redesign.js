@@ -45,12 +45,11 @@ pick('capability-explorer').addEventListener('click', event => {
   show(target);
 });
 
-let breathPhase;
-let breathEnd;
+let breathTimer;
 function stopBreath(message = 'Ready when you are.') {
-  clearTimeout(breathPhase);
-  clearTimeout(breathEnd);
+  clearTimeout(breathTimer);
   delete pick('breath-circle').dataset.phase;
+  pick('breath-count').textContent = '';
   pick('breath-status').textContent = message;
   pick('breath-start').disabled = false;
   pick('breath-stop').hidden = true;
@@ -61,17 +60,25 @@ bind('breath-start', () => {
   pick('breath-stop').hidden = false;
   pick('breath-stop').focus();
   pick('breath-start').disabled = true;
-  circle.dataset.phase = 'in';
-  status.textContent = 'Breathe in';
-  breathPhase = setTimeout(() => {
-    circle.dataset.phase = 'out';
-    status.textContent = 'Breathe out';
-  }, 4000);
-  breathEnd = setTimeout(() => {
-    const returnFocus = document.activeElement === pick('breath-stop');
-    stopBreath('Round complete.');
-    if (returnFocus) pick('breath-start').focus();
-  }, 12000);
+  const started = performance.now();
+  function tick() {
+    const elapsed = performance.now() - started;
+    if (elapsed >= 12000) {
+      const returnFocus = document.activeElement === pick('breath-stop');
+      stopBreath('Round complete.');
+      if (returnFocus) pick('breath-start').focus();
+      return;
+    }
+    const phase = elapsed < 4000 ? 'in' : 'out';
+    if (circle.dataset.phase !== phase) {
+      circle.dataset.phase = phase;
+      status.textContent = phase === 'in' ? 'Breathe in' : 'Breathe out';
+    }
+    const phaseEnd = phase === 'in' ? 4000 : 12000;
+    pick('breath-count').textContent = String(Math.ceil((phaseEnd - elapsed) / 1000));
+    breathTimer = setTimeout(tick, 1000 - elapsed % 1000);
+  }
+  tick();
 });
 bind('breath-stop', () => {
   stopBreath();

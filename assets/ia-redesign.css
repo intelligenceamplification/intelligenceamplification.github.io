@@ -36,7 +36,8 @@
 .ia-score-list li {border-bottom:1px solid var(--rule);padding:.5rem 0}
 .ia-score-list strong {margin-left:1rem}
 .breath-area {position:relative;min-height:13rem;display:grid;place-items:center;margin:1rem 0}
-#breath-circle {width:6rem;aspect-ratio:1;border:1px solid var(--blue);border-radius:50%;background:#e7edf2;transform:scale(.72)}
+#breath-circle {display:grid;place-items:center;width:6rem;aspect-ratio:1;border:1px solid var(--blue);border-radius:50%;background:#e7edf2;transform:scale(.72)}
+#breath-count {color:var(--blue);font:1.8rem/1 var(--serif);font-variant-numeric:tabular-nums}
 #breath-circle[data-phase=in] {transform:scale(1.45);transition:transform 4s ease-in-out}
 #breath-circle[data-phase=out] {transform:scale(.72);transition:transform 8s ease-in-out}
 #breath-status {margin:0}
