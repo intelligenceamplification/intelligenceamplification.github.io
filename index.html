@@ -21,9 +21,9 @@
 <meta name="twitter:description" content="Amplify your intelligence. Expand your capabilities.">
 <meta name="twitter:image" content="https://intelligenceamplification.github.io/assets/og-v2.png">
 <link rel="stylesheet" href="assets/release-1/explorer-D9feSOGG.css">
-<link rel="stylesheet" href="assets/ia-redesign.css?v=20261126-breath">
+<link rel="stylesheet" href="assets/ia-redesign.css?v=agent-work-review">
 <script defer src="assets/release-1/explorer-Y6v3qbcN.js"></script>
-<script defer src="assets/ia-redesign.js?v=20261126-breath"></script>
+<script defer src="assets/ia-redesign.js?v=agent-work-review-2"></script>
 <style id="design">
   :root{color-scheme:light;--paper:#f6f7f9;--ink:#161c24;--muted:#4e5a67;--blue:#264964;--rule:#bbc5ce;--serif:Georgia,'Times New Roman',serif;--sans:system-ui,sans-serif}
   *{box-sizing:border-box}
@@ -100,18 +100,6 @@
   .handoff-stages{margin:1.65rem 0}
   .handoff-text{min-height:6rem}
   .handoff-text mark{color:inherit;background:transparent;text-decoration:underline;text-decoration-color:var(--blue);text-underline-offset:.14em}
-  .question-flow h1{font-size:clamp(2.9rem,6.4vw,5.65rem);max-width:19ch;text-wrap:balance}
-  .question-flow .anchor{max-width:35ch;overflow-wrap:anywhere}
-  .question-form{max-width:39rem;margin-top:2.15rem}
-  .question-form label{display:block;font-weight:550;font-size:.95rem;margin-top:1.45rem}
-  .question-form textarea{display:block;width:100%;resize:vertical;margin:.35rem 0 .8rem;padding:.65rem 0;background:transparent;color:var(--ink);border:0;border-bottom:1px solid var(--muted);border-radius:0;font:1.12rem/1.5 var(--serif)}
-  .question-form textarea::placeholder{color:var(--muted);opacity:1}
-  .question-form .actions{margin-top:1.35rem}
-  .test-note .structure{margin:1.8rem 0}
-  .test-note .structure p{white-space:pre-wrap;overflow-wrap:anywhere}
-  .test-note .question-form{margin:1rem 0 1.5rem}
-  .test-note .question-form label{margin:0}
-  .test-status{margin-top:1rem}
   .ia-trajectory{margin:0}
   .ia-trajectory figcaption p{color:var(--muted);font-size:1.12rem}
   .ia-trajectory-kicker{display:block;color:var(--muted);letter-spacing:.05em;margin-bottom:.5rem;font-size:.92rem}
@@ -155,7 +143,6 @@
         <p class="anchor">What can you do with AI that you couldn’t do before?</p>
         <div class="actions">
           <button class="solid" id="home-experience">Explore an experience →</button>
-          <button class="link" data-page="question">Bring your own question →</button>
         </div>
       </div>
       <img src="assets/hero-lens-engraved.png" width="1448" height="1086" alt="Transparent optical form bearing the letters IA">
@@ -168,69 +155,120 @@
       </ul>
     </nav>
   </section>
-  <section id="question" class="wide question-flow" aria-labelledby="question-title" hidden>
-    <button class="link back-link" data-page="home">← Home</button>
-    <h1 id="question-title" tabindex="-1">What would you like to make possible?</h1>
-    <form id="question-form" class="question-form">
-      <label for="your-question">Your question</label>
-      <textarea id="your-question" rows="2" maxlength="500" placeholder="How can I make time to read after work?" required></textarea>
-      <div class="actions">
-        <button class="solid" type="submit">Shape a small test →</button>
-      </div>
-    </form>
-    <details>
-      <summary>See the reading example</summary>
-      <p><strong>Question</strong><br>How can I make time to read after work?</p>
-      <p><strong>Test</strong><br>Leave my phone in another room and set a 20-minute timer.</p>
-      <p><strong>Evidence</strong><br>Record how long I read and what interrupted me.</p>
-    </details>
-  </section>
-  <section id="test" class="wide question-flow" aria-labelledby="test-title" hidden>
-    <button class="link back-link" data-page="question">← Your question</button>
-    <h1 id="test-title" tabindex="-1">Make it testable.</h1>
-    <p class="anchor" id="test-question"></p>
-    <form id="test-form" class="question-form">
-      <label for="test-move">What will you try?</label>
-      <textarea id="test-move" rows="2" maxlength="1000" required></textarea>
-      <label for="test-evidence">What would count as evidence?</label>
-      <textarea id="test-evidence" rows="2" maxlength="1000" required></textarea>
-      <div class="actions"><button class="solid" type="submit">See your test note →</button></div>
-    </form>
-  </section>
-  <section id="test-note" class="wide question-flow test-note" aria-labelledby="test-note-title" hidden>
-    <button class="link back-link" data-page="test">← Edit the test</button>
-    <h1 id="test-note-title" tabindex="-1">Your test note.</h1>
-    <p class="anchor" id="note-question"></p>
-    <div class="structure">
-      <section><h2>The test</h2><p id="note-move"></p></section>
-      <section><h2>Evidence to look for</h2><p id="note-evidence"></p></section>
-      <section id="note-observation-row" hidden><h2>What I observed</h2><p id="note-observation"></p></section>
-    </div>
-    <div class="actions">
-      <button class="solid" id="download-note">Download note ↓</button>
-      <button class="link" id="record-observation">Record what happened</button>
-    </div>
-    <form id="observation-form" class="question-form" hidden>
-      <label for="observation">What happened when you tried it?</label>
-      <textarea rows="2" id="observation" maxlength="1000" required></textarea>
-      <div class="actions">
-        <button class="solid" type="submit">Save observation</button>
-        <button class="link" type="button" id="cancel-observation">Cancel</button>
-      </div>
-    </form>
-    <p class="quiet test-status" id="test-status" role="status"></p>
-  </section>
   <section id="experiences" class="wide" aria-labelledby="experiences-title" hidden>
     <button class="link back-link" data-page="home">← Home</button>
-    <h1 id="experiences-title" tabindex="-1">Explore an experience.</h1>
+    <h1 id="experiences-title" tabindex="-1">See AI do the work.</h1>
+    <p class="anchor">Give an AI agent a job. See how it uses the records, prepares a result, and brings a decision back to you.</p>
+    <p class="quiet case-format">Choose a guided simulation. Both use fictional records.</p>
     <div class="artifact-row">
-      <button class="link" data-page="handoff">The Friday handoff →</button>
-      <p>A prepared design example of where an AI attempt needs human judgment.</p>
+      <p class="eyeline">When the facts are unclear · Paralegal</p>
+      <button class="link" data-page="case-chronology">Did the vendor agree to replace the units? →</button>
+      <p>Separate what the records show from what someone remembers.</p>
     </div>
     <div class="artifact-row">
-      <button class="link" data-page="examples">Expression, Languages, and Execution →</button>
-      <p>Explore the published examples and inspect what changes.</p>
+      <p class="eyeline">When the goal is clear · Physician</p>
+      <button class="link" data-page="case-referrals">Make every pending referral visible. →</button>
+      <p>Build a follow-up queue from scattered updates and flag gaps in ownership.</p>
     </div>
+    <details id="transfer-work">
+      <summary>See how these moves apply to your work</summary>
+      <dl class="transfer-list">
+        <dt>Software engineering</dt><dd>Turn conflicting load-test and failure-mode reports into a rollout decision with explicit release gates.</dd>
+        <dt>Software development</dt><dd>Turn a clear bug report into a regression test and a reviewable patch. Check whether the test fails before the fix and passes after.</dd>
+        <dt>Graphic design</dt><dd>Turn competing stakeholder requests into two layouts that can be compared against the audience, brand rules, and production constraints.</dd>
+        <dt>Writing</dt><dd>Turn transcripts and notes into a publishable draft. Trace attributed quotes and keep unsupported claims open for reporting.</dd>
+        <dt>Rideshare and gig work</dt><dd>Compare offers using the same time and cost assumptions, including unpaid pickup time. Keep estimated and observed earnings separate.</dd>
+        <dt>Independent contracting</dt><dd>Turn a vague request into scope, deliverables, and acceptance criteria that both sides can review before work starts.</dd>
+        <dt>Nursing</dt><dd>Turn an existing shift record into an open-task list. Keep pending items visible and confirm responsibility at handoff.</dd>
+      </dl>
+    </details>
+  </section>
+  <section id="case-chronology" class="wide example-case" aria-labelledby="case-chronology-title" hidden>
+    <button class="link back-link" data-page="experiences">← Experiences</button>
+    <p class="eyeline">Paralegal · Fictional records</p>
+    <h1 id="case-chronology-title" tabindex="-1">Did the vendor agree to replace the units?</h1>
+    <p class="anchor">An attorney needs a chronology. The buyer remembers a promise, but the records are mixed.</p>
+    <div class="case-brief">
+      <h2>Give the agent a job</h2>
+      <p>Read the three records, build a dated chronology, and flag any claim the records leave unresolved.</p>
+      <button type="button" class="solid case-run" aria-controls="chronology-run" aria-expanded="false">Run the simulation →</button>
+    </div>
+    <details class="case-source">
+      <summary>Read the three records</summary>
+      <dl class="transfer-list">
+        <dt>P-01 · March 4 email</dt><dd>The buyer reports defects and asks the vendor to propose a remedy by March 10.</dd>
+        <dt>P-02 · March 11 email</dt><dd>The vendor acknowledges the complaint and says it is reviewing replacement options. It gives no delivery date.</dd>
+        <dt>P-03 · Undated staff note</dt><dd>A buyer employee writes, “I understood replacements would be sent.” The note gives no direct quote from the vendor.</dd>
+      </dl>
+    </details>
+    <div id="chronology-run" class="case-run-result" hidden>
+      <div class="case-draft">
+        <h2 tabindex="-1">What the agent did</h2>
+        <ol class="case-trace">
+          <li>Read two emails and an undated staff note.</li>
+          <li>Extracted dates and statements into a chronology with record IDs.</li>
+          <li>Flagged March 10 and the reported promise for review.</li>
+        </ol>
+        <p>“I found a March 10 date and a staff note about replacements. What do these records establish?”</p>
+      </div>
+      <button type="button" class="solid case-review" aria-controls="chronology-choices" aria-expanded="false">Review the agent’s work →</button>
+      <fieldset id="chronology-choices" class="case-choices" hidden><legend tabindex="-1">Your call</legend>
+        <button type="button" class="tile" data-case-choice="accept">Record a missed delivery deadline</button>
+        <button type="button" class="tile" data-case-choice="revise">Separate the request from any agreement</button>
+      </fieldset>
+      <p class="case-status quiet" role="status"></p>
+    </div>
+    <section class="case-result structure" hidden>
+      <h2 tabindex="-1">Review the finished chronology</h2>
+      <section><h2>March 4 · P-01</h2><p>The buyer reported defects and requested a proposed remedy by March 10.</p></section>
+      <section><h2>March 11 · P-02</h2><p>The vendor said replacement options were under review. It gave no delivery date.</p></section>
+      <section><h2>Undated · P-03</h2><p>A buyer employee recorded an understanding that replacements would be sent.</p></section>
+      <section><h2>Still open</h2><p>Find a direct vendor confirmation before recording an agreement or a missed delivery deadline.</p></section>
+      <button type="button" class="solid case-download">Download the chronology ↓</button>
+    </section>
+  </section>
+  <section id="case-referrals" class="wide example-case" aria-labelledby="case-referrals-title" hidden>
+    <button class="link back-link" data-page="experiences">← Experiences</button>
+    <p class="eyeline">Physician · Fictional administrative records</p>
+    <h1 id="case-referrals-title" tabindex="-1">Make every pending referral visible.</h1>
+    <p class="anchor">The physician wants one place to see every referral awaiting acknowledgment.</p>
+    <div class="case-brief">
+      <h2>Give the agent a job</h2>
+      <p>Reconcile the referral log, team message, and intake note. Prepare a queue with a next action for every pending referral.</p>
+      <button type="button" class="solid case-run" aria-controls="referrals-run" aria-expanded="false">Run the simulation →</button>
+    </div>
+    <details class="case-source">
+      <summary>Read the three referral updates</summary>
+      <dl class="transfer-list">
+        <dt>R-01 · Referral log</dt><dd>Cardiology acknowledged receipt on Monday.</dd>
+        <dt>R-02 · Team message</dt><dd>Dermatology acknowledgment pending. The referral coordinator is assigned to check by Thursday.</dd>
+        <dt>R-03 · Intake note</dt><dd>Physiotherapy acknowledgment pending. The note names no owner or due date.</dd>
+      </dl>
+    </details>
+    <div id="referrals-run" class="case-run-result" hidden>
+      <div class="case-draft">
+        <h2 tabindex="-1">What the agent did</h2>
+        <ol class="case-trace">
+          <li>Matched each update to its referral.</li>
+          <li>Reconciled three referrals into one acknowledged and two pending.</li>
+          <li>Prepared the queue and found one pending referral without a confirmed owner.</li>
+        </ol>
+        <p>“Dermatology has an assigned next step. Physiotherapy is also pending. How should I handle its missing owner?”</p>
+      </div>
+      <button type="button" class="solid case-review" aria-controls="referrals-choices" aria-expanded="false">Review the agent’s work →</button>
+      <fieldset id="referrals-choices" class="case-choices" hidden><legend tabindex="-1">Your call</legend>
+        <button type="button" class="tile" data-case-choice="accept">Assign it to the coordinator</button>
+        <button type="button" class="tile" data-case-choice="revise">Keep it visible and request confirmation</button>
+      </fieldset>
+      <p class="case-status quiet" role="status"></p>
+    </div>
+    <section class="case-result structure" hidden>
+      <h2 tabindex="-1">Review the finished queue</h2>
+      <section><h2>Dermatology · R-02</h2><p>Awaiting acknowledgment. Referral coordinator to check by Thursday.</p></section>
+      <section><h2>Physiotherapy · R-03</h2><p>Awaiting acknowledgment. Next action: confirm the owner and due date with the referral team.</p></section>
+      <section><h2>Reconciliation</h2><p>Two pending referrals from three updates. Cardiology is outside the queue because receipt is confirmed in R-01.</p></section>
+      <button type="button" class="solid case-download">Download the queue ↓</button>
+    </section>
   </section>
   <section id="handoff" class="wide" aria-labelledby="handoff-title" hidden>
     <button class="link back-link" data-page="experiences">← Experiences</button>
@@ -480,7 +518,6 @@
     <h1 id="index-title" tabindex="-1">Index</h1>
     <ul class="index-list">
       <li><button data-page="home">Home →</button></li>
-      <li><button data-page="question">Bring your own question →</button></li>
       <li><button data-page="experiences">Experiences →</button></li>
       <li><button data-page="apps">Working applications →</button></li>
       <li><button data-page="evidence">The accelerating curve →</button></li>
@@ -509,7 +546,7 @@ const builds = { es: [], vi: [] };
 const finished = new Set();
 let language = 'es';
 let replayLanguage = 'es';
-const pages = ['home', 'question', 'test', 'test-note', 'experiences', 'handoff', 'apps', 'evidence', 'build', 'compare', 'replay', 'index', 'book', 'work', 'about', 'contact', 'framework', 'outcomes', 'models', 'examples', 'aware'];
+const pages = ['home', 'experiences', 'case-chronology', 'case-referrals', 'handoff', 'apps', 'evidence', 'build', 'compare', 'replay', 'index', 'book', 'work', 'about', 'contact', 'framework', 'outcomes', 'models', 'examples', 'aware'];
 let view = 'home';
 let beforeIndex = 'home';
 let timer;
@@ -517,31 +554,9 @@ const audio = pick('audio');
 const model = () => lesson[language];
 const selected = () => builds[language];
 const correct = () => selected().length === model().blocks.length && selected().every((block, position) => block === position);
-const draftKey = 'ia-mockup-test-note-v1';
-const draftFields = ['your-question', 'test-move', 'test-evidence'];
-let savedObservation = {};
-try {
-  const draft = JSON.parse(sessionStorage.getItem(draftKey));
-  for (const id of draftFields) {
-    if (typeof draft?.fields?.[id] === 'string') pick(id).value = draft.fields[id];
-  }
-  if (typeof draft?.observation?.text === 'string') savedObservation = draft.observation;
-  if (!draft) {
-    const previous = JSON.parse(sessionStorage.getItem('ia-visit-v1'));
-    if (previous?.version === 1) {
-      const entries = [previous.brief?.pursue?.trim() || previous.question, previous.brief?.move, previous.brief?.evidence];
-      for (const [index, id] of draftFields.entries()) {
-        if (typeof entries[index] === 'string') pick(id).value = entries[index];
-      }
-      if (typeof previous.insight === 'string' && previous.insight.trim()) {
-        savedObservation = {test: JSON.stringify(testValues()), text: previous.insight.trim()};
-      }
-    }
-  }
-} catch {}
-
 const routeAliases = new Map(Object.entries({
-  'visit-opening': 'question', 'visit-takeaway': 'test-note', 'practice': 'apps',
+  'visit-opening': 'experiences', 'visit-takeaway': 'experiences',
+  question: 'experiences', test: 'experiences', 'test-note': 'experiences', 'practice': 'apps',
   'visit-apps': 'apps', 'visit-listening-title': 'build', 'visit-breathe-title': 'aware',
   'capability-explorer': 'examples', 'experience': 'examples', 'language-xray': 'examples',
   'capability-backdrop': 'evidence', 'trajectory-title': 'evidence',
@@ -558,8 +573,6 @@ function restoreRoute() {
     .findIndex(item => 'chapter-' + item.dataset.bookChapter === destination);
   let page = chapter >= 0 ? 'book' : routeAliases.get(destination) || destination || 'home';
   if (!pages.includes(page)) page = 'home';
-  if (page === 'test-note' && !testValues().every(Boolean)) page = testValues()[0] ? 'test' : 'question';
-  if (page === 'test' && !testValues()[0]) page = 'question';
   if ((page === 'compare' || page === 'replay') && !finished.size) page = 'build';
   if (page === 'book' && chapter < 0) resetBook();
   show(page, false);
@@ -577,8 +590,6 @@ function show(page, updateUrl = true) {
   }
   if (view === "aware" && page !== "aware") stopBreath();
   if (page !== 'build') audio.pause();
-  if (page === 'test') pick('test-question').textContent = pick('your-question').value.trim();
-  if (page === 'test-note') updateTestNote();
   for (const id of pages) pick(id).hidden = id !== page;
   view = page;
   pick('index-toggle').textContent = page === 'index' ? 'Close index' : 'Index';
@@ -588,82 +599,6 @@ function show(page, updateUrl = true) {
   heading.focus({ preventScroll: true });
   window.scrollTo(0, 0);
 }
-
-function testValues() {
-  return draftFields.map(id => pick(id).value.trim());
-}
-function observationText() {
-  return savedObservation.test === JSON.stringify(testValues()) ? savedObservation.text : '';
-}
-function saveDraft() {
-  const fields = Object.fromEntries(draftFields.map(id => [id, pick(id).value]));
-  try {
-    sessionStorage.setItem(draftKey, JSON.stringify({fields, observation: savedObservation}));
-  } catch {}
-}
-function updateTestNote() {
-  const [question, move, evidence] = testValues();
-  pick('note-question').textContent = question;
-  pick('note-move').textContent = move;
-  pick('note-evidence').textContent = evidence;
-  const observation = observationText();
-  pick('note-observation').textContent = observation;
-  pick('note-observation-row').hidden = !observation;
-  pick('record-observation').textContent = observation ? 'Edit observation' : 'Record what happened';
-  pick('observation-form').hidden = true;
-  pick('test-status').textContent = '';
-}
-function submitStep(id, fields, next) {
-  for (const field of fields) pick(field).addEventListener('input', () => pick(field).setCustomValidity(''));
-  pick(id).addEventListener('submit', event => {
-    event.preventDefault();
-    for (const field of fields) {
-      const input = pick(field);
-      if (input.value.trim()) continue;
-      input.setCustomValidity('Please enter a response.');
-      input.reportValidity();
-      return;
-    }
-    next();
-  });
-}
-for (const id of draftFields) pick(id).addEventListener('input', saveDraft);
-submitStep('question-form', ['your-question'], () => show('test'));
-submitStep('test-form', ['test-move', 'test-evidence'], () => show('test-note'));
-submitStep('observation-form', ['observation'], () => {
-  savedObservation = {test: JSON.stringify(testValues()), text: pick('observation').value.trim()};
-  saveDraft();
-  updateTestNote();
-  pick('record-observation').focus();
-  pick('test-status').textContent = 'Observation saved.';
-});
-bind('record-observation', () => {
-  pick('observation').value = observationText();
-  pick('observation').setCustomValidity('');
-  pick('observation-form').hidden = false;
-  pick('observation').focus();
-});
-bind('cancel-observation', () => {
-  pick('observation-form').hidden = true;
-  pick('record-observation').focus();
-});
-bind('download-note', () => {
-  const [question, move, evidence] = testValues();
-  const escape = value => {
-    const text = document.createElement('span');
-    text.textContent = value;
-    return text.innerHTML;
-  };
-  const entries = [['The test', move], ['Evidence to look for', evidence], ['What I observed', observationText()]];
-  const sections = entries.filter(([, value]) => value).map(([label, value]) =>
-    '<section><h2>' + label + '</h2><p>' + escape(value) + '</p></section>'
-  ).join('');
-  const page = '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' +
-    '<title>Your test note · Intelligence Amplification</title><style>' + pick('design').textContent + '</style>' +
-    '<header><p><strong>IA</strong> Intelligence Amplification</p></header><main class="wide question-flow test-note">' +
-    '<h1>Your test note.</h1><p class="anchor">' + escape(question) + '</p><div class="structure">' + sections + '</div></main></html>';
-  downloadPage(page, 'intelligence-amplification-test-note.html');
-});
 
 function downloadPage(page, filename) {
   const url = URL.createObjectURL(new Blob([page], {type:'text/html;charset=utf-8'}));
