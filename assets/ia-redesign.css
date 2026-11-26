@@ -1,0 +1,77 @@
+.reading-panel > h1 {text-wrap:balance}
+.reading-panel > .anchor + p {margin-top:1.25rem}
+.reading-panel > .actions {margin:1.3rem 0}
+.reading-panel .solid {display:inline-block;text-decoration:none}
+.reading-list {margin:2rem 0}
+.reading-list > details,.reading-panel > .reading-choice {margin:0;border-top:1px solid var(--rule)}
+.reading-list > details:last-child,.reading-panel > .reading-choice:last-of-type {border-bottom:1px solid var(--rule)}
+.reading-list > details > summary,.reading-choice > summary {padding:1rem 0;font:clamp(1.12rem,2.5vw,1.6rem)/1.25 var(--serif);text-decoration:none}
+.reading-list > details > summary:hover,.reading-choice > summary:hover {text-decoration:underline}
+.reading-copy,.chapter-text {max-width:65ch;overflow-wrap:break-word}
+.reading-copy {padding:0 0 1rem 1.12rem}
+.reading-panel .reading-copy > :last-child {margin-bottom:0}
+.reading-panel .section-number {display:none}
+.reading-panel blockquote {margin:1.6rem 0;font:clamp(1.35rem,3vw,2rem)/1.35 var(--serif)}
+.reading-panel .resource-grid,.reading-panel .contact-options {display:grid;align-items:start;gap:.65rem}
+.reading-panel .resource-grid a,.reading-panel .contact-options a {width:fit-content;max-width:100%}
+.reading-panel dl {display:flex;flex-wrap:wrap;gap:1rem 2rem;margin:0 0 1rem}
+.reading-panel dt {font-size:.85rem;color:var(--muted)}
+.reading-panel dd {margin:0;font-family:var(--serif);font-size:1.2rem}
+.cover-row,.about-lead {display:flex;align-items:center;gap:clamp(1.1rem,5vw,2.8rem);margin:1rem 0 2rem}
+.cover-row img {display:block;width:clamp(5rem,16vw,9.5rem);height:auto}
+.cover-row p:last-child,.about-lead p {margin:1rem 0 0}
+.about-lead img {width:6.5rem;height:6.5rem;object-fit:cover;border-radius:50%}
+.about-lead + .reading-copy {padding-left:0}
+.selected-credentials li {margin:0 0 .6rem}
+.selected-credentials li span {display:block;color:var(--muted);font-size:.9rem}
+.chapter-text {padding-top:1rem;font-family:var(--serif);font-size:clamp(1.12rem,2.5vw,1.38rem);line-height:1.62}
+.chapter-text h2 {font-size:clamp(1.85rem,4vw,3.4rem);line-height:1.1;text-wrap:balance}
+.chapter-lead {font-size:1.14em;color:var(--blue)}
+.chapter-text .formula {margin:1.4rem 0;font-size:1.35em}
+#book-reading > .actions {justify-content:space-between;border-top:1px solid var(--rule);padding-top:1rem}
+.table-scroll {overflow-x:auto}
+.table-scroll table {border-collapse:collapse;width:100%;text-align:left;font-size:.9rem}
+.table-scroll th,.table-scroll td {padding:.6rem .7rem;border-bottom:1px solid var(--rule);vertical-align:top}
+.ia-score-list {padding-left:1.4rem}
+.ia-score-list li {border-bottom:1px solid var(--rule);padding:.5rem 0}
+.ia-score-list strong {margin-left:1rem}
+.breath-area {position:relative;min-height:13rem;display:grid;place-items:center;margin:1rem 0}
+#breath-circle {width:6rem;aspect-ratio:1;border:1px solid var(--blue);border-radius:50%;background:#e7edf2;transform:scale(.72)}
+#breath-circle[data-phase=in] {transform:scale(1.45);transition:transform 4s ease-in-out}
+#breath-circle[data-phase=out] {transform:scale(.72);transition:transform 8s ease-in-out}
+#breath-status {margin:0}
+@media(prefers-reduced-motion:reduce){
+  #breath-circle[data-phase] {transform:scale(.72);transition:none}
+  #breath-circle[data-phase=in] {background:#d0e1ec}
+}
+@media(max-width:520px){
+  .cover-row,.about-lead {align-items:flex-start;gap:1rem}
+  .cover-row .anchor {font-size:1.15rem}
+  .about-lead img {width:4rem;height:4rem}
+}
+body #capability-explorer {
+  --ink:#161c24;--paper:#f6f7f9;--line:#bbc5ce;--muted:#4e5a67;--blue:#264964;
+  --soft:#f0f3f6;--blue-wash:#eaf0f5;--hero-wash:#f6f7f9;--glass:#f6f7f9;
+  font-family:var(--sans);background:transparent;
+}
+#examples #capability-explorer :is(.intro,.skip,.explorer-options) {display:none}
+#examples #capability-explorer :is(.explorer-main,.experience,.app) {padding:0;background:transparent;border:0;border-radius:0;box-shadow:none}
+#examples #capability-explorer :is(h2,h3,.serif) {font-family:var(--serif);font-weight:400}
+#examples #capability-explorer h2 {font-size:clamp(1.85rem,4vw,3.15rem);letter-spacing:-.032em}
+#examples #capability-explorer .ability-selector {gap:0;margin:0 0 2.6rem;padding:0;border:0;border-bottom:1px solid var(--rule);border-radius:0;background:transparent;box-shadow:none;backdrop-filter:none}
+#examples #capability-explorer .ability-selector button {min-height:2.85rem;padding:.5rem;border:0;border-bottom:2px solid transparent;border-radius:0;background:transparent;box-shadow:none;justify-content:center;font-size:clamp(.82rem,2vw,1.05rem)}
+#examples #capability-explorer .ability-selector button.selected {border-color:var(--blue);color:var(--ink)}
+#examples #capability-explorer .icon-disc {display:none}
+#examples #capability-explorer :is(.prepared-draft,.analysis,.professional-context,.record-grid article,.control-guide,.workshop,.workflow-trace,.professional-artifact,.feedback,.passage,.comparison-table) {background:transparent;box-shadow:none;border-radius:0}
+#examples #capability-explorer :is(.primary,.secondary,select,textarea) {border-radius:4px;box-shadow:none}
+#examples #capability-explorer .primary {background:var(--blue);color:white}
+#examples #capability-explorer :is(.secondary,select,textarea) {background:var(--paper);color:var(--ink)}
+#examples #capability-explorer :is(.analysis,.workshop,.workflow-trace,.control-guide) {border:0;border-top:1px solid var(--rule);padding-inline:0}
+#examples #capability-explorer .curated-controls {margin-block:1.3rem}
+#examples #capability-explorer :is(button,a):focus-visible {outline:2px solid var(--blue);outline-offset:3px}
+#book:has(#book-reading:not([hidden])) > :is(.back-link,h1) {display:none}
+#examples #capability-explorer .explorer-options {display:block;margin:2.3rem 0 0;padding:1rem 0;border-top:1px solid var(--rule);background:transparent}
+#examples #capability-explorer .explorer-options > a {display:none}
+#examples #capability-explorer .control-preference {display:flex;align-items:center;flex-wrap:wrap;gap:.4rem 1rem}
+#examples #capability-explorer .control-preference p {margin:0}
+#examples #capability-explorer .app.solid :is(.professional-context,.record-grid article,.control-guide,.analysis,.workshop,.professional-artifact) {background:#fff;padding-inline:.8rem}
